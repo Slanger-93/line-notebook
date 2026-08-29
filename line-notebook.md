@@ -144,5 +144,84 @@ Utah 96-site chronic: published SU/channel cluster around 0.5–0.9 in the human
 
 ## Open problems
 1. still open.
-2. (not started) Same bound language for a 96-site Utah array after gliosis, encapsulation, and percutaneous connector failure, using only the longevity paper + histology paper numbers above.
-3. (not started) Whether the 2,048 AP paths on the 59,760-electrode CMOS chip are independent after switch-matrix crosstalk specs in the JSSC paper.
+2. (started below) Same bound language for a 96-site Utah array after gliosis, encapsulation, and percutaneous connector failure.
+3. (started below) Whether the 2,048 AP paths on the 59,760-electrode CMOS chip are independent after switch-matrix crosstalk specs.
+4. (not started) Bits that survive after 1 ms blanking + Wait on a bidirectional 59-site MCS loop. Still no published bit-rate. Leave it.
+
+### Object A reuse / drift addendum (vendor manuals, not a longitudinal table)
+MCS MEA Manual (public PDF extract):
+- Warranty of a MEA chip: six months from delivery.
+- "All MEAs with TiN electrodes have a long life and can be reused several times if handled with care."
+- Acute slices: "MEAs can be used for approximately one year."
+- "Long-time experiments with cell cultures and rigid cleaning methods shorten the MEA lifetime, but you can still reuse a MEA about 30 times, depending on the coating, cell culture, and cleaning procedure."
+- Temperature: 0–125 °C; autoclave allowed on standard (not pMEA / FlexMEA / EcoMEA-Glass).
+- Quick Guide: autoclave 121 °C, 30 min after Terg-A-Zyme overnight; "keep track on the accumulated time a MEA spend in cell culture, and the number of cleaning procedures."
+- Impedance still listed as <100 kΩ (30 µm) and 250–400 kΩ (10 µm). No per-cycle impedance table.
+
+These are vendor bounds. They sit next to the still-empty day-by-day impedance curve. Do not merge them into one drift function.
+
+Hales / JVE 10 kΩ–100 kΩ at 1 kHz pass window remains the only published in-use reject rule pulled so far.
+
+### Object B switch matrix (problem 3, not resolved)
+ISSCC 2016 companion (Dig Tech Pap IEEE ISSCC 2016:394–396, PMC7612103 extract) and Purdue MEMS 2017 slide citing the same chip:
+- Pixel: 13.5 × 13.5 µm². Each electrode (Pt, 3 × 7.5 µm²) sits with 4 switches and 3 SRAM cells for switch control.
+- "Neuronal signal lines are all shielded with analog supply/ground tracks to minimize crosstalk."
+- Simultaneous AP readout: 2048 channels. Noise "as low as 3.2 µV RMS" (300 Hz–10 kHz) in the ISSCC writeup; JSSC 2017 abstract band is 300 Hz–10 kHz for AP units.
+- 32 LFP units separate from the 2048 AP units.
+- 16 dual-mode stim units. Not 2048 stimulators.
+- Switch matrix: any measurement/stimulation unit to any electrode; functions in parallel.
+
+Earlier Hierlemann switch-matrix chip (Frey et al. JSSC 2010; 26,400 electrodes / 1024 readout):
+- Reprogram the matrix in 1.4 ms.
+- Full-chain noise 2.4 µVrms (300 Hz–10 kHz) on that older part.
+- 32 stim units at the periphery.
+
+No numeric crosstalk ratio (dB, % of neighbor amplitude) was sitting in the JSSC 2017 / ISSCC 2016 extracts pulled this pass. "Shielded to minimize" is the published claim. A different CMOS-MEA family (Frontiers conf abstract "In-Column Cross-Talk Suppression in High-Density CMOS-MEAs", 4225 capacitive sites, 65×65) describes in-column crosstalk from source-degeneration resistance and an inverse-matrix correction. That chip is not the 59,760-electrode part. Do not transplant the correction onto object B.
+
+Independence of the 2048 AP paths:
+- They are 2048 analog front-ends, not 59,760.
+- Routing is shared switch-matrix metal. Shielding is asserted. Quantified residual coupling is not in the pulled pages.
+- Biological mixing at 13.5 µm pitch is a separate floor: neighboring electrodes can see the same axon (HD-MEA papers use that on purpose for axonal tracking). Electrical independence ≠ spatial independence of sources.
+
+Leave problem 3 open. The simultaneous-channel bound stays 2048 AP + 32 LFP. Crosstalk dB not filled.
+
+### Utah 96-site bound sketch (problem 2, conflicting published numbers kept)
+Geometry (public / review): 10×10 shanks, 400 µm pitch, typically 96 wired recording sites, 4 corners unused or reference. Shank length commonly 1.0 or 1.5 mm. Tip metal Pt or IrOx.
+
+Yield / life (Sponheim / Collinger group, J Neural Eng 2021, 55 arrays, 17 macaques + 2 humans, >6000 sessions):
+- Average lifespan of available recordings: 622 days.
+- Nearly 50% of implants: year-long recordings with >40% of available electrodes at SNR > 1.5.
+- 16/55 arrays >800 days; three into five years (two of those in human P2).
+- One array near nine years; explant reason given as infection near the connector, not zero SNR.
+- Electrode length did not affect longevity in that analysis. IrOx tips had superior yield vs Pt.
+- Human implants lasted longer than NHP implants in that set.
+
+Same paper's "good electrode" definition is SNR > 1.5, not isolated single-unit cluster quality. That is a different bar than the SU/channel numbers already on the map (0.55–0.88 in other tables). Keep both bars.
+
+Histology / materials, not the same animals:
+- J Neural Eng 2023 / PMC9954796, one NHP, arrays at 848 d and 590 d: 63% reduction in neurons surrounding shanks vs control. SEM categories on examined shanks: Parylene C cracks 40.3%, coating cracks 39.7%, tip breakage 22.3%, shank fracture 3.3%, debris 1.7%, Parylene delamination 1.3%. 37.3% of examined shanks "visible to no degradation."
+- Human explants (Front Neurosci 2021 / PMC8688945): two Pt arrays 980–987 d in P1; mixed Pt/IrOx 182 d in P2. Recording quality: initial peak-to-peak rise first 30–40 days, gradual decline after in P1. Tissue encapsulation and material degradation more pronounced on the longer implants; those also had lower signal amplitude and impedance.
+- Multiple adjacent Utah arrays in monkey visual cortex (J Neural Eng 2023 chronic-stability paper): SNR and Vpp decreased over ~15 months in one animal and ~4 months in the other; phosphene-yielding channels decreased over years; post-mortem "arrays and wire bundles were almost fully encapsulated, insulating them from the cortex after 3–3.5 years." Authors attribute failure to tissue response rather than device electronics. Impedance of remaining channels (after dropping >3000 kΩ sites) decreased over the study.
+
+Connector / percutaneous path:
+- Longevity paper: the 9-year array ended on connector-site infection.
+- USEA (slanted, same foundry family, peripheral nerve, not cortex): one participant explant at 84 d "due an infection at the USEA percutaneous wire passage site" (J Neural Eng 2020). Other USEAs 425 d and 503 d by protocol, not failure. Six of seven USEAs lost functional recording electrodes within the first 2 months; one improved. Median SNR ~5.0–5.7 in that nerve set.
+
+Soak / encapsulation bench (not in vivo): Al2O3 + Parylene C bilayer UEA, PBS 57 °C accelerated (J Neural Eng / PMC4077846): median tip impedance 60 kΩ → 160 kΩ over 960 equivalent days at 37 °C (increase, opposite the usual Parylene-only decrease). Wireless bilayer RF stable to 1044 equivalent days. Parylene-only lifetime cited there as ~100 days at 37 °C. Bench soak is not gliosis.
+
+Bound sketch, unresolved on purpose:
+- Wired sites: 96.
+- Sites passing SNR > 1.5 at one year: on the order of 40% of available in half the 55-array set; not a promise for a given implant.
+- Isolated SU per valid channel in other human/macaque tables: ~0.5–0.9, sometimes "up to about three" as a review ceiling.
+- Tissue: 63% local neuron loss in one long NHP histology; full encapsulation of array + bundle at 3–3.5 years in another NHP multi-array visual study.
+- Failure modes published as concurrent, not ranked: gliosis/encapsulation, IrOx or Pt tip damage, Parylene cracks, tip breakage, connector infection, impedance walk both up and down depending on paper.
+- Closed-loop latency for Utah percutaneous + external rack is not in these longevity papers. Do not invent one.
+
+LFP mixing on Utah 400 µm pitch: Kajikawa lateral spread already on the map is ≥ that pitch. 96 LFP traces are not 96 independent generators. CSD needs depth; the Utah plane is one depth.
+
+## Attempts / dead ends (continued)
+- JSSC 2017 / ISSCC 2016 full-text PMC pages returned a reCAPTCHA wall this pass. Specs above are from the ISSCC text extract, Purdue 2017 citing slides, and abstracts. Numeric crosstalk in dB for the 59,760-electrode switch matrix still missing. Dead for now.
+- MCS "about 30 times" reuse is a manual sentence, not a Kaplan-Meier of impedance vs cycle. Still no day-by-day dish curve. Partially un-deads the earlier reuse search; the curve is still empty.
+- Tried to treat "SNR > 1.5 yield" and "single units per channel" as the same Utah metric. They are not. Left both.
+- USEA nerve numbers mixed into cortical Utah only as connector-infection and early-month electrode-loss examples. Different target tissue. Flagged.
+- No published Shannon rate for the 59-site closed loop. Problem 4 stays empty.
