@@ -276,3 +276,47 @@ Still no agreed neuron census for the dish. Active-electrode rules now on the ma
 3. still open. Crosstalk dB still missing.
 4. still empty of bits. Timing conflicts collected instead.
 5. (not started) How many of the 3 MCS stim patterns can land on sites that are also in the 15/59 burst set without the blanking window erasing the burst metric. Would need a methods paper that states both. Not pulled.
+
+### Closed-loop culture papers on 60-site class (problem 5 adjacent; still no joint 3-pattern × 15/59 statement)
+Bakkum, Chao, Potter J Neural Eng 2008 / PMC2559979 (MEA record+stim, embodied animat):
+- Adaptive training: network reaches pre-determined activity states "within tens of minutes."
+- After 2 h of training, plasticity remained above baseline for 80 min (p < 0.01).
+- Same sequence replayed open-loop (no longer contingent on feedback) did not induce significant plasticity (p = 0.82) or the desired behavior.
+- Last 10 min closed-loop learning curve 2.88 ± 0.08× start vs 1.24 ± 0.03 open-loop (n = 23 trials / six experiments).
+
+Bakkum, Chao, Potter PLoS ONE 2008 (same hardware family): activity-dependent change in electrically evoked AP propagation delay "up to 4 ms or 40% after minutes and 13 ms or 74% after hours"; amplitude change up to 87%. Those delays sit on the same timescale as the blanking/Wait/artifact numbers already listed. A 13 ms delay shift is larger than the MCS brochure <1 ms trigger spec. Do not fold them into one latency.
+
+Wagenaar, Pine, Potter J Negat Results Biomed 2006: "Searching for plasticity in dissociated cortical cultures on multi-electrode arrays" — negative-results paper on the same class of dish. Plasticity is not a guaranteed payload of a 59-site loop.
+
+No methods paragraph in the pulled set states "3 independent MCS stim patterns" and "15/59 burst participation" in the same protocol. Problem 5 stays unfilled.
+
+### Utah rack latency (fills the hole noted under problem 2)
+Blackrock Cerebus public spec page: sample frequency 30 kS/s; channel options include 96; 16-bit path on analog inputs. Scientific Data 2018 Utah motor-cortex dataset: 96 active IrOx electrodes, 1.5 mm, 400 µm, mean impedance 50 kΩ at 1 kHz (factory); Front-End Amplifier gain 5000, 0.3 Hz–7.5 kHz analog, digitized 16-bit at 30 kHz. Online spike snippets 1.3–1.6 ms. LFP copy low-pass 250 Hz, downsampled to 1 kHz.
+
+Ali et al. J Neural Eng 2024 (BRAND, Blackrock NSP firmware 6.05.02 in the benchmark):
+- Inter-process: <600 µs sending 1024 channels of 30 kHz data in 1 ms chunks.
+- iBCI graph: "less than 8 ms of latency from neural data input to decoder prediction."
+- OLE decoder node <0.6 ms in that test.
+- They treat <10 ms per-node as the real-time bar they aimed at.
+
+These are rack + software numbers on Utah-class streams. They are not the tissue-response latency and they are not the MCS dish brochure numbers. Put them on the Utah side of the map. Closed-loop BMI decoder latency was the missing item under problem 2; still no published figure in the longevity/histology papers themselves.
+
+### Object B commercial sibling (MaxOne / Frey 2010 line, not the 59,760-electrode JSSC chip)
+MaxWell Biosystems MaxOne brochure (public PDF):
+- 26,400 electrodes, 17.5 µm pitch, active area 3.85 × 2.10 mm², Pt, two electrode sizes listed (9.3 × 5.45 µm² and 11.5 × 9.5 µm²).
+- Recording channels: Full 1024 / Basic 256. Sampling 20 kHz per electrode. ADC 10 bit. Gain up to 78 dB.
+- Amplifier noise 2.4 µVrms (300 Hz–10 kHz). Application noise 4.4 µVrms measured with primary culture in the same band.
+- Stimulation units: 32. Current ±1.6 mA, voltage ±1.6 V, 2 nA / 2 µs resolution in the brochure table.
+- Switch-matrix routing: "Full: unlimited" configurations vs Basic 4 options.
+
+This is the commercialized 26,400 / 1024 chip (Frey JSSC 2010 numbers already on the map: 2.4 µVrms, 1.4 ms matrix reprogram, 32 stim). It is not object B's 59,760 / 2048 part. Electrode count and channel count remain different numbers. Crosstalk dB still not on either datasheet pulled.
+
+MDPI Biosensors 2026 review table (ordinary survey, not new measurement): typical MEA eval ranges they compile — EAP 10–500 µV, LFP 0.1–5 mV, sampling ≥10–20 kHz, noise <5 µVrms, impedance 100 kΩ–1 MΩ at 1 kHz, CIC cited >0.5–1 mC/cm² as a review rule of thumb, water-window −0.6 to +0.8 V vs Ag/AgCl. TiN CIC listed 0.87 mC/cm² in their material table; Pt 0.05–0.3 mC/cm². Those are compiled ranges, not a measurement on one 59-site dish.
+
+## Open problems
+1. still open.
+2. rack latency now listed (8 ms decoder class; 30 kS/s Cerebus). Tissue + connector failure numbers unchanged.
+3. still open. MaxOne brochure also has no crosstalk dB.
+4. still empty of bits.
+5. still not pulled as a joint methods statement.
+6. (not started) Whether the 13 ms propagation-delay plasticity in Bakkum 2008 PLoS ONE moves a unit across a spike-sorting cluster boundary on a 59-site dish. Would need sorted-unit identity tracked through the delay shift. Not pulled.
