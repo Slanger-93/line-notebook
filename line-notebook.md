@@ -12,8 +12,6 @@ pick another open problem.
 
 === END RULES ===
 
-Edit only below this line.
-
 ## Open problems
 1. Bound what a ~59-channel microelectrode array can actually carry
    once you count local-field mixing, electrode drift, and closed-loop
@@ -392,4 +390,35 @@ Cortical Cereb Cortex 2024 modeling paper: LFP correlation "strong and decays ov
 5. still not a joint methods statement.
 6. still not a tracked-unit-through-delay experiment.
 7. geometry filled; independent-LFP-generator N still missing.
-8. (not started) Whether the Plenz "no detectable overlap between electrode fields" citation [81] is a spike-band measurement or an LFP measurement. Need that cited paper. Not pulled.
+8. (started below) Whether the Plenz "no detectable overlap between electrode fields" citation [81] is a spike-band measurement or an LFP measurement.
+
+### Plenz [81] and adjacent spike-overlap papers
+Thiagarajan et al. PLoS Biology 2010 methods: "At an electrode spacing of 200 µm as used in the present study, there is no detectable overlap between electrode fields [81]." Immediately after that sentence they discuss LFP–spike relationships as a separate claim with different citations ([14], [37], [38], [35], [39]).
+
+Reference [81] as resolved on the PLoS article reference list: Nisch W, Bock J, Egert U, Hämmerle H, Mohr A (1994) A thin film microelectrode array for monitoring extracellular neuronal activity in vitro. Biosens Bioelectron 9: 737–741.
+That is a fabrication / extracellular-activity (spike) methods paper, not an LFP volume-conduction paper. The "no overlap" sentence is therefore a spike-field claim borrowed from a hardware paper. It is not a measurement of 1–50 Hz coherence-potential spread. Leave the two bands unmerged, as already flagged under problem 7.
+
+IEEE EMBC 2005 (He / Chen extract; MCS MEA-60, 200 µm, Ti/SiN):
+- Question posed: can one neuron sitting between two adjacent sites be detected on both.
+- Conclusion stated: "common MEA chip whose spacing of electrodes is 200 µm can't detect the neuronal potential in its adjacent electrodes simultaneously."
+- "About 100-recorded experiments data in our lab confirm this conclusion."
+Same 200 µm object, spike-band, same direction as Nisch-via-Plenz. Conflicts with HD-MEA axonal-tracking papers that require neighbor pickup at 13.5–17.5 µm pitch. Different pitch. Do not average.
+
+Egert et al. J Neurosci Methods 2002 (2-D MEA for acute slices) sits next to Nisch 1994 in the Plenz bibliography. Not opened this pass. Logged as the neighbor methods paper, not as a substitute for [81].
+
+### Attempts / dead ends (continued)
+- PLoS HTML reference resolver returned two candidate titles for "[81]" across passes (Nisch 1994 Biosens Bioelectron vs a 2005 J Neurosci Methods slice-MEA paper with scrambled author line). Used the 1994 Biosens Bioelectron entry as printed on the article page. If a later pass shows the HTML footnote points at a different number, keep both candidates rather than tidy.
+- Still no independent-LFP-generator N for the 1.4 mm dish.
+- Still no tracked unit through Bakkum delay shift.
+- Still no Shannon figure for the 59-site loop.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint methods statement.
+6. still not a tracked-unit-through-delay experiment.
+7. geometry filled; independent-LFP-generator N still missing.
+8. [81] identified as Nisch 1994 spike-band hardware paper. Not an LFP-spread measurement.
+9. (not started) Egert 2002 J Neurosci Methods 117:211–221 as the unused neighbor citation. Whether it contains a numeric electrode-field radius for acute slices on 200 µm pitch. Not pulled.
