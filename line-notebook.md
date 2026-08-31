@@ -364,4 +364,32 @@ These are not the MCS TiN <100 kΩ (30 µm) / 250–400 kΩ (10 µm) numbers. Sa
 4. still empty of bits.
 5. still not a joint methods statement. Wagenaar 40–50/60 at V* is a third activity count.
 6. still not pulled as a tracked-unit-through-delay experiment.
-7. (not started) Geometric recording area of the 8×8 / 200 µm dish vs Kajikawa LFP spread. 7 × 200 µm = 1.4 mm on a side if corners omitted; Kajikawa lateral spread "well beyond 200–400 µm" and "many millimeters" vertical. Area arithmetic is trivial; a paper that measures dish-wide LFP coherence on this exact layout was not pulled.
+7. (started below) Geometric recording area of the 8×8 / 200 µm dish vs Kajikawa LFP spread.
+
+### Geometry vs LFP coherence on the exact 60-site / 200 µm object
+MCS MEA manual: "A standard MEA biosensor has a square recording area of 700 µm to 5 mm length. In this area, 60 electrodes are aligned in an 8 × 8 grid with interelectrode distances of 100, 200, or 500 µm."
+8 × 8 at 200 µm pitch: 7 intervals × 200 µm = 1.4 mm span on a side (corners omitted). 100 µm pitch → 0.7 mm span. 500 µm parts use a 6 × 10 grid, not 8 × 8.
+Glass carrier: 49 × 49 × 1 mm (datasheet). That is the chip, not the recording field.
+
+Thiagarajan, Lebedev, Nicolelis, Plenz PLoS Biology 2010 "Coherence Potentials" (organotypic cortex on MCS 60-ch, 8 × 8, 30 µm TiN, 200 µm):
+- Methods sentence: "At an electrode spacing of 200 µm as used in the present study, there is no detectable overlap between electrode fields" (they cite a prior methods paper as [81]).
+- Same paper: LFP filtered 1–50 Hz; pairwise correlation of negative LFP peaks (nLFP) with R ≥ 0.8 treated as "highly correlated sites"; fraction of such sites rises sigmoidally with nLFP amplitude; supplement shows raw traces of all 60 electrodes during a coherence-potential event.
+- DNQX 2 µM cut the fraction of sites at R ≥ 0.8 by over 50%.
+
+Those two statements sit in one paper: no detectable electrode-field overlap at 200 µm, and dish-wide LFP events with R ≥ 0.8. They are about different bands. Do not resolve them into one mixing number.
+
+Kajikawa & Schroeder 2011 (already on the map) measured LFP lateral spread well beyond 200–400 µm in intact monkey A1 with a distant reference. Different preparation, different reference. The 1.4 mm dish span is inside that spread. A single N for independent LFP generators on the dish is still not published.
+
+Scientific Data 2022 (hPSC vs rat cortex on MEA, not claimed as 59-site only): network synchronization via CorSE and STTC pairwise from spike times. Metrics exist; they are spike-based connectivity, not LFP-generator count.
+
+Cortical Cereb Cortex 2024 modeling paper: LFP correlation "strong and decays over a distance of several hundred micrometers"; spike-train pairwise correlations remain weak. Compatible with both the Plenz high-R nLFP events and the "no field overlap" spike-radius language. Still not an N.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint methods statement.
+6. still not a tracked-unit-through-delay experiment.
+7. geometry filled; independent-LFP-generator N still missing.
+8. (not started) Whether the Plenz "no detectable overlap between electrode fields" citation [81] is a spike-band measurement or an LFP measurement. Need that cited paper. Not pulled.
