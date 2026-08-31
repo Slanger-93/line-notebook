@@ -320,3 +320,48 @@ MDPI Biosensors 2026 review table (ordinary survey, not new measurement): typica
 4. still empty of bits.
 5. still not pulled as a joint methods statement.
 6. (not started) Whether the 13 ms propagation-delay plasticity in Bakkum 2008 PLoS ONE moves a unit across a spike-sorting cluster boundary on a 59-site dish. Would need sorted-unit identity tracked through the delay shift. Not pulled.
+
+### Stim-parameter numbers on the same 30 µm TiN 60-site dishes (Wagenaar line)
+Wagenaar, Pine, Potter J Neurosci Methods 2004 (dense neocortex on 30 µm TiN MEAs):
+- Compared voltage- and current-controlled pulse shapes. Stimulation mediated by negative currents.
+- Positive-then-negative biphasic voltage-controlled pulses more effective than the other shapes tested at the same peak voltage.
+- They state the aim as useful parameter ranges that optimize efficacy while preventing electrochemical damage. Paper is methods, not a recipe dump here.
+
+Wagenaar, Madhavan, Pine, Potter J Neurosci 2005 (closed-loop bursting control, same hardware class):
+- Biphasic rectangular voltage pulses, positive phase first, 400 µs per phase, voltages 100–900 mV.
+- Per-electrode V* defined as the voltage at which evoked response was five times spontaneous rate. "Typically, 40–50 electrodes per dish were in sufficiently close contact with the culture to attain that level of response by voltages in the range tested."
+- Closed-loop protocol started at a base voltage V = 200 mV on all electrodes and adjusted per electrode to hold a target firing rate.
+- Early post-stimulus component: latencies up to 20 ms, attributed mainly to direct antidromic axonal stimulation (citing Wagenaar et al. 2004). Late component: synaptically mediated reverberating bursts, variable latency.
+
+40–50/60 electrodes reaching 5× spontaneous at V* is another activity-count, different from Middya 16/60, Downes 15/59 inclusion, and MFR ≥ 0.1 Hz. Leave them unmerged.
+
+Early-component 20 ms window is longer than MCS brochure <1 ms trigger, longer than Müller 1.25 ms example loop, and comparable to Bakkum's 13 ms delay plasticity. Those clocks still do not collapse.
+
+### Problem 6 status (sorting identity vs delay shift)
+No paper in this pass tracks a named sorted unit on a 59-site dish through the Bakkum 4–13 ms propagation-delay change and reports whether the cluster split or merged.
+
+Nearby published practice:
+- Hughes et al. J Neural Eng 2021 (human Utah, 5 year): Wave_Clus units "identified de novo each day … without influence from the sorting results of previous sessions." They did not claim cross-day identity. Average identified units: day 23 = 64; day 71 = 100; day 178 = 43; then slow decline, linear-regression slope −0.0058 units/day over the study.
+- SAMS (bioRxiv 2025, cultured neurons on MEA): human–machine consistency ~75–80% from 1 to 8 weeks in vitro. That is agreement with a human sorter on the same file, not a tracked neuron through a delay shift.
+- SpikeSift (J Neural Eng 2025) and Niediek et al. Front Neuroinform 2016 (10-hour simulated drift, amplitude ×1.0→1.5): algorithms built to keep identity under drift. Simulation recovery 74.6% of simulated neurons in Niediek. Neither is a 59-site Bakkum-delay experiment.
+- SpyKING CIRCUS docs: default template radius 250 µm for in-vitro 252-electrode MEAs, 100 µm suggested for in-vivo. 200 µm MCS pitch sits inside that in-vitro radius; templates are expected to touch neighbors. That is spatial mixing of templates, not a delay-shift result.
+
+Problem 6 stays open. De-novo-daily sorting is the published conservative stance on identity.
+
+### Clone-vendor impedance (MED sàrl catalog, pin-compatible 59-site)
+MicroElectrodeDevices product catalog (MCS-compatible MEA60):
+- 59 recording + internal ref 15. 8×8, 200 µm.
+- Planar Pt 30 µm: impedance 800–1100 kΩ at 1 kHz.
+- Planar 10 µm: 150–200 kΩ.
+- Planar 50 µm: 900–1200 kΩ.
+- 3D tip 30 µm: 450–650 kΩ.
+These are not the MCS TiN <100 kΩ (30 µm) / 250–400 kΩ (10 µm) numbers. Same channel count, different metal, different impedance band. JVE 10–100 kΩ pass window would reject most of the MED planar-Pt 30 µm band if applied uncritically. Do not apply it uncritically.
+
+## Open problems
+1. still open.
+2. started. Wave_Clus de-novo-daily on 5-year human Utah now listed; not a tracked-identity study.
+3. still open.
+4. still empty of bits.
+5. still not a joint methods statement. Wagenaar 40–50/60 at V* is a third activity count.
+6. still not pulled as a tracked-unit-through-delay experiment.
+7. (not started) Geometric recording area of the 8×8 / 200 µm dish vs Kajikawa LFP spread. 7 × 200 µm = 1.4 mm on a side if corners omitted; Kajikawa lateral spread "well beyond 200–400 µm" and "many millimeters" vertical. Area arithmetic is trivial; a paper that measures dish-wide LFP coherence on this exact layout was not pulled.
