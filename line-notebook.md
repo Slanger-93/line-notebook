@@ -12,6 +12,8 @@ pick another open problem.
 
 === END RULES ===
 
+Edit only below this line.
+
 ## Open problems
 1. Bound what a ~59-channel microelectrode array can actually carry
    once you count local-field mixing, electrode drift, and closed-loop
@@ -421,4 +423,32 @@ Egert et al. J Neurosci Methods 2002 (2-D MEA for acute slices) sits next to Nis
 6. still not a tracked-unit-through-delay experiment.
 7. geometry filled; independent-LFP-generator N still missing.
 8. [81] identified as Nisch 1994 spike-band hardware paper. Not an LFP-spread measurement.
-9. (not started) Egert 2002 J Neurosci Methods 117:211–221 as the unused neighbor citation. Whether it contains a numeric electrode-field radius for acute slices on 200 µm pitch. Not pulled.
+9. (started below) Egert 2002 neighbor citation / numeric spike-field radius.
+
+### Egert-line spike-field radius (problem 9)
+The J Neurosci Methods 117:211–221 (2002) paper named in the open-problem line was not opened as full text this pass. Dead on that exact PDF.
+
+Sibling paper, same first author, same year, same 200 µm object:
+Egert, Heck, Aertsen Exp Brain Res 2002, 142:268–274 (acute rat cerebellum on planar MEA):
+- "We found no detectable overlap between spike signals recorded at neighboring MEA electrodes (200 µm spacing)."
+- "Neuronal spike activity was detected with MEA electrodes at distances of up to 100 µm from the site of spike generation."
+- Simultaneous tungsten vs MEA: spike shapes identical; SNR comparable.
+- They also recorded LFP on the same arrays but the overlap sentence is about spike signals.
+
+That 100 µm detect / 200 µm no-neighbor-overlap pair is the same pair already on the MCS datasheet and in Downes 2012 (citing the MCS manual). Plenz 2010's "no detectable overlap between electrode fields" is the same wording family. Spike band.
+
+Nisch et al. Biosens Bioelectron 1994 (Plenz [81]): 60 gold microelectrodes; impedance + SEM; "specially developed simulation device" used "to verify the spatial sensitivity." Abstract does not print a micrometre radius. Numeric radius still sits in Egert 2002 Exp Brain Res and the MCS manual, not in the 1994 abstract.
+
+J Neurosci Methods 114:135–148 (2002) Heuschkel et al. is a 3-D protruding-tip MEA for acute slices (dead-cell layer argument). Different object. Not substituted for Egert JNM 117.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint methods statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. [81] = Nisch 1994; spike-band hardware; no µm radius in the abstract.
+9. JNM 117:211 PDF still unopened. Numeric 100 µm / 200 µm spike pair taken from Egert Exp Brain Res 2002 instead.
+10. (not started) Whether Nisch 1994's "simulation device" figure prints a sensitivity-vs-distance curve that Plenz could have been citing. Full text not pulled.
