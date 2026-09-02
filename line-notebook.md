@@ -451,4 +451,33 @@ J Neurosci Methods 114:135–148 (2002) Heuschkel et al. is a 3-D protruding-tip
 7. independent-LFP-generator N still missing.
 8. [81] = Nisch 1994; spike-band hardware; no µm radius in the abstract.
 9. JNM 117:211 PDF still unopened. Numeric 100 µm / 200 µm spike pair taken from Egert Exp Brain Res 2002 instead.
-10. (not started) Whether Nisch 1994's "simulation device" figure prints a sensitivity-vs-distance curve that Plenz could have been citing. Full text not pulled.
+10. (dead this pass) Whether Nisch 1994's "simulation device" figure prints a sensitivity-vs-distance curve that Plenz could have been citing. Full text not pulled.
+
+### Attempts / dead ends (continued)
+- Nisch 1994 Biosens Bioelectron 9:737–741 full text not sitting in an open PDF this pass (Elsevier / documentsdelivered stub only). Abstract names a simulation device; no µm curve extracted. Leave problem 10 as a missing figure, not as a filled radius.
+- Egert et al. J Neurosci Methods 117:211–221 still unopened. The numeric 100 µm / 200 µm pair remains sourced from Egert Exp Brain Res 2002, not from JNM 117.
+
+### Burst duration vs blanking window (problem 5 adjacent clocks)
+Wagenaar, Pine, Potter BMC Neurosci 2006, 7:11 (dense cortical cultures on MEAs; same lab / dish class):
+- After two weeks, activity dominated by population bursts in most cultures.
+- Inter-burst intervals between 1 and 300 s.
+- Average total burst duration decreased from 1 s when bursts first appeared to less than 200 ms after 20 DIV.
+- Burst onset phase decreased from 300 ms toward shorter values over the same period.
+- Evoked bursts subject to a relative refractory period "on the order of 1 s" (cited back to their earlier work).
+
+Wagenaar, Pine, Potter J Negat Results Biomed 2006 (already on the map): probe cycle 3 s between pulses across all 59 electrodes; 5–10 s pause between sets so each set had a chance of evoking bursts.
+
+1 ms MCS blanking / 5 ms SALPA blank / 400 µs Wait sit inside a 200 ms–1 s burst and inside a 1–300 s IBI. They punch a hole in the burst metric; they do not erase the burst as an event. How many of the 3 stim patterns land inside the 15/59 burst-participation set is still not a joint methods statement. Problem 5 stays open. These durations are now on the map as the culture-side clocks.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement. Burst duration 200 ms–1 s now listed next to 1 ms blanking.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. [81] = Nisch 1994; figure still missing.
+9. JNM 117 PDF still unopened.
+10. Nisch simulation-device figure still not pulled.
+11. (not started) Catchment-volume arithmetic: π(100 µm)² × culture thickness vs plated cells/mm² from Downes (~2,500 ± 1,500 cells/mm²). Would be a back-of-envelope, not a published neuron census. Leave it uncomputed unless a paper already did it.
