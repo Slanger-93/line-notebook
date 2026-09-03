@@ -480,4 +480,34 @@ Wagenaar, Pine, Potter J Negat Results Biomed 2006 (already on the map): probe c
 8. [81] = Nisch 1994; figure still missing.
 9. JNM 117 PDF still unopened.
 10. Nisch simulation-device figure still not pulled.
-11. (not started) Catchment-volume arithmetic: π(100 µm)² × culture thickness vs plated cells/mm² from Downes (~2,500 ± 1,500 cells/mm²). Would be a back-of-envelope, not a published neuron census. Leave it uncomputed unless a paper already did it.
+11. (started below) Catchment-volume arithmetic. Not computed here.
+
+### Catchment arithmetic already published — different array (problem 11)
+Jun, Steele, Zhang, Potter et al. J Neurosci Methods / PMC2767260 (patterned PLL on 32-site MEA, 200 µm pitch, 100 µm² exposed site):
+- Spontaneous activity at densities as low as 200 cells/mm² (10–14 DIV).
+- Goal stated as one cell body per electrode site at 100 cells/mm² plating.
+- Table: predicted cells per electrode tiling (they tiled 100 µm × 100 µm, not a π(100 µm)² disc) vs observed soma-on-site counts:
+  - 100 cells/mm²: predicted 4.0, observed 0.9 ± 1.3
+  - 200: predicted 8.0, observed 1.9 ± 3.7
+  - 400: predicted 16.0, observed 5.3 ± 6.1
+- Seeding area they used for the prediction: 1600 × 800 µm² = 1.28 mm² around 32 sites.
+
+That is published catchment-style division. It is not the 59-site MCS object, not a 100 µm detection radius disc, and not Downes' 2,500 ± 1,500 cells/mm² dense-culture number. Observed << predicted in every row. Do not transplant the table onto object A.
+
+MCS neuronal-culture application note (public PDF, Potter / Wagenaar acknowledged): "Plate the cells in a density of 1000–5000 cells per mm² (depending on your application) onto the recording field of the MEA." That range brackets Downes' dense figure and sits well above Jun's 100–400 patterned-PLL range. Two plating regimes, two papers.
+
+Culture thickness as a third factor in the uncomputed π r² × thickness product: not a single published monolayer thickness for the 59-site dish in the pulled set. Dissociated cortex on glass is treated as a near-monolayer in the methods papers; organotypic slices in Plenz 2010 are a different thickness class. Leave the product uncomputed.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. JNM 117 PDF still unopened.
+10. Nisch simulation-device figure still not pulled.
+11. Jun 32-site table listed; 59-site π(100 µm)² × thickness product not computed and not found pre-computed.
+12. (not started) Whether MCS 100 µm "acute brain slice" detection radius was ever re-measured on dissociated monolayer cultures rather than slices. Datasheet sentence specifies slice. Downes cites the manual for cultures anyway. Not a new measurement.
