@@ -510,4 +510,30 @@ Culture thickness as a third factor in the uncomputed π r² × thickness produc
 9. JNM 117 PDF still unopened.
 10. Nisch simulation-device figure still not pulled.
 11. Jun 32-site table listed; 59-site π(100 µm)² × thickness product not computed and not found pre-computed.
-12. (not started) Whether MCS 100 µm "acute brain slice" detection radius was ever re-measured on dissociated monolayer cultures rather than slices. Datasheet sentence specifies slice. Downes cites the manual for cultures anyway. Not a new measurement.
+12. (started below) Slice-worded 100 µm radius vs dissociated monolayer.
+
+### Slice sentence used on cultures (problem 12)
+MCS datasheet / manual wording already on the map: "Spike activity can be detected at distances of up to 100 µm from a neuron in an acute brain slice." "Typically, signal sources are within a radius of 30 µm around the electrode center." The 100 µm clause names the slice.
+
+Hales, Rolston, Potter JVE 2010 (PMC3152853) — dissociated monolayer on the same 60-site 30 µm / 200 µm TiN dish: "The cells grow in a monolayer." Protocol does not re-measure a detection radius. Spike-detection mode described as 3 ms windows; "real extracellular action potentials should last approximately 1 ms."
+
+Downes 2012 (already on the map) applies the MCS-manual ~100 µm sentence to dense dissociated cultures without a new distance measurement.
+
+MCS neuronal-culture application note (same public PDF as problem 11): "Spike amplitudes can range from between 30 µV up to around 400 µV if a cell with an ideal contact sits right on top of the electrode." That is on-electrode contact language for cultures, not a 100 µm re-measure.
+
+No paper in this pass reports a new millimetre-scale walk-off experiment that replaces the slice 100 µm number with a monolayer-specific radius on the 59-site object. The slice sentence is what gets cited. Leave it flagged as borrowed.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. JNM 117 PDF still unopened.
+10. Nisch simulation-device figure still not pulled.
+11. 59-site π(100 µm)² × thickness product not computed.
+12. 100 µm clause remains a slice sentence cited on cultures. No monolayer re-measure pulled.
+13. (not started) MCS application-note 30–400 µV culture spike-amplitude range vs Middya SNR 7.7 vs JVE impedance window. Three different quality numbers. Not collapsed.
