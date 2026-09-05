@@ -536,4 +536,32 @@ No paper in this pass reports a new millimetre-scale walk-off experiment that re
 10. Nisch simulation-device figure still not pulled.
 11. 59-site π(100 µm)² × thickness product not computed.
 12. 100 µm clause remains a slice sentence cited on cultures. No monolayer re-measure pulled.
-13. (not started) MCS application-note 30–400 µV culture spike-amplitude range vs Middya SNR 7.7 vs JVE impedance window. Three different quality numbers. Not collapsed.
+13. (started below) Three quality numbers, not collapsed.
+
+### Quality numbers that do not measure the same thing (problem 13)
+Already on the map, left unmerged:
+- JVE / Hales 2010: 10 kΩ–100 kΩ at 1 kHz pass window. Hardware health, not spike size.
+- Middya Adv Sci 2021: raw-signal SNR 7.7 in one reported PEDOT condition; 16/60 active electrodes. Different metal, same channel count.
+- MCS culture application note: spike amplitudes 30 µV to around 400 µV "if a cell with an ideal contact sits right on top of the electrode."
+
+Added this pass, same 60-site / 30 µm TiN object:
+- MCS MEA manual / MEA60System PDF: average noise of 30 µm electrodes <10 µV peak-to-peak; 10 µm electrodes <15 µV peak-to-peak. Impedance sentence unchanged (<100 kΩ / 250–400 kΩ).
+- Bonzano et al. Sensors 2015 / PMC4419262 (MEA 200/30iR + MCS MEA1060 as the commercial benchmark): literature features they adopt — extracellular spikes 30 µV to 1 mV peak-to-peak; overlapping electrode + biological noise ~20 µV peak-to-peak (~3–4 µV RMS). Their custom AFE claims <1 µV RMS input-referred; SNR of firing electrodes computed as spike p-p / SD of first 500 ms.
+
+30–400 µV (app note), 30 µV–1 mV (Bonzano lit range), <10 µV p-p noise (MCS manual), SNR 7.7 (Middya), 10–100 kΩ (JVE) are five published figures. Amplitude, noise, SNR, and impedance are different meters. Do not divide 400 µV by 10 µV and call it Middya's 7.7.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. JNM 117 PDF still unopened.
+10. Nisch simulation-device figure still not pulled.
+11. 59-site π(100 µm)² × thickness product not computed.
+12. 100 µm clause remains a slice sentence cited on cultures.
+13. amplitude / noise / SNR / impedance listed separately. Not collapsed.
+14. (not started) Whether Bonzano's SNR definition (p-p / first-500-ms SD) is the same arithmetic as Middya's "SNR of raw signal 7.7." Methods paragraphs not compared line-by-line this pass.
