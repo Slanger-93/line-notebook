@@ -564,4 +564,42 @@ Added this pass, same 60-site / 30 µm TiN object:
 11. 59-site π(100 µm)² × thickness product not computed.
 12. 100 µm clause remains a slice sentence cited on cultures.
 13. amplitude / noise / SNR / impedance listed separately. Not collapsed.
-14. (not started) Whether Bonzano's SNR definition (p-p / first-500-ms SD) is the same arithmetic as Middya's "SNR of raw signal 7.7." Methods paragraphs not compared line-by-line this pass.
+14. (started below) Two SNR recipes, not the same sentence.
+
+### SNR arithmetic (problem 14)
+Middya et al. Adv Sci 2021 (Cambridge repository full-text extract):
+- High-pass 200 Hz.
+- Detection threshold 5 × SD.
+- Waveforms collapsed over a 4 ms window centered on the peak.
+- "The SNR of the raw signal, calculated from the mean spike amplitude and the SD of the background, was found to be 7.7 (17.7 dB)."
+- 20 log10(7.7) ≈ 17.7. They print both the linear ratio and the dB.
+
+Bonzano et al. Sensors 2015 / PMC4419262:
+- Digital filter 300 Hz–3 kHz, Butterworth 2nd order.
+- Detection threshold −5 × SD of the first 500 ms.
+- "The SNR of firing electrodes was computed as the ratio of the peak-to-peak amplitudes of spikes by the standard deviation of signal computed over the first 500 ms."
+
+Same family (amplitude / SD) but not the same recipe:
+- numerator: mean spike amplitude (Middya) vs peak-to-peak (Bonzano)
+- denominator: SD of the background (Middya, window unspecified beyond "background") vs SD of the first 500 ms (Bonzano)
+- filter: 200 Hz HPF vs 300 Hz–3 kHz band
+- threshold sign: 5 × SD vs −5 × SD
+
+Do not treat 7.7 as a Bonzano number. Different metal (PEDOT vs TiN benchmark), different filter, different numerator.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. JNM 117 PDF still unopened.
+10. Nisch simulation-device figure still not pulled.
+11. 59-site π(100 µm)² × thickness product not computed.
+12. 100 µm clause remains a slice sentence cited on cultures.
+13. amplitude / noise / SNR / impedance listed separately.
+14. Middya 7.7 = mean-amp / background-SD = 17.7 dB. Bonzano = p-p / first-500-ms SD. Not the same sentence.
+15. (not started) Whether 17.7 dB in Middya uses 20 log10 (amplitude ratio) or 10 log10 (power). They printed both 7.7 and 17.7; 20 log10(7.7) matches. Confirm they did not also publish a power-SNR. Not a new measurement.
