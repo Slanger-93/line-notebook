@@ -602,4 +602,30 @@ Do not treat 7.7 as a Bonzano number. Different metal (PEDOT vs TiN benchmark), 
 12. 100 µm clause remains a slice sentence cited on cultures.
 13. amplitude / noise / SNR / impedance listed separately.
 14. Middya 7.7 = mean-amp / background-SD = 17.7 dB. Bonzano = p-p / first-500-ms SD. Not the same sentence.
-15. (not started) Whether 17.7 dB in Middya uses 20 log10 (amplitude ratio) or 10 log10 (power). They printed both 7.7 and 17.7; 20 log10(7.7) matches. Confirm they did not also publish a power-SNR. Not a new measurement.
+15. (closed as far as the extract goes) 17.7 dB is the voltage-ratio conversion of 7.7.
+
+### dB convention in the Middya extract (problem 15)
+Same sentence already quoted: "7.7 (17.7 dB)."
+20 × log10(7.7) = 17.73. 10 × log10(7.7) = 8.86. The printed pair matches amplitude/voltage SNR, not power SNR.
+
+No second SNR figure labeled as power appears in the Cambridge full-text extract pulled for problem 14. Leave problem 15 as: one printed pair, voltage-style dB. Not a new measurement.
+
+Utah longevity SNR > 1.5 (already on the map under problem 2) is a third bar. It is a site-inclusion threshold on chronic penetrating arrays, not Middya's 7.7 and not Bonzano's p-p/SD. Still do not average.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. JNM 117 PDF still unopened.
+10. Nisch simulation-device figure still not pulled.
+11. 59-site π(100 µm)² × thickness product not computed.
+12. 100 µm clause remains a slice sentence cited on cultures.
+13. amplitude / noise / SNR / impedance listed separately.
+14. two SNR recipes unmerged.
+15. Middya 17.7 dB = 20 log10(7.7). No power-SNR in the extract.
+16. (not started) Detection-threshold conventions on the same 59-site class: Middya 5×SD; Bonzano −5×SD of first 500 ms; Downes ≥4 spikes in 100 ms for a channel burst. Three gates. Not the same filter on the same trace.
