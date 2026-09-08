@@ -628,4 +628,35 @@ Utah longevity SNR > 1.5 (already on the map under problem 2) is a third bar. It
 13. amplitude / noise / SNR / impedance listed separately.
 14. two SNR recipes unmerged.
 15. Middya 17.7 dB = 20 log10(7.7). No power-SNR in the extract.
-16. (not started) Detection-threshold conventions on the same 59-site class: Middya 5×SD; Bonzano −5×SD of first 500 ms; Downes ≥4 spikes in 100 ms for a channel burst. Three gates. Not the same filter on the same trace.
+16. (started below) Detection-threshold conventions. Not the same gate.
+
+### Detection gates on or next to the 59-site class (problem 16)
+Already listed:
+- Middya: 5 × SD after 200 Hz HPF; 4 ms waveform window.
+- Bonzano: −5 × SD of first 500 ms after 300 Hz–3 kHz Butterworth.
+- Downes: channel burst = ≥4 spikes in 100 ms; global burst inclusion = 15/59 electrodes. That is a burst gate, not a single-spike threshold.
+
+Added this pass:
+- Wagenaar / MEABench (J Neurosci Methods 2006 tool paper, used on MCS 60-site dishes in the Potter line): band-pass 100 Hz–3 kHz; noise from 2nd and 30th percentiles in 10 ms windows; spikes when |V| exceeds current noise estimate by a user-settable factor. "If one false positive per second per channel is acceptable, the detection threshold could be set at 4.25× estimated RMS noise."
+- Pasquale (already on the map): active electrode = MFR ≥ 0.1 spikes/s. Rate gate, after detection.
+
+5 × SD, −5 × SD, 4.25 × RMS, ≥4 spikes / 100 ms, MFR ≥ 0.1 Hz are five published gates. Filters and noise estimators differ. Do not treat them as one threshold.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. JNM 117 PDF still unopened.
+10. Nisch simulation-device figure still not pulled.
+11. 59-site π(100 µm)² × thickness product not computed.
+12. 100 µm clause remains a slice sentence cited on cultures.
+13. amplitude / noise / SNR / impedance listed separately.
+14. two SNR recipes unmerged.
+15. Middya 17.7 dB = 20 log10(7.7).
+16. five detection/inclusion gates listed. Not collapsed.
+17. (not started) MEABench 4.25× RMS "one false positive per second per channel" vs problem-4 bit-rate. That sentence is a false-positive budget, not a Shannon figure. Leave bits empty.
