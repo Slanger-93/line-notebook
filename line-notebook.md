@@ -659,4 +659,48 @@ Added this pass:
 14. two SNR recipes unmerged.
 15. Middya 17.7 dB = 20 log10(7.7).
 16. five detection/inclusion gates listed. Not collapsed.
-17. (not started) MEABench 4.25× RMS "one false positive per second per channel" vs problem-4 bit-rate. That sentence is a false-positive budget, not a Shannon figure. Leave bits empty.
+17. (closed as not-bits) MEABench 4.25× is a false-positive budget.
+
+### False-positive budget is not a bit-rate (problem 17)
+MEABench J Neurosci Methods 2006 already quoted: 4.25 × estimated RMS for "one false positive per second per channel" if that FP rate is acceptable.
+
+That is a detector operating point. It is not information capacity after blanking. Problem 4 stays empty of bits.
+
+Array-wide spike detection rate in a later reuse of the Wagenaar 60-site set (bioRxiv 2022.05.27.493606): median ASDR 55.7 spikes/s (IQR 12.9–158) across the dish, after their MEABench detections. That is a spike-count rate on the published files, not a Shannon number. Do not convert it here.
+
+### Sample-rate / resolution on the same rack family (problem 18 start)
+MCS MEA2100-System manual / brochure (public PDFs):
+- Sampling frequency per channel: up to 50 kHz, software controlled.
+- Data resolution: 24 bit (16 bit if operated with MC_Rack).
+- Bandwidth: 0.1 Hz to 10 kHz.
+- Number of stimulation channels: 3 independent stimulation patterns per 60 channels (2 on HS256).
+- Stimulus time resolution: 20 µs. Stimulus DAC 16 bit.
+
+MEA2100-Mini datasheet: 24 bit; up to 50 kHz; 2 independent stimulation patterns; input noise typical 0.7 µVrms (1 Hz–3.5 kHz, inputs grounded).
+
+MEA2100-Lite manual: up to 32 kHz (MC_Rack) / 25 kHz (Experimenter); still "3 independent stimulation patterns per 60 channels."
+
+Older MCS system manual rule of thumb: sampling rate "should equal five times the highest signal frequency"; also "at least twice the bandwidth of the MEA amplifier." Example given: 20 kHz when analog bandwidth is 10 kHz even if the expected spike content is 1 kHz.
+
+These are wire-side specs. 50 kHz × 24 bit × 59 is a raw stream size, not the bound in problem 1. Leave the product uncomputed as a "capacity."
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement. MEA2100 manual now confirms "3 independent stimulation patterns per 60 channels."
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. JNM 117 PDF still unopened.
+10. Nisch simulation-device figure still not pulled.
+11. 59-site π(100 µm)² × thickness product not computed.
+12. 100 µm clause remains a slice sentence cited on cultures.
+13. amplitude / noise / SNR / impedance listed separately.
+14. two SNR recipes unmerged.
+15. Middya 17.7 dB = 20 log10(7.7).
+16. five detection/inclusion gates listed.
+17. 4.25× RMS is an FP budget. ASDR 55.7 /s is a count rate. Neither is bits.
+18. sample-rate / bit-depth / 3-pattern stim listed from vendor PDFs. Raw stream arithmetic not treated as the bound.
+19. (not started) Whether papers on the 59-site dish actually sample at 50 kHz or at a lower rate the methods name. Vendor max ≠ used rate.
