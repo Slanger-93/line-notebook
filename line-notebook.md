@@ -703,4 +703,37 @@ These are wire-side specs. 50 kHz × 24 bit × 59 is a raw stream size, not the 
 16. five detection/inclusion gates listed.
 17. 4.25× RMS is an FP budget. ASDR 55.7 /s is a count rate. Neither is bits.
 18. sample-rate / bit-depth / 3-pattern stim listed from vendor PDFs. Raw stream arithmetic not treated as the bound.
-19. (not started) Whether papers on the 59-site dish actually sample at 50 kHz or at a lower rate the methods name. Vendor max ≠ used rate.
+19. (started below) Used sampling rates vs vendor max.
+
+### Used rates on the 60-site class (problem 19)
+Potter, Wagenaar, DeMarse chapter in Taketani & Baudry *Advances in Network Electrophysiology* (2006 preprint extract):
+- "sampling each of 60 channels at 25 kHz creates a data stream of several megabytes per second, or tens of gigabytes in one afternoon."
+That is a used-rate sentence on the same lab / dish class, not the MEA2100 "up to 50 kHz" ceiling.
+
+Regalia et al. Comput Intell Neurosci 2015 (custom AFE intended for standard MEAs): "minimum sampling frequency of 25 kHz, as commonly done with MEA recordings" citing prior MEA practice. Adjacent hardware language, not a 59-site methods line of their own.
+
+USB-MEA256 manual (different channel count): "up to 40 kHz per channel." Different object. Logged only as another vendor max.
+
+No methods paragraph in this pass prints 50 kHz as the rate actually used on a 59-site culture dish. 25 kHz is the published used figure from the Potter line. Vendor max and used rate stay separate.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. JNM 117 PDF still unopened.
+10. Nisch simulation-device figure still not pulled.
+11. 59-site π(100 µm)² × thickness product not computed.
+12. 100 µm clause remains a slice sentence cited on cultures.
+13. amplitude / noise / SNR / impedance listed separately.
+14. two SNR recipes unmerged.
+15. Middya 17.7 dB = 20 log10(7.7).
+16. five detection/inclusion gates listed.
+17. 4.25× RMS is an FP budget. ASDR 55.7 /s is a count rate.
+18. vendor max 50 kHz / 24 bit listed. Not treated as the bound.
+19. Potter-line used rate named at 25 kHz / 60 ch. 50 kHz not found as a used methods rate this pass.
+20. (not started) File-size sentence in the same Potter chapter ("tens of gigabytes in one afternoon") vs spike-extraction as the published data-reduction step. Not a bit-rate.
