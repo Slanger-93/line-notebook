@@ -736,4 +736,37 @@ No methods paragraph in this pass prints 50 kHz as the rate actually used on a 5
 17. 4.25× RMS is an FP budget. ASDR 55.7 /s is a count rate.
 18. vendor max 50 kHz / 24 bit listed. Not treated as the bound.
 19. Potter-line used rate named at 25 kHz / 60 ch. 50 kHz not found as a used methods rate this pass.
-20. (not started) File-size sentence in the same Potter chapter ("tens of gigabytes in one afternoon") vs spike-extraction as the published data-reduction step. Not a bit-rate.
+20. (started below) File size vs spike extraction. Still not bits.
+
+### Data reduction on the same 60-site stream (problem 20)
+Same Potter / Wagenaar / DeMarse chapter already cited for 25 kHz:
+- "sampling each of 60 channels at 25 kHz creates a data stream of several megabytes per second, or tens of gigabytes in one afternoon."
+- "Clearly, some data reduction strategy is necessary, and this usually takes the form of extraction of spikes from the raw data stream."
+- "It is assumed by most MEA users that neural signals smaller than action potentials, such as post-synaptic potentials, are hidden in the noise of an extracellular recording, so it makes sense only to record action potentials."
+
+That is a storage-and-assumption paragraph. It is not a published Shannon rate after blanking. LFP is discarded by that assumption on purpose; Kajikawa / Plenz LFP mixing already on the map is a different band they chose not to keep. Leave problem 4 empty.
+
+Hales JVE 2010 abstract (same lab / dish): "cultures on MEAs can survive for over a year in vitro." Electrode-chip reuse bound from the MCS manual is "about 30 times" under culture + cleaning. Culture lifetime and chip-reuse count are different clocks. Do not merge.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. JNM 117 PDF still unopened.
+10. Nisch simulation-device figure still not pulled.
+11. 59-site π(100 µm)² × thickness product not computed.
+12. 100 µm clause remains a slice sentence cited on cultures.
+13. amplitude / noise / SNR / impedance listed separately.
+14. two SNR recipes unmerged.
+15. Middya 17.7 dB = 20 log10(7.7).
+16. five detection/inclusion gates listed.
+17. 4.25× RMS is an FP budget. ASDR 55.7 /s is a count rate.
+18. vendor max 50 kHz / 24 bit listed.
+19. used rate named at 25 kHz / 60 ch.
+20. raw stream reduced to spikes by published assumption. Not a bit-rate. LFP dropped on purpose in that paragraph.
+21. (not started) Culture lifetime "over a year" (Hales JVE) vs MCS chip reuse "about 30 times." Two clocks on the same object. Not pulled as a paired table.
