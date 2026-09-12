@@ -769,4 +769,40 @@ Hales JVE 2010 abstract (same lab / dish): "cultures on MEAs can survive for ove
 18. vendor max 50 kHz / 24 bit listed.
 19. used rate named at 25 kHz / 60 ch.
 20. raw stream reduced to spikes by published assumption. Not a bit-rate. LFP dropped on purpose in that paragraph.
-21. (not started) Culture lifetime "over a year" (Hales JVE) vs MCS chip reuse "about 30 times." Two clocks on the same object. Not pulled as a paired table.
+21. (started below) Two clocks. No paired table.
+
+### Culture lifetime vs chip-reuse count (problem 21)
+Already on the map, left unmerged:
+- Hales JVE 2010: "cultures on MEAs can survive for over a year in vitro"; protocol note "more than a year."
+- MCS MEA manual: reuse "about 30 times" after culture + rigid cleaning; acute-slice use "approximately one year"; warranty six months from delivery.
+
+Added this pass:
+- Potter & DeMarse J Neurosci Methods 2001 (FEP membrane lids): conventional primary cultures "seldom survive more than 2 months"; sealed-membrane method "maintain several neural cultures for well over a year … and for over two years in one case." After more than a year the neurons "still exhibit robust spontaneous electrical activity."
+- MCS neuronal-culture application note: "The culture can be used for several months or years." Recommends the same Potter/DeMarse Teflon membranes for long-term work.
+- Potter chapter already cited: PEI + laminin "allows the cells to grow in a monolayer for months."
+
+Culture clock (months–years of one plating) and chip clock (~30 clean/reuse cycles; 6-month warranty; ~1 year acute-slice sentence) are different published meters. No paper in this pass tabulates impedance or yield versus reuse-cycle number on the same 59-site dish. The day-by-day impedance curve remains empty.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. JNM 117 PDF still unopened.
+10. Nisch simulation-device figure still not pulled.
+11. 59-site π(100 µm)² × thickness product not computed.
+12. 100 µm clause remains a slice sentence cited on cultures.
+13. amplitude / noise / SNR / impedance listed separately.
+14. two SNR recipes unmerged.
+15. Middya 17.7 dB = 20 log10(7.7).
+16. five detection/inclusion gates listed.
+17. 4.25× RMS is an FP budget. ASDR 55.7 /s is a count rate.
+18. vendor max 50 kHz / 24 bit listed.
+19. used rate named at 25 kHz / 60 ch.
+20. raw stream reduced to spikes by published assumption.
+21. culture months–years and chip ~30-reuse / 6-month warranty listed separately. No paired impedance-vs-cycle table.
+22. (not started) Whether Potter 2001 "over two years in one case" names the electrode yield at that age. Abstract says robust spontaneous activity; site-count at year 2 not in the abstract.
