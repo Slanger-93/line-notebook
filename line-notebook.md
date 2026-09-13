@@ -806,3 +806,120 @@ Culture clock (months–years of one plating) and chip clock (~30 clean/reuse cy
 20. raw stream reduced to spikes by published assumption.
 21. culture months–years and chip ~30-reuse / 6-month warranty listed separately. No paired impedance-vs-cycle table.
 22. (not started) Whether Potter 2001 "over two years in one case" names the electrode yield at that age. Abstract says robust spontaneous activity; site-count at year 2 not in the abstract.
+
+### Potter 2001 vs 2006 two-year sentence (problem 22)
+Potter & DeMarse J Neurosci Methods 110:17–24 (2001), public lab PDF:
+- Abstract: "After more than a year in culture, the neurons still exhibit robust spontaneous electrical activity."
+- Body extract already on the map as "9 months, in one case for well over 1 year (Fig. 1)."
+- Fig. 1 caption: "Top: Phase-contrast image of our oldest living dissociated rat cortical culture, taken at 15 months in vitro. Neuron somata are mostly obscured by abundant glia and fascicles. Scale: 200 µm between electrodes. Bottom: Spontaneous activity of this network, recorded after 1 year in culture using MultiChannel Systems MEA60 … Each dot is an action potential recorded by one of the multi-electrode array channels."
+- Hardware in methods: "60-electrode glass MEAs from MultiChannel Systems … with 10-µm diameter electrodes, 200-µm interelectrode spacing (Egert et al., 1998)."
+- Plating: "20 000 to 50 000 cells were plated in a 20-µl droplet covering the 1.5-mm electrode region of the MEAs, forming a dense monolayer."
+- No electrode-count, active-electrode fraction, or SNR table at 12 months or at 15 months. Raster is described as dots on channels; N channels not printed.
+
+The phrase "for over two years in one case" is not in the 2001 paper. It is in Potter, Wagenaar, DeMarse chapter, *Advances in Network Electrophysiology* (Taketani & Baudry, 2006; Caltech preprint 06-PWD):
+- "has allowed us to maintain several neural cultures for well over a year (Potter and DeMarse, 2001), and for over two years in one case."
+- Same chapter does not name an electrode yield, active-site count, or impedance at that age. Site-count at year 2 remains unprinted.
+
+Earlier notebook line that hung the two-year clause on the 2001 methods paper is a source mix. Leave both citations on the map; do not merge the clocks.
+
+### Intact-electrode sentence and a mid-age yield (same lab, not year 2)
+Same 2006 chapter:
+- "Some electrodes on MEAs become damaged after repeated plating of cultures, from deterioration of the contact pads, titanium nitride electrode surface, or silicon nitride insulation."
+- "We routinely have neural activity on every MEA electrode that is physically intact."
+That is a reuse-damage statement plus a dense-culture coupling claim. It is not a Kaplan–Meier of sites vs DIV, and it is not the missing year-2 census.
+
+Wagenaar, Madhavan, Pine, Potter J Neurosci 25:680–688 (2005), same 60-site class:
+- "neuronal ensembles in culture maintain activity patterns dominated by global bursts for the lifetime of the culture (up to 2 years)."
+- Experiments at 25–45 DIV: "At this age, ~90% of electrodes recorded spikes."
+- Screening rule: "Only cultures that fired at least three bursts in 10 min of pre-experimental screening were used."
+90% at 25–45 DIV is another activity count. Different age, different gate, different from Middya 16/60, Downes 15/59 inclusion, Wagenaar 2005 V* 40–50/60, and Pasquale MFR ≥ 0.1 Hz. Do not average them onto year 2.
+
+Scholarpedia Multielectrode arrays (Gross / 2011 page): "survival of primary cultures for 6 to 12 months is possible (Gross, 1994; Potter and DeMarse, 2001). For practical reasons, most experiments use 4 to 8 week old cultures." Practical-age sentence, not a yield.
+
+### Dense-plating geometry on the 10 µm / 200 µm object (problems 11–12 adjacent)
+2006 chapter numbers, same MCS 60-site family as object A but 10 µm tips, not the 30 µm Hales/JVE part:
+- "We usually plate 20–50,000 mouse cortical cells in a three millimeter diameter region over the electrode array, resulting in densities of 5000–10,000 cells per square millimeter."
+- "Thus, each 10 micrometer diameter electrode will have at least one and usually several neurons within recording and stimulation range."
+- 2-photon: "our cultures are 15–20 µm thick, and the neuron somata form a monolayer." Glia "often form a very thin layer under, and sometimes over the neurons."
+
+2001 paper plating droplet covered a "1.5-mm electrode region"; 2006 chapter uses a "three millimeter diameter region." Two published footprints on the same lab line. Do not collapse.
+
+Density stack now on the map, unmerged:
+- Jun 32-site patterned PLL: 100–400 cells/mm² (observed somata << tiled prediction).
+- MCS culture application note: 1000–5000 cells/mm².
+- Downes 2012 dense: ~2,500 ± 1,500 cells/mm².
+- Potter 2006: 5000–10,000 cells/mm².
+
+Thickness 15–20 µm is now a published number for this lab's dense dissociated cortex, not a computed product. The 59-site π(100 µm)² × thickness product is still not computed here and was not sitting pre-computed in the pulled pages. Problem 11 stays uncomputed.
+
+10 µm (Potter 2001 / 2006 chapter) and 30 µm (Hales JVE / MCS 200/30iR) are both sold as 60-site / 200 µm MCS parts. Impedance bands on the datasheet already differ by diameter. Do not treat them as one electrode object.
+
+### JNM 117 identity (problem 9)
+Egert, Knott, Schwarz, Nawrot, Brandt, Rotter, Diesmann J Neurosci Methods 117:33–42 (2002) is MEA-Tools, an open-source MATLAB toolbox. Volume 117 issue 1 also contains Claverol-Tinturé & Pine JNM 117:13–21 (low-density pipette localization; not the 59-site dish).
+
+The spike-radius paper already used for the 100 µm / 200 µm pair is Egert, Heck, Aertsen Exp Brain Res 142:268–274 (2002), not JNM 117:211–221. No paper in the pulled set has the pagination 117:211–221. Prior open-problem line that named JNM 117:211–221 as the unopened neighbor of Plenz [81] was pointing at the wrong article. Leave the wrong pagination logged. Numeric radius remains sourced from Exp Brain Res 2002 and the MCS manual.
+
+Egert et al. Brain Res Brain Res Protoc 1998 (cited by Potter 2001 for the 10 µm / 200 µm MCS part; organotypic hippocampus up to 4 weeks) not opened this pass.
+
+## Attempts / dead ends (continued)
+- Potter 2001 full Fig. 1 raster does not print an N of active channels at 12 months. Dead on year-2 yield.
+- 2006 chapter "over two years in one case" still has no accompanying site table.
+- Nisch 1994 full text and simulation-device figure still not pulled (Elsevier / documentsdelivered stub).
+- JNM 117:211–221 as cited earlier does not match the MEA-Tools pagination (117:33–42) or the Exp Brain Res spike-radius paper. Pagination dead end kept.
+- No Shannon figure. Problem 4 stays empty.
+- Did not compute π(100 µm)² × 15–20 µm. Problem 11 stays uncomputed.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. JNM 117:211–221 pagination does not match MEA-Tools 117:33–42 or Exp Brain Res 142. Radius still from Exp Brain Res 2002 / MCS manual.
+10. Nisch simulation-device figure still not pulled.
+11. 59-site π(100 µm)² × thickness product not computed. Thickness 15–20 µm now listed for the Potter-line dense culture only.
+12. 100 µm clause remains a slice sentence cited on cultures. Potter 2006 "recording and stimulation range" around a 10 µm site is a different sentence, no new walk-off curve.
+13. amplitude / noise / SNR / impedance listed separately.
+14. two SNR recipes unmerged.
+15. Middya 17.7 dB = 20 log10(7.7).
+16. five detection/inclusion gates listed. Wagenaar 2005 ~90% at 25–45 DIV added as a sixth activity count, not a gate.
+17. 4.25× RMS is an FP budget. ASDR 55.7 /s is a count rate.
+18. vendor max 50 kHz / 24 bit listed.
+19. used rate named at 25 kHz / 60 ch.
+20. raw stream reduced to spikes by published assumption.
+21. culture months–years and chip ~30-reuse listed separately. No paired impedance-vs-cycle table.
+22. year-2 site-count still unprinted. 2001 paper stops at 15-month photo / 1-year raster without N. Two-year clause lives in the 2006 chapter without a table.
+23. (started below) 10 µm vs 30 µm tips on the same 59/60-site MCS layout.
+
+### Two tip diameters on object A (problem 23)
+Already on the map from datasheets: 10 µm and 30 µm are both standard MCS 60-site pitches at 200 µm. Impedance bands differ (<100 kΩ at 30 µm TiN; 250–400 kΩ at 10 µm, vendor 1 kHz figures). MED-clone planar Pt bands differ again.
+
+Papers using the same channel count with different tips:
+- Potter 2001 / 2006 chapter: 10 µm, 200 µm, dense 5k–10k cells/mm², "at least one and usually several neurons" per site.
+- Hales / JVE 2010, Downes 2012, Thiagarajan / Plenz 2010: 30 µm TiN, 200 µm.
+- Wagenaar J Neurosci Methods 2004 and J Neurosci 2005 bursting-control paper: 30 µm TiN named in the 2004 methods line already on the map.
+
+No paper in this pass reports a head-to-head unit yield of 10 µm vs 30 µm on otherwise identical 59-site dishes. Do not transfer the "several neurons" sentence onto the 30 µm object.
+
+MCS manual noise already listed: 30 µm electrodes <10 µV p-p average; 10 µm electrodes <15 µV p-p. That is a vendor noise pair, not a culture yield pair.
+
+## Open problems
+1. still open.
+2. started.
+3. still open.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm sentence vs Potter 10 µm "range" sentence unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. (not started) Whether Wagenaar 2005 "~90% of electrodes recorded spikes" at 25–45 DIV used the 10 µm or 30 µm part, and whether "recorded spikes" means unsorted crossings or isolated units.
