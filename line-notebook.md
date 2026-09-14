@@ -922,4 +922,140 @@ MCS manual noise already listed: 30 µm electrodes <10 µV p-p average; 10 µm e
 13–21. unchanged status.
 22. year-2 N still empty.
 23. 10 µm vs 30 µm yield not pulled head-to-head.
-24. (not started) Whether Wagenaar 2005 "~90% of electrodes recorded spikes" at 25–45 DIV used the 10 µm or 30 µm part, and whether "recorded spikes" means unsorted crossings or isolated units.
+24. (started below) Whether Wagenaar 2005 "~90% of electrodes recorded spikes" at 25–45 DIV used the 10 µm or 30 µm part, and whether "recorded spikes" means unsorted crossings or isolated units.
+
+### Wagenaar 2005 methods object (problem 24)
+Wagenaar, Madhavan, Pine, Potter J Neurosci 25:680–688 (2005) / PMC2663856:
+
+Recording system sentence: "Electrical activity was recorded with a square array of 60 substrate-embedded titanium nitride electrodes, 30 μm in diameter, with 200 μm spacing (Multi Channel Systems, Reutlingen, Germany)."
+- Tip diameter is the 30 µm object, not the 10 µm Potter 2001 / 2006-chapter part.
+- After 1200× amplification, sampled at 25 kHz on an MCS data-acquisition card through Meabench.
+- "Experiments took place at 25–45 DIV. At this age, >90% of electrodes recorded spikes."
+- Screening gate already on the map: "Only cultures that fired at least three bursts in 10 min of pre-experimental screening were used."
+
+Detection sentence in the same paragraph: "Spikes were detected on-line by thresholding at 5× rms noise and later validated based on the shapes of their waveforms (P. P. Mitra, personal communication)."
+
+That is a threshold-crossing plus shape-validation pipeline. It is not a statement that the 90% figure is isolated single-unit clusters. No sorter name, no cluster-count table, no SU-per-channel number in the methods extract.
+
+Same paper's V* sentence already on the map: "Typically, 40–50 electrodes per dish were in sufficiently close contact with the culture to attain that level of response by voltages in the range tested." V* = voltage at which evoked response was five times the spontaneous firing rate. 40–50/60 at V* and >90% "recorded spikes" at 25–45 DIV are two different gates on the same object. Leave them unmerged.
+
+Plating in the same methods: "Fifty thousand cells were plated in a 20 μl drop … This led to a plating density of 2500 cells per square millimeter in a monolayer." Matches the Downes 2012 dense figure (~2,500 ± 1,500 cells/mm²) already listed under problem 11. Different paper, same density class, 30 µm tips.
+
+Madhavan PhD dissertation (Georgia Tech, 2007 public PDF) reprints the same hardware paragraph and the same ">90% of electrodes recorded spikes" line for experiments at 25–45 DIV, with the same 5× RMS + waveform-validation sentence. Not an independent measurement.
+
+### What "validated based on the shapes" is (not spike sorting)
+MEABench tool paper (Wagenaar, DeMarse, Potter, 2nd Intl IEEE EMBS Conf Neural Eng 2005 extract; same wording family as the J Neurosci Methods 2006 MEABench note already on the map):
+
+Detection front-end already listed: band-pass 100 Hz–3 kHz; noise from 2nd and 30th percentiles in 10 ms windows; spikes when |V| exceeds the current noise estimate by a user-settable factor; 4.25× estimated RMS named as the one-false-positive-per-second-per-channel operating point.
+
+Validation step printed in that extract:
+- "We accept a spike only if its detected peak is the highest peak of either polarity within a ± 1 ms window, and no secondary peaks of the same polarity and more than 50% of the amplitude of the detected peak exists within the same window (P. P. Mitra, personal communication)."
+- Purpose stated there: prevent double detections of unitary multiphasic events.
+
+That is a single-event anti-double-count rule. It is not cluster isolation and it is not cross-day identity. Problem 6 (tracked unit through Bakkum delay shift) is still not this paper.
+
+Later toolbox papers that cite Wagenaar 2005 for "artifact detection" (e.g. MEA-ToolBox Neuroinformatics 2022 extract) copy the ±1 ms / 50% secondary-peak rule. Still not a sorter.
+
+### Stimulating-site dead time on the same 2005 object (problem 25 start)
+Same 2005 methods paragraph: Meabench SALPA (Wagenaar and Potter 2002) "allowed us to detect action potentials as early as 2 msec after stimulation (except on the electrode used for stimulation, which remained saturated by stimulation artifacts for 50–150 msec)."
+
+Clock stack on the 59/60-site class, still unmerged:
+- MCS brochure trigger <100 µs / stimulus <1 ms.
+- MCS MEA1060-Inv-BC Wait up to 400 µs after stim→record switch.
+- MCS-BC blanking 1 ms.
+- Müller CMOS programmed 400 µs / example loop 1.25 ms.
+- FPGA 4096-ch <2 ms.
+- NeuroRighter dissertation tables: stimulating-electrode spike-band recovery <1 ms on resistor / 6 ms in ACSF; broadband 140 ms ACSF on the stimulating site.
+- 2005 Meabench: non-stim sites 2 ms; stimulating site 50–150 ms saturation.
+- Newman 2013 StimSrv 46.9 ± 3.1 ms (reducible 7–9 ms).
+- Wagenaar J Neural Eng 2004 stimulator + Meabench: "feedback stimulation in response to recorded action potentials within 15 ms."
+- Bakkum 2008 PLoS ONE propagation-delay plasticity 4–13 ms.
+- Wagenaar 2005 early component latencies up to 20 ms.
+
+50–150 ms dead time on the stimulating electrode is longer than the brochure trigger spec and longer than most of the non-stimulating-site recovery numbers. It sits inside the 200 ms–1 s burst-duration window already on the map. Problem 4 still has no published bit-rate. Problem 5 still has no joint 3-pattern × 15/59 statement.
+
+### Custom all-channel stimulator vs MCS 3-pattern bound (problem 26 start)
+Wagenaar and Potter J Neural Eng 1:39–45 (2004) / PMID 15876621, used as the stimulator in the 2005 bursting-control paper:
+
+Abstract / Caltech author record: "allows stimulation through any electrode in the array, with rapid switching between channels." "In combination with our freely available data-acquisition software, MeaBench, this system can provide feedback stimulation in response to recorded action potentials within 15 ms."
+
+2005 methods: "Stimuli were generated using our custom-made 60 channel stimulator (Wagenaar and Potter, 2004)." Biphasic rectangular voltage, positive phase first, 400 µs per phase, 100–900 mV. "The stimulator was switched to high impedance output 100 µs after each pulse using the built-in switches of our stimulator."
+
+Protocols in 2005:
+- S: one electrode at V*, 0.05–50 stim/s.
+- M: groups of 2–20 electrodes cycled at 2–20 stim/s (each electrode once per second), or 25 electrodes at 50 stim/s (each 2 stim/s).
+- FB: 10 electrodes cycled at 10 stim/s, voltages tuned to hold a tonic array-wide rate.
+
+That is sequential cycling across many sites, not 3 concurrent independent analog stim patterns. The MCS MEA2100 datasheet bound already on the map is "3 independent stimulation patterns per 60 channels." Different box. The 2005 paper is not a measurement of how many of those 3 patterns can sit inside the Downes 15/59 burst set. Problem 5 stays unfilled.
+
+Wagenaar, Pine, Potter J Neurosci Methods 138:27–37 (2004), same 30 µm TiN MCS object:
+- "We use glass MEAs with 30 [µ]m diameter titanium nitride electrodes and a silicon nitride insulation layer (MultiChannel Systems, Reutlingen, Germany)."
+- Tested 100–1000 mV, 100–800 µs/phase on "45 electrodes from five MEAs."
+- "All electrodes tested could be used to evoke responses, given sufficiently strong stimuli."
+- "On about 20% of electrodes, tuning pulse amplitudes could even be used to select different subsets of cells to stimulate."
+- Direct responses: first 10–20 ms, jitter <0.25 ms.
+- Electrolysis "starts to play a role when electrode voltages exceed about 1 V"; they stayed below that.
+
+20% subset-selectable is another activity/selectivity count. Do not average it onto 16/60, 15/59, 40–50/60 at V*, or >90% recorded spikes.
+
+### 15 ms closed-loop sentence (problem 27)
+The 15 ms figure is the J Neural Eng 2004 stimulator + Meabench claim for feedback in response to recorded action potentials. It is not the MCS brochure <1 ms trigger. It is not the 50–150 ms stimulating-site saturation in the 2005 methods. It is not Ali et al. 2024 Utah-rack "<8 ms … neural data input to decoder prediction." Leave the four clocks listed.
+
+No Shannon figure attached to the 15 ms loop in the pulled pages. Problem 4 stays empty of bits.
+
+### Same-lab 59-electrode wording and a broken channel (problem 28 start)
+Wagenaar, Pine, Potter J Negat Results Biomed 2006 (plasticity-search paper already on the map):
+
+Methods extract: "Multielectrode arrays with 59 electrodes were used for both recording and stimulation." "All 59 electrodes in the array could be used for stimulation, but due to a broken wire in one pre-amplifier channel, only 58 could be used for recording."
+
+That is a one-dish wiring fault, not a vendor channel-count change. Object A remains 59 recording + 1 internal reference on the chip. The preamp path can be 58.
+
+Same paper: electrodes chosen that could raise ASDR to at least twice baseline at ≤900 mV; "In all cultures, many electrodes fulfilled these requirements (10–50)." Another inclusion range. Different gate from V* 40–50, from >90% recorded spikes, from MFR ≥ 0.1 Hz.
+
+Plating sentence there: 50,000 cells in a 20 µL drop; "monolayer cultures of 5 mm diameter – three times larger than the diameter of the electrode array – with a density of about 2,500 cells/mm² after one day in vitro." 5 mm culture footprint vs the 1.4 mm 8×8/200 µm recording span already under problem 7. Two published lengths. Do not collapse.
+
+Bandpass in that paper: 10 Hz–5 kHz on MEA1060 + MC_Card. Different analog band from MEABench's 100 Hz–3 kHz detector and from MEA2100's software-controlled 0.1 Hz–10 kHz. Leave the bands listed.
+
+### Detection-gate list update (problem 16 adjacent)
+Gates now on the map, still unmerged:
+- Middya: 5 × SD after 200 Hz HPF.
+- Bonzano: −5 × SD of first 500 ms after 300 Hz–3 kHz.
+- MEABench / Wagenaar 2006 tool: user factor on percentile-estimated RMS; 4.25× named for 1 FP/s/ch.
+- Wagenaar 2005: 5 × rms noise, then ±1 ms / 50% secondary-peak shape validation.
+- Downes: ≥4 spikes in 100 ms channel-burst; 15/59 global-burst inclusion.
+- Pasquale: MFR ≥ 0.1 spikes/s.
+- Wagenaar 2005 V*: evoked rate 5× spontaneous.
+- Wagenaar 2005 age line: >90% of electrodes recorded spikes at 25–45 DIV (threshold crossings after validation, not a published SU census).
+
+Do not treat 5 × rms and 5 × SD as the same estimator. Percentile-in-10-ms-windows is a third noise meter.
+
+### Attempts / dead ends (continued)
+- J Neural Eng 2004 full PMC page returned a reCAPTCHA wall this pass. 15 ms feedback sentence taken from the Caltech author record / PubMed abstract family. Switching-time in microseconds between channels not extracted as a number. Dead on the exact switch latency.
+- No head-to-head 10 µm vs 30 µm yield table appeared while opening the 2005 methods. Problem 23 stays unpulled.
+- Year-2 site-count still unprinted. Problem 22 unchanged.
+- Did not convert ASDR, 5× RMS crossings, or 15 ms loops into bits. Problem 4 unchanged.
+- Nisch 1994 figure and JNM 117:211 pagination remain dead.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits. 15 ms MeaBench+stimulator loop and 50–150 ms stim-site saturation added to the clock list, not converted.
+5. still not a joint 3-pattern × 15/59 statement. 2005 protocols cycle many electrodes sequentially on a custom 60-ch stimulator, which is not the MCS 3-pattern bound.
+6. still not a tracked-unit-through-delay experiment. Shape validation is anti-double-count, not identity tracking.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed. 2500 cells/mm² now also a Wagenaar 2005 plating number on the 30 µm object.
+12. slice 100 µm sentence vs Potter 10 µm "range" sentence unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm TiN, 200 µm, 60-site MCS. ">90% recorded spikes" = 5× rms crossings later shape-validated. Not a published isolated-unit census.
+25. started. Stimulating-electrode saturation 50–150 ms on the 2005 Meabench path. Non-stim sites 2 ms.
+26. started. Custom all-channel sequential stimulator ≠ MCS 3 concurrent patterns.
+27. 15 ms feedback sentence listed. Not bits.
+28. started. JNRB 2006: 59 stim / 58 rec on one preamp with a broken wire; 10–50 electrodes met the ASDR-doubling inclusion rule.
+29. (not started) Whether the J Neural Eng 2004 "rapid switching between channels" number is published in microseconds, and whether two adjacent 30 µm sites can be stimulated in the same 400 µs phase pair.
+30. (not started) Array-wide spike detection rate (ASDR) numbers on the same 30 µm / 200 µm dishes as a function of DIV — listed as a count rate wherever printed, not converted to bits.
