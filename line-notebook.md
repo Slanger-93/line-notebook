@@ -1057,5 +1057,95 @@ Do not treat 5 × rms and 5 × SD as the same estimator. Percentile-in-10-ms-win
 26. started. Custom all-channel sequential stimulator ≠ MCS 3 concurrent patterns.
 27. 15 ms feedback sentence listed. Not bits.
 28. started. JNRB 2006: 59 stim / 58 rec on one preamp with a broken wire; 10–50 electrodes met the ASDR-doubling inclusion rule.
-29. (not started) Whether the J Neural Eng 2004 "rapid switching between channels" number is published in microseconds, and whether two adjacent 30 µm sites can be stimulated in the same 400 µs phase pair.
-30. (not started) Array-wide spike detection rate (ASDR) numbers on the same 30 µm / 200 µm dishes as a function of DIV — listed as a count rate wherever printed, not converted to bits.
+29. (started below) Whether the J Neural Eng 2004 "rapid switching between channels" number is published in microseconds, and whether two adjacent 30 µm sites can be stimulated in the same 400 µs phase pair.
+30. (started below) Array-wide spike detection rate (ASDR) numbers on the same 30 µm / 200 µm dishes as a function of DIV — listed as a count rate wherever printed, not converted to bits.
+
+### RACS switch timing (problem 29)
+Wagenaar and Potter J Neural Eng 1:39–45 (2004) ResearchGate / results extract (full PMC still walled last pass):
+
+Hardware bound printed there:
+- "Stimulus outputs for direct connection to 64 electrodes, all driven from a single DAC, with high-quality isolation switches to select stimulation channels with microsecond" timing.
+- "While the single-DAC design does not allow for truly simultaneous stimulation through more than one electrode, different electrodes can be stimulated with less than 10 μs between stimuli."
+- Switching-event timing accuracy: "0.5 μs RMS, with a worst case deviation of 2.0 μs (N = 5000)."
+- DAC update ceiling in that writeup: "controlling the DAC output voltage at a maximum rate of 130 kHz."
+- Example low-level sequence in the same extract: "at time t = 500 ms, switch to channel 37; 50 μs later, set the DAC to 700 mV; 400 μs later, set the DAC to -700 mV; 400 μs later, …"
+
+Two adjacent 30 µm sites on object A therefore cannot share one analog current/voltage source for the same 400 µs phase pair on this box. They can be staggered by <10 µs on one DAC. That is not the MCS MEA2100 "3 independent stimulation patterns" bound already on the map. Leave the two stim architectures unmerged.
+
+Potter / Wagenaar / DeMarse chapter (Taketani & Baudry 2006 preprint, already cited): "Since the stimulator can switch between electrodes with microsecond timing, it is possible to stimulate using arbitrarily complex multi-channel patterns." Same "microsecond" word as the JNE results extract. No second numeric gap besides the <10 µs sentence.
+
+PubMed figure list for the 2004 paper names Figure 5 as stimulation artifacts for 0.5 V, 400 µs/phase biphasic pulses, including "Amount of time the stimulated electrode cannot be used for recording because the signal is driven outside the dynamic range of the amplifier." Numeric dead-time from that panel was not in the extract this pass. The 50–150 ms stimulating-site saturation already listed from the 2005 methods sits next to that unopened panel. Do not substitute.
+
+Isolation / charge-injection of the switches is asserted ("good isolation characteristics, low leakage current, and small charge injection" in the 2006 chapter). No dB crosstalk number for the RACS analog path in the pulled pages. Problem 3 (CMOS switch-matrix dB) is a different chip. Do not transplant.
+
+### ASDR on the 30 µm / 200 µm object (problem 30)
+Wagenaar, Pine, Potter BMC Neurosci 2006, 7:11 / PMC1420316 — same 30 µm TiN, 200 µm, 59-site MCS object as the 2005 bursting-control paper:
+
+Methods: "We used MEAs with 59 electrodes with a diameter of 30 μm, purchased from Multichannel Systems … organized in a square grid with the corners missing, spaced 200 μm center-to-center."
+
+Spike detection in that paper: "upward or downward excursions beyond 4.5× estimated RMS noise." Waveforms stored "to remove duplicate detections of multiphasic spikes." Different numeric factor from the 2005 5× rms line and from the MEABench 4.25× false-positive-budget sentence. Leave the three factors listed.
+
+Sorting sentence, same methods: "A variety of spike waveform shapes was observed on many electrodes, but distinct clusters in waveform space were not usually seen, presumably because many cells contributed to the spike train at each electrode, especially during bursts. Also during bursts, overlapping waveforms were a common occurrence, making spike sorting problematic." "Thus, sorting was not attempted, and all results in this paper are based on multiunit data."
+
+That is a published reason they did not produce an SU census on this dish class. It sits next to problem 6 (no tracked unit through delay shift) and problem 24 (90% = validated crossings). Do not upgrade ASDR into neurons.
+
+ASDR definition in that paper: "the number of spikes detected per unit time, summed over all electrodes in the array." During bursts, "up to a hundredfold increase over baseline could be observed in the array-wide spike detection rate (ASDR)." Increased activity "on all electrodes that recorded any activity at all."
+
+Development sentence already flagged from the abstract: "the aggregate spike detection rate scaled linearly with density, as expected from the number of cells in proximity to electrodes." Dense cultures: "median ASDR steadily increased during the first three weeks in vitro, then leveled off." Sparser cultures: smaller ASDRs, delayed rise. Figure 5B is described as maximum (across days) of 30-minute-averaged ASDR in the first 35 DIV versus density class; error bars = mean ± sample SD; vertical scale logarithmic. Exact ticks from that panel were not copied out of the figure this pass. Dead on the printed Hz table.
+
+Plating classes from their Table 1 (same paper; densities at 1 DIV):
+- Dense: 50,000 cells; 2.5 ± 1.5 × 10³ cells/mm²; 30 cultures / 8 batches; culture diameter 4.9 ± 0.4 mm.
+- Small: 12,500 cells; 1.6 ± 0.6 × 10³ cells/mm²; 12 cultures / 3 batches; diameter 3.1 ± 0.3 mm.
+- Sparse: 12,500 cells; 0.60 ± 0.24 × 10³ cells/mm²; 10 cultures / 3 batches.
+- Small & sparse: 3,125 cells; 0.30 ± 0.16 × 10³ cells/mm²; 3 cultures.
+- Ultra sparse: 3,125 cells; 0.11 ± 0.06 × 10³ cells/mm²; 3 cultures.
+
+Drop thickness at plating is also in that table (dense / sparse / ultra-sparse 1.69 ± 0.24 mm; small classes 1.06 ± 0.23 mm). That is the droplet column at plating, not the Potter-chapter 15–20 µm mature-monolayer thickness already on the map. Two different millimetre-scale numbers. Do not collapse them into the uncomputed π(100 µm)² × thickness product (problem 11).
+
+bioRxiv 2022.05.27.493606 (already on the map under problem 17): median ASDR 55.7 spikes/s (IQR 12.9–158) across the dish on a later reuse of Wagenaar 60-site files, after MEABench detections. One published snapshot on those files, not a DIV curve and not a Shannon rate.
+
+Charlesworth / hippocampal extract that borrows the ASDR name (PMC4725104): "Array-wide spike detection rate (ASDR; Wagenaar et al. 2006) was measured as the total number of spikes across the entire array in each second of recording averaged over the entire recording." Different tissue, different well/array. Logged only as reuse of the name.
+
+None of these ASDR figures is bits after blanking. Problem 4 stays empty.
+
+### 4.5× vs 5× vs 4.25× on the same lab line (problem 16 adjacent)
+Same object class, three printed factors:
+- BMC 2006 developmental survey: 4.5× estimated RMS.
+- J Neurosci 2005 bursting-control: 5× rms noise, then Mitra-style shape validation.
+- MEABench methods: user-settable factor; 4.25× named for 1 FP s⁻¹ channel⁻¹.
+
+Do not treat them as one threshold. All three are multiunit crossing gates. The BMC paper is the one that states sorting was not attempted.
+
+### Attempts / dead ends (continued)
+- JNE 2004 Figure 5 dead-time panel still not read as a number. 50–150 ms from 2005 methods remains the printed stimulating-site saturation.
+- Figure 5B ASDR-vs-density ticks in BMC 2006 not transcribed. Linearity-with-density sentence and "first three weeks then leveled off" stay as the published words.
+- No DIV-by-DIV Hz table for a single dense 30 µm dish beyond those two sentences plus the 55.7 /s snapshot on the reused files.
+- Still no head-to-head 10 µm vs 30 µm yield (problem 23).
+- Still no year-2 site-count (problem 22).
+- Still no Shannon figure.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing. RACS isolation asserted without a dB number; different box from object B.
+4. still empty of bits. ASDR is a count rate.
+5. still not a joint 3-pattern × 15/59 statement. RACS is one DAC plus switches, not three concurrent MCS patterns.
+6. still not a tracked-unit-through-delay experiment. BMC 2006 explicitly did not sort.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed. Table-1 droplet thickness (≈1.1–1.7 mm at plating) is not the 15–20 µm mature monolayer.
+12. slice 100 µm sentence vs Potter 10 µm "range" sentence unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; 90% = validated crossings. BMC 2006 adds that clusters were usually absent and sorting was not attempted.
+25. stim-site 50–150 ms; JNE 2004 Fig. 5 panel still unopened as a number.
+26. custom sequential stimulator ≠ MCS 3 patterns. Single-DAC / not-truly-simultaneous now quoted.
+27. 15 ms feedback sentence listed. Not bits.
+28. JNRB 59 stim / 58 rec broken-wire case listed.
+29. switch timing published: <10 µs between electrodes on one DAC; 0.5 µs RMS / 2.0 µs worst-case event timing; 130 kHz DAC updates. Adjacent 30 µm sites cannot occupy the same 400 µs phase as independent analog sources on RACS.
+30. ASDR defined; scales linearly with density in BMC 2006; dense median rose over first 3 weeks then leveled; burst ASDR up to 100× baseline; later-file snapshot median 55.7 /s (IQR 12.9–158). No Hz-per-DIV table copied from Fig. 5B. Not bits.
+31. (not started) Whether JNE 2004 Figure 5 prints a millisecond dead-time vs amplitude curve that can sit next to the 2005 50–150 ms sentence without merging them.
+32. (not started) Burst participation vs density class in BMC 2006 Table/Figures — tiny-burst <5 electrodes vs culture-wide — as another activity count, not a neuron census.
