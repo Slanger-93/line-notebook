@@ -1147,5 +1147,99 @@ Do not treat them as one threshold. All three are multiunit crossing gates. The 
 28. JNRB 59 stim / 58 rec broken-wire case listed.
 29. switch timing published: <10 µs between electrodes on one DAC; 0.5 µs RMS / 2.0 µs worst-case event timing; 130 kHz DAC updates. Adjacent 30 µm sites cannot occupy the same 400 µs phase as independent analog sources on RACS.
 30. ASDR defined; scales linearly with density in BMC 2006; dense median rose over first 3 weeks then leveled; burst ASDR up to 100× baseline; later-file snapshot median 55.7 /s (IQR 12.9–158). No Hz-per-DIV table copied from Fig. 5B. Not bits.
-31. (not started) Whether JNE 2004 Figure 5 prints a millisecond dead-time vs amplitude curve that can sit next to the 2005 50–150 ms sentence without merging them.
-32. (not started) Burst participation vs density class in BMC 2006 Table/Figures — tiny-burst <5 electrodes vs culture-wide — as another activity count, not a neuron census.
+31. (started below) Whether JNE 2004 Figure 5 prints a millisecond dead-time vs amplitude curve that can sit next to the 2005 50–150 ms sentence without merging them.
+32. (started below) Burst participation vs density class in BMC 2006 Table/Figures — tiny-burst <5 electrodes vs culture-wide — as another activity count, not a neuron census.
+
+### JNE 2004 Figure 5 dead time (problem 31)
+Caltech lab PDF of Wagenaar and Potter J Neural Eng 1:39–45 (2004) (www.its.caltech.edu/~daw/papers/04-WP.pdf):
+
+Stimulus used for the artifact measurement: "biphasic pulses of 500 mV and 400 µs per phase, as commonly used during experiments."
+
+Stimulated electrode:
+- "the signal on the stimulated electrode transiently exceeded the amplifier’s dynamic range in all cases, for 61 ms on average (figure 5(A))."
+- Figure 5 caption: "Amount of time the stimulated electrode cannot be used for recording because the signal is driven outside the dynamic range of the amplifier. The histogram shows a bimodal distribution, because the recorded signal sometimes swings to the other rail after recovering from the first phase of the artifact." Histogram axis in the extract: lost time 0–200 ms.
+- Same results paragraph: "On stimulated electrodes, spikes could be detected after 40–160 ms: as soon as artifacts no longer saturated the pre-amplifier."
+- Earlier in the same section, a related count: "The stimulated channel itself did record significant artifacts: in 55% of trials the signal was driven outside of the amplifier’s dynamic range (±683 µV) for 10 ms or more."
+
+Non-stimulated channels, same pulses:
+- "signals remained within the amplifier’s dynamic range throughout the stimulus in >99% of trials, and the absolute value of the artifact 1 ms after the end of the stimulus was 10.6 ± 15.6 µV (mean ± SSD)."
+- Those residuals "could be entirely suppressed in software using SALPA."
+
+That is a printed pair at one amplitude (0.5 V), not a family of dead-time-versus-amplitude curves. No second voltage in the extract that would make Figure 5 a V–ms function. Leave the missing curve logged.
+
+Clock stack addendum, still unmerged:
+- Figure 5 mean saturation 61 ms; detectability 40–160 ms on the stimulating site at 0.5 V / 400 µs.
+- 2005 methods: stimulating site "saturated by stimulation artifacts for 50–150 msec"; non-stim sites 2 ms with SALPA.
+- SALPA J Neurosci Methods 2002 abstract: "reduces the period after stimulation during which action potentials cannot be detected by an order of magnitude, to less than 2 ms." That <2 ms sentence is the algorithm claim; the 2004 paper assigns 40–160 ms to the saturated stimulating electrode and SALPA to the other channels.
+- 2006 chapter: "cross-channel stimulus artifacts of several hundred microvolts lasting tens of milliseconds."
+
+61 ms mean and 40–160 ms detectability sit inside the 2005 50–150 ms window. They are the same lab / same stimulator / overlapping pulse family. They are not one number. Do not average them. Problem 4 still has no bits.
+
+Suggested hardware fix in the 2004 text, not implemented as a measured latency here: "A simpler approach would be to isolate the amplifier from the electrode during stimulation using an additional switch." Sample-and-hold cited to Novak and Wheeler 1988. Logged as a sentence, not as a third recovery table.
+
+### Burst participation vs density (problem 32)
+Wagenaar, Pine, Potter BMC Neurosci 2006 / PMC1420316, same 30 µm / 200 µm / 59-site object.
+
+Classification already named:
+- Tiny: "Any burst spanning fewer than 5 electrodes was termed tiny." Methods also: pre-global bursts "on one, or sometimes two or three, electrodes"; results: "Small bursts involving 1–5 electrodes were often observed several days before global synchronization." Tiny bursts "were not further analysed."
+- Array-wide synchronized bursting: "usually began after 5–7 div in dense cultures, and later in sparser cultures."
+- Conclusion sentence: "Except for the very sparsest cultures, all cultures exhibited globally synchronized bursts."
+- Small-and-sparse and ultra-sparse: "the ASDR remained so low that the age at which half of the maximum was reached could not be measured accurately, and the BI never reached 0.25."
+- Superbursts: "observed in only about half of all cultures."
+- During bursts: "Increased activity during bursts was seen on all electrodes that recorded any activity at all." Inference in the same paragraph: "Thus, it appears likely that most or all active neurons participated in bursting." That is their wording, not an SU count. Sorting was not attempted (already on the map).
+
+Figure 7 in that paper: scatter of total spikes versus number of participating electrodes; "the relationship between spike count and number of electrodes is preserved throughout most of the developmental period studied." Exact slope / intercept not copied from the figure this pass.
+
+Sibling PRE 73:051907 (2006) on dense cultures of the same lab line: "large" defined as "at least 5 participating sites with a total of at least 50 spikes." Different paper, same 5-electrode floor. Do not merge the floor with Downes' 15/59 global-burst inclusion rule.
+
+Activity-count stack, still unmerged, now including participation floors:
+- Tiny <5 electrodes (BMC 2006).
+- Large ≥5 sites and ≥50 spikes (PRE 2006).
+- Downes global-burst inclusion 15/59.
+- Middya 16/60 active.
+- Wagenaar 2005 V* 40–50/60.
+- Wagenaar 2005 age line >90% recorded spikes at 25–45 DIV.
+- JNRB 2006 ASDR-doubling inclusion 10–50 electrodes.
+- Ultra-sparse / small-and-sparse: BI never 0.25.
+
+None of these is a neuron census. Problem 5 (3 MCS patterns × 15/59) still has no joint methods statement. A tiny-burst on <5 electrodes is a different set than the 15/59 inclusion set.
+
+### Attempts / dead ends (continued)
+- Figure 5 of JNE 2004 is a histogram at one pulse amplitude, not a V–ms family. Dead on the "vs amplitude curve" half of problem 31.
+- Figure 7 spike-count vs electrode-count slope not transcribed.
+- Fraction of dense vs sparse cultures that reach global bursts is the qualitative "except the very sparsest" sentence plus the BI<0.25 clause for the two sparsest classes. No per-class percentage table pulled beyond "about half" for superbursts.
+- Still no Shannon figure.
+- Still no year-2 site-count.
+- Still no 10 µm vs 30 µm head-to-head yield.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits. 61 ms mean / 40–160 ms stim-site detectability added next to 50–150 ms, not converted.
+5. still not a joint 3-pattern × 15/59 statement. Tiny <5 is a different participation floor.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm sentence vs Potter 10 µm "range" sentence unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; 90% = validated crossings; sorting not attempted.
+25. stim-site saturation now has three printed windows on the same lab line: 50–150 ms (2005 methods), 61 ms mean and 40–160 ms (2004 Fig. 5 at 0.5 V), <2 ms SALPA claim on non-saturated channels.
+26. custom sequential stimulator ≠ MCS 3 patterns.
+27. 15 ms feedback sentence listed. Not bits.
+28. JNRB 59 stim / 58 rec listed.
+29. <10 µs stagger on one DAC listed.
+30. ASDR listed as count rate.
+31. Figure 5 is a lost-time histogram at 0.5 V / 400 µs, mean 61 ms, detect 40–160 ms, bimodal 0–200 ms axis. Not a V–ms curve.
+32. Tiny <5 electrodes; global bursts except the two sparsest classes (BI never 0.25); superbursts in about half; activity on all electrodes that already recorded any activity. Not a neuron census.
+33. (not started) Whether BMC 2006 Figure 7 prints a numeric slope of spike-count vs participating-electrode-count that could be read as a per-site multiunit load. Leave unread until the panel is copied.
+34. (not started) Cross-channel artifact "several hundred microvolts lasting tens of milliseconds" (2006 chapter) vs 10.6 ± 15.6 µV at 1 ms on non-stim sites (2004). Same lab, two sentences. Do not average.
+
+
+
+
