@@ -1237,8 +1237,81 @@ None of these is a neuron census. Problem 5 (3 MCS patterns × 15/59) still has 
 30. ASDR listed as count rate.
 31. Figure 5 is a lost-time histogram at 0.5 V / 400 µs, mean 61 ms, detect 40–160 ms, bimodal 0–200 ms axis. Not a V–ms curve.
 32. Tiny <5 electrodes; global bursts except the two sparsest classes (BI never 0.25); superbursts in about half; activity on all electrodes that already recorded any activity. Not a neuron census.
-33. (not started) Whether BMC 2006 Figure 7 prints a numeric slope of spike-count vs participating-electrode-count that could be read as a per-site multiunit load. Leave unread until the panel is copied.
-34. (not started) Cross-channel artifact "several hundred microvolts lasting tens of milliseconds" (2006 chapter) vs 10.6 ± 15.6 µV at 1 ms on non-stim sites (2004). Same lab, two sentences. Do not average.
+33. (started below) Whether BMC 2006 Figure 7 prints a numeric slope of spike-count vs participating-electrode-count that could be read as a per-site multiunit load. Leave unread until the panel is copied.
+34. (started below) Cross-channel artifact "several hundred microvolts lasting tens of milliseconds" (2006 chapter) vs 10.6 ± 15.6 µV at 1 ms on non-stim sites (2004). Same lab, two sentences. Do not average.
+
+### BMC 2006 Figure 7 (problem 33)
+Wagenaar, Pine, Potter BMC Neurosci 7:11 caption as printed on the Springer/BMC HTML:
+
+"Comparison of burst sizes during culture development. Scatter plot of total number of spikes in burst and number of participating electrodes. Colors represent bursts from different (dense) cultures. Black traces are the frequencies (in bursts per minute; bpm) of bursts with a given number of participating electrodes, averaged across all cultures represented. Note log scale on y-axis."
+
+Body sentence next to the figure: "It is interesting to note how well the relationship between spike count and number of electrodes is preserved throughout most of the developmental period studied."
+
+No slope, intercept, or spikes-per-participating-electrode ratio is printed in the caption or in the adjacent paragraph. The panel remains a scatter plus a frequency histogram on a log y-axis. Dead on a numeric per-site multiunit load. Do not read a load off an uncopied cloud.
+
+Participating-electrode count in that figure is still a multiunit burst-participation number. BMC 2006 methods already said sorting was not attempted. The figure cannot be upgraded into SU per site.
+
+### PRE 2006 forced clusters on the same 59-site object (problem 33 adjacent; not BMC)
+Wagenaar, Nadasdy, Potter Phys Rev E 73:051907 (2006) preprint extract, dense cultures on the same 59-electrode / 25 kHz line:
+
+- Detection: "Putative spikes were detected by thresholding the electrode traces at 4.5× estimated RMS noise." Same factor as BMC 2006.
+- "In both cultures the sorting resulted in 236 putative neurons (59 electrodes × 4 clusters)."
+- "Cross-correlation analysis revealed that inter-electrode spacing was such that cells did not evoke potentials on more than one electrode."
+
+Four clusters per electrode is a sorter setting, not a measured yield. 236 = 59 × 4 is arithmetic, not a census. The no-neighbor-pickup sentence is the same 200 µm spike-field family already on the map (Egert Exp Brain Res 2002; Plenz-via-Nisch; He/Chen EMBC 2005). It conflicts with HD-MEA axonal tracking at 13.5–17.5 µm and with BMC 2006's own "many cells contributed to the spike train at each electrode, especially during bursts." Different papers, different claims. Leave both.
+
+BMC 2006: sorting not attempted. PRE 2006: 4 clusters forced per site. Do not treat 236 as the missing year-2 or 25–45 DIV unit count.
+
+### Two cross-channel artifact sentences (problem 34)
+Potter, Wagenaar, DeMarse chapter, Taketani & Baudry 2006 preprint (already cited):
+
+"A combination of capacitive crosstalk between electrode traces and conduction through the culture medium couples the stimulated electrode to all of the other recording electrodes. If the resulting transient is larger than the dynamic range of the amplification system — as is often the case — the nonlinear properties of saturated amplifiers and the connected filters greatly increase the size and duration of the artifact. We often observe cross-channel stimulus artifacts of several hundred microvolts lasting tens of milliseconds."
+
+That is a qualitative "often observe" on raw / saturated-path artifacts. No N, no amplitude distribution, no time-after-pulse specified.
+
+Wagenaar and Potter J Neural Eng 2004 (04-WP.pdf, already on the map under problem 31), same 0.5 V / 400 µs pulses:
+
+Non-stimulated channels: "signals remained within the amplifier’s dynamic range throughout the stimulus in >99% of trials, and the absolute value of the artifact 1 ms after the end of the stimulus was 10.6 ± 15.6 µV (mean ± SSD)." Those residuals "could be entirely suppressed in software using SALPA."
+
+Two different meters:
+- Chapter: peak-ish cross-channel artifact, "several hundred µV", duration "tens of ms", includes the saturated-amplifier case ("as is often the case").
+- JNE 2004: amplitude at a fixed 1 ms post-stimulus sample on trials that stayed inside ±683 µV on the non-stim sites (>99%).
+
+Do not average 10.6 µV with several hundred µV. One is a 1 ms residual inside the rail; the other is the thing that happens when the rail is hit. SALPA is asserted to remove the former. The stimulating-site 61 ms / 40–160 ms numbers already listed stay on the stimulated electrode.
+
+Grumet et al. 2000 is the citation the chapter uses for "several factors contribute." Not opened this pass. Logged as the neighbor methods paper.
+
+### Attempts / dead ends (continued)
+- Figure 7 slope still not a printed number. Frequency-in-bpm black traces also untranscribed.
+- PRE 2006 59 × 4 = 236 is a setting, not a yield table.
+- Grumet 2000 full artifact breakdown not pulled.
+- Still no Shannon figure.
+- Still no year-2 site-count.
+- Still no 10 µm vs 30 µm head-to-head.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment. PRE 2006 forced 4 clusters/site is not tracking through a delay shift.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm sentence vs Potter 10 µm "range" sentence unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–32. status as previous list.
+33. Figure 7 caption copied. No printed slope or spikes-per-electrode ratio. Dead on a numeric load.
+34. several-hundred-µV / tens-of-ms (chapter, often, includes saturation) vs 10.6 ± 15.6 µV at 1 ms on in-range non-stim trials (JNE 2004). Unmerged.
+35. (not started) BMC 2006 Figure 9 "Median distance of sites of non-synaptic responses to stimulated electrode" — published spatial scale of direct (antidromic) pickup on the 200 µm dish, versus the 100 µm spike-radius sentence.
+36. (not started) Grumet et al. 2000 as the chapter's artifact-factor citation. What amplitudes and durations that paper actually prints on planar MEAs.
+
 
 
 
