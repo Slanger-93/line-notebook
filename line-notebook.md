@@ -1309,8 +1309,79 @@ Grumet et al. 2000 is the citation the chapter uses for "several factors contrib
 25–32. status as previous list.
 33. Figure 7 caption copied. No printed slope or spikes-per-electrode ratio. Dead on a numeric load.
 34. several-hundred-µV / tens-of-ms (chapter, often, includes saturation) vs 10.6 ± 15.6 µV at 1 ms on in-range non-stim trials (JNE 2004). Unmerged.
-35. (not started) BMC 2006 Figure 9 "Median distance of sites of non-synaptic responses to stimulated electrode" — published spatial scale of direct (antidromic) pickup on the 200 µm dish, versus the 100 µm spike-radius sentence.
-36. (not started) Grumet et al. 2000 as the chapter's artifact-factor citation. What amplitudes and durations that paper actually prints on planar MEAs.
+35. (started below) BMC 2006 Figure 9 "Median distance of sites of non-synaptic responses to stimulated electrode" — published spatial scale of direct (antidromic) pickup on the 200 µm dish, versus the 100 µm spike-radius sentence.
+36. (started below) Grumet et al. 2000 as the chapter's artifact-factor citation. What amplitudes and durations that paper actually prints on planar MEAs.
+
+### BMC 2006 Figure 9 — direct-response distance (problem 35)
+Wagenaar, Pine, Potter BMC Neurosci 7:11 / PMC1420316:
+
+Definition already pointed at J Neurosci Methods 138:27–37 (2004) as ref 29: "a monopolar biphasic stimulus pulse on one electrode typically evokes very precisely timed responses on a number of other electrodes that are insensitive to synapse blockers." Conclusion in BMC 2006: "stimulation most likely evokes action potentials in axons, which then cause recordable action potentials elsewhere along the axon, or in the cell body by antidromic transmission." Those events are the "direct" / "non-synaptic" responses.
+
+JNM 2004 (already on the map): direct responses in the first 10–20 ms, jitter <0.25 ms. That latency window is the classification gate, not a distance.
+
+Figure 9 results sentences:
+- "functional projections grew rapidly during the first week in vitro in dense cultures, reaching across the entire array within 15 days (Figure 9)."
+- "Outgrowth was slower in small and sparse cultures, and the typical length of projections after 5 weeks in vitro was shorter."
+- "The diameter of the MEA (maximum electrode distance) is 1.72 mm."
+- "Projections likely continued to grow beyond this length, especially in the dense cultures, but our method is incapable of following that development."
+
+Caption: median distance of non-synaptic-response sites to the stimulated electrode (solid, dots) and 90th percentile (dashed, circle), plotted for dense / small / sparse cultures separately. Exact millimetre ticks from the panel were not copied this pass. Dead on a numeric median table.
+
+1.72 mm is a third published array-span number. Already on the map: JNRB 2006 5 mm culture footprint vs 1.4 mm 8×8/200 µm recording span. 8 steps of 200 µm is 1.4 mm; corner-to-corner of an 8×8 with corners missing is the 1.72 mm they print. Do not collapse 1.4 and 1.72.
+
+This distance is axonal projection length measured by which other electrodes show a blocker-insensitive short-latency spike. It is not the MCS datasheet "signal sources within a radius of 30 µm" / "spike activity … up to 100 µm" sentence, and it is not Kajikawa LFP spread. Three different spatial objects:
+- passive spike-field radius of a soma/axon near one site (30–100 µm class);
+- volume-conducted LFP (hundreds of µm to mm);
+- length of an axon that can be stimulated at site i and recorded at site j (up to the 1.72 mm array diameter by 15 DIV in dense cultures).
+
+Leave them unmerged. Problem 12 (slice 100 µm vs Potter 10 µm "range") is still a different pair.
+
+### Grumet 2000 (problem 36)
+Grumet, Wyatt, Rizzo J Neurosci Methods 101:31–42 (2000), PMID 10967359. Isolated retina, not dissociated cortex. 10 µm diameter disk electrodes.
+
+Artifact-mitigation architecture printed in the abstract / methods family:
+- "To reduce stimulus artifacts, the electrodes are grouped into two clusters — one used for stimulation and the other for recording — spaced several hundred microns apart."
+- Insulation: silicon nitride plus "a 10 µm thick layer of polyimide."
+
+That is a split-array geometry. Stim cluster and record cluster are not interleaved on a 200 µm 8×8. It is not object A used as a bidirectional 59-site loop.
+
+Wagenaar and Potter J Neurosci Methods 120:113–120 (2002, SALPA) cite Grumet 2000 as one of the preparations in which stimulation-and-recording have been reported, and as an example of reducing the problem "by physically separating the recording site from the stimulation site (Grumet et al., 2000)." Same SALPA paper: artifacts "last much longer than the stimulus that caused it, sometimes up to 100 ms (Maeda et al., 1995), even on channels not used for stimulation."
+
+No peak-µV or duration-ms table from Grumet 2000 itself was sitting in the abstract / secondary extracts this pass. The "several hundred microvolts lasting tens of milliseconds" sentence remains the 2006 chapter's own observation, not a Grumet number transplanted onto the 59-site dish. Dead on Grumet amplitudes.
+
+Maeda et al. 1995 (the 100 ms even-on-non-stim-sites citation inside SALPA) was not opened. Logged.
+
+### Attempts / dead ends (continued)
+- Figure 9 median and 90th-percentile ticks not transcribed. 1.72 mm array diameter and "across the entire array within 15 days" (dense) stay as the printed words.
+- Grumet 2000 prints a cluster-separation architecture, not a µV table on interleaved MCS 30 µm sites.
+- Maeda 1995 100 ms sentence not pulled from the source paper.
+- Still no Shannon figure.
+- Still no year-2 site-count.
+- Still no 10 µm vs 30 µm head-to-head yield.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm sentence vs Potter 10 µm "range" sentence unmerged. Figure 9 axonal-projection length is a third spatial scale.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–34. status as previous list.
+35. Figure 9: dense cultures reach across the 1.72 mm array by 15 DIV; small/sparse slower and shorter at 5 weeks; median and 90th-percentile traces untranscribed. Direct = blocker-insensitive, 10–20 ms, jitter <0.25 ms. Not the 30–100 µm spike-radius sentence.
+36. Grumet 2000 is split stim/record clusters several hundred µm apart on isolated retina, plus 10 µm polyimide. Not a µV table on object A. Chapter "several hundred µV" stays the chapter's sentence.
+37. (not started) Maeda et al. 1995 as the SALPA paper's "sometimes up to 100 ms even on channels not used for stimulation" source. What geometry and amplitude that paper actually used.
+38. (not started) Whether the 1.72 mm "diameter of the MEA (maximum electrode distance)" is the same geometric object as the 1.4 mm 8×8/200 µm recording span already on the map under problem 7 / JNRB 2006.
+
 
 
 
