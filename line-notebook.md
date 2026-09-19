@@ -1379,11 +1379,77 @@ Maeda et al. 1995 (the 100 ms even-on-non-stim-sites citation inside SALPA) was 
 25–34. status as previous list.
 35. Figure 9: dense cultures reach across the 1.72 mm array by 15 DIV; small/sparse slower and shorter at 5 weeks; median and 90th-percentile traces untranscribed. Direct = blocker-insensitive, 10–20 ms, jitter <0.25 ms. Not the 30–100 µm spike-radius sentence.
 36. Grumet 2000 is split stim/record clusters several hundred µm apart on isolated retina, plus 10 µm polyimide. Not a µV table on object A. Chapter "several hundred µV" stays the chapter's sentence.
-37. (not started) Maeda et al. 1995 as the SALPA paper's "sometimes up to 100 ms even on channels not used for stimulation" source. What geometry and amplitude that paper actually used.
-38. (not started) Whether the 1.72 mm "diameter of the MEA (maximum electrode distance)" is the same geometric object as the 1.4 mm 8×8/200 µm recording span already on the map under problem 7 / JNRB 2006.
+37. (started below) Maeda et al. 1995 as the SALPA paper's "sometimes up to 100 ms even on channels not used for stimulation" source. What geometry and amplitude that paper actually used.
+38. (started below) Whether the 1.72 mm "diameter of the MEA (maximum electrode distance)" is the same geometric object as the 1.4 mm 8×8/200 µm recording span already on the map under problem 7 / JNRB 2006.
 
+### Maeda 1995 as the 100 ms citation (problem 37)
+Wagenaar and Potter J Neurosci Methods 120:113–120 (2002, SALPA) introduction:
 
+"The non-linear behavior of saturated amplifiers, together with the properties of the filters used for noise reduction, make this artifact last much longer than the stimulus that caused it, sometimes up to 100 ms (Maeda et al., 1995), even on channels not used for stimulation."
 
+The cited paper in that sentence is Maeda, Robinson, Kawana, J Neurosci 15:6834–6845 (1995), PMID 7472441. Title: "The mechanisms of generation and propagation of synchronized bursting in developing networks of cortical neurons."
 
+That paper's published object: "multisite recording through planar electrode arrays (PEAs)"; cultured cortical neurons, 3–40 days after plating; "Focal stimulation through the PEA was effective at multiple sites in eliciting bursts." Burst propagation velocity printed there: from ~5 to 100 mm/s with maturation. Burst frequency ~0.01 to 0.5 Hz. Mg sensitivity. UV-laser cuts of the network. Not an MCS 60-site / 30 µm / 200 µm datasheet part. Kawana / NTT PEA family.
 
+No "100 ms" sentence was copied out of Maeda 1995 itself this pass (J Neurosci HTML returned 403). The 100 ms figure therefore remains SALPA's attribution, not a transcribed Maeda methods number. Leave it tagged as citation-not-source-quote.
 
+Same SALPA introduction also cites stimuli "typically on the order of a volt (Pancrazio et al., 1998, Jimbo et al., 1999)" and Grumet 1999 (thesis spelling in that paragraph; the 2000 JNM paper is the published sibling already under problem 36). Jimbo 1999 and Pancrazio 1998 not opened for artifact duration this pass.
+
+Clock stack addendum, still unmerged:
+- SALPA-via-Maeda: "sometimes up to 100 ms" even on non-stim channels.
+- 2006 chapter: "several hundred microvolts lasting tens of milliseconds" cross-channel.
+- JNE 2004 non-stim: 10.6 ± 15.6 µV at 1 ms, in-range >99%.
+- Stim-site: 61 ms mean / 40–160 ms (JNE 2004 Fig. 5); 50–150 ms (2005 methods).
+- SALPA algorithm claim: <2 ms on channels where the polynomial fit applies.
+
+100 ms and "tens of milliseconds" and 50–150 ms sit in the same order of magnitude and are not one measurement. Problem 4 still has no bits.
+
+### 1.4 mm vs 1.72 mm on the same 200 µm grid (problem 38)
+MCS product brochure language (MEA-System-Brochure public PDF extract):
+
+"The spacing of the electrodes is available at 100 µm and 200 µm. This represents a square shaped recording area of 700 µm or 1.4 mm respectively."
+
+7 intervals × 200 µm = 1.4 mm. That is the axis-aligned side of the 8-site row (electrodes 1 through 8). Same arithmetic at 100 µm pitch: 7 × 100 µm = 700 µm. Vendor "recording area" side, not a diagonal.
+
+BMC 2006 Figure 9 sentence already on the map: "The diameter of the MEA (maximum electrode distance) is 1.72 mm."
+
+Object A omits the four corner sites. Axis span remains 7 × 200 µm = 1.4 mm. A long pair that exists, e.g. column-1 row-2 to column-8 row-7, is 7 steps by 5 steps: 200 µm × √(49+25) = 200 µm × √74 ≈ 1.720 mm. That matches the printed 1.72 mm as a maximum pairwise center-to-center among the sites that are actually present.
+
+Two published lengths of the same 200 µm 8×8-minus-corners object:
+- 1.4 mm = square recording-area side (MCS brochure; also the 1.4 mm "recording span" already logged from JNRB 2006 / problem 7).
+- 1.72 mm = maximum electrode-to-electrode distance on the populated grid (BMC 2006).
+
+Do not collapse them. Neither is the 5 mm culture-footprint diameter (JNRB 2006; BMC Table 1 dense 4.9 ± 0.4 mm). Three millimetre-scale dishes: culture drop, array side, array diagonal.
+
+MCS 60StandardMEA layout PDF also prints 2.2 mm and 5.4 mm on the substrate drawing next to the 200/100 µm pitch mark. Those are package / pad-field dimensions on the 49 mm glass, not the electrode-grid span. Leave them off the recording-area stack.
+
+### Attempts / dead ends (continued)
+- Maeda 1995 body not readable this pass (403). 100 ms stays a SALPA citation.
+- Jimbo 1999 / Pancrazio 1998 volt-scale stimulus citations inside SALPA not opened for artifact duration.
+- Figure 9 millimetre ticks still untranscribed.
+- Still no Shannon figure.
+- Still no year-2 site-count.
+- Still no 10 µm vs 30 µm head-to-head yield.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits. 100 ms (SALPA citing Maeda) added to the artifact-duration stack, not converted.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing. 1.4 mm and 1.72 mm now distinguished as side vs max pairwise on the same grid.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm sentence vs Potter 10 µm "range" sentence unmerged. Axonal-projection length (Fig. 9) still a third scale.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–36. status as previous list.
+37. Maeda 1995 identified as J Neurosci 15:6834–6845, Kawana PEA, not MCS 60. 100 ms is SALPA's citation of that paper, not a transcribed Maeda sentence. Dead on Maeda's own artifact paragraph.
+38. 1.4 mm = 7 × 200 µm recording-area side (MCS brochure). 1.72 mm = max pairwise on the corner-omitted grid (BMC 2006). Same object, two measures. Culture dish ~5 mm is a third.
+39. (not started) Jimbo et al. 1999 as the SALPA "stimuli typically on the order of a volt" co-citation. Array family and any printed artifact window there.
+40. (not started) Burst propagation velocity 5–100 mm/s in Maeda 1995 versus Bakkum 2008 PLoS ONE delay-shift 4–13 ms on the MCS 200 µm dish. Different arrays; do not merge travel times.
