@@ -1451,5 +1451,113 @@ MCS 60StandardMEA layout PDF also prints 2.2 mm and 5.4 mm on the substrate draw
 25–36. status as previous list.
 37. Maeda 1995 identified as J Neurosci 15:6834–6845, Kawana PEA, not MCS 60. 100 ms is SALPA's citation of that paper, not a transcribed Maeda sentence. Dead on Maeda's own artifact paragraph.
 38. 1.4 mm = 7 × 200 µm recording-area side (MCS brochure). 1.72 mm = max pairwise on the corner-omitted grid (BMC 2006). Same object, two measures. Culture dish ~5 mm is a third.
-39. (not started) Jimbo et al. 1999 as the SALPA "stimuli typically on the order of a volt" co-citation. Array family and any printed artifact window there.
-40. (not started) Burst propagation velocity 5–100 mm/s in Maeda 1995 versus Bakkum 2008 PLoS ONE delay-shift 4–13 ms on the MCS 200 µm dish. Different arrays; do not merge travel times.
+39. (started below) Jimbo et al. 1999 as the SALPA "stimuli typically on the order of a volt" co-citation. Array family and any printed artifact window there.
+40. (started below) Burst propagation velocity 5–100 mm/s in Maeda 1995 versus Bakkum 2008 PLoS ONE delay-shift 4–13 ms on the MCS 200 µm dish. Different arrays; do not merge travel times.
+
+### Jimbo 1999 as the SALPA volt co-citation (problem 39)
+Wagenaar and Potter J Neurosci Methods 120:113–120 (2002, SALPA) introduction already on the map:
+
+"stimuli typically on the order of a volt (Pancrazio et al., 1998, Jimbo et al., 1999)"
+
+Two co-citations. Different objects.
+
+Jimbo, Tateno, Robinson Biophys J 76:670–678 (1999) / PMC1300072:
+
+- Title object: cultured networks of cortical neurons; electrode arrays; "firing of up to 72 neurons recorded simultaneously … activation through 64 different test stimulus pathways."
+- One localized tetanus. Same tetanus potentiated some pathways and depressed others.
+- Homogeneity rule printed there: "for any one stimulus pathway, neuronal responses were either all enhanced or all depressed."
+- Cross-correlation window printed there: activity closely correlated before tetanus with spikes through the tetanized pathway was enhanced; "activity outside a 40-ms time window of correlation to tetanic pathway spikes was depressed."
+- NTT / Kawana PEA family, not the MCS 60-site / 30 µm / 200 µm object A. 64 pathways is the published pathway count. Electrode diameter / pitch / metal not in the abstract extract pulled this pass.
+- No "on the order of a volt" sentence was sitting in the abstract / PMC front matter this pass. No printed artifact-duration window in that extract. The volt clause remains SALPA's grouping of this paper with Pancrazio 1998, not a transcribed Jimbo 1999 methods number.
+
+Pancrazio et al. Biosens Bioelectron 13:971–979 (1998) / PMID 9839386 — the other SALPA co-citation:
+
+- Custom CMOS amplifier/stimulator chip + planar array.
+- Array: 32 microelectrodes, 14 µm diameter, four larger reference electrodes. Gold 500 nm; traces under 1 µm SiN; Pt-black on the sites.
+- 16 instrumentation amplifiers, gain 50. Cross-point array designates a site as stimulator or sensor.
+- Input-referred noise 12–16 µVrms over 50 kHz. Corner frequencies 0.7 Hz / 50 kHz.
+- Demonstrated biopotentials: chick cardiac myocytes 0.9–2.1 mV p-p; rat spinal-cord neurons 100–400 µV p-p.
+- Crosstalk "below the amplifier noise level, even for relatively large extracellular potentials."
+- No "on the order of a volt" stimulus-amplitude sentence in the abstract extract. Different channel count (32+4), different metal, different tissue set. Not object A.
+
+Jimbo et al. IEEE Trans Biomed Eng 50:241–248 (2003) / PMID 12665038 — later NTT stim/record box, not the 1999 plasticity paper:
+
+- "PC-controlled remote switching of each substrate electrode."
+- "rapid switching of the selected sites between stimulation and recording, within 1.2 ms."
+- "almost continuous monitoring of extracellular signals at all the substrate-embedded electrodes, including those used for stimulation."
+- That 1.2 ms switch sits next to the MCS Wait (up to 400 µs), MCS-BC blanking (1 ms), Meabench non-stim SALPA (<2 ms algorithm claim / 2 ms in the 2005 methods), and stimulating-site 40–160 ms / 50–150 ms / 61 ms mean already on the map. Different box. Do not fold 1.2 ms into the MCS brochure <1 ms trigger.
+
+SALPA therefore pointed at a 1999 PEA plasticity paper and a 1998 32-site CMOS chip for the "order of a volt" clause. Neither extract printed the volt number. Dead on a source-quote volt for both co-citations this pass.
+
+Jimbo, Kawana, Parodi, Torre Biol Cybern 83:1–20 (2000) sits next to the 1999 paper on the same NTT 64-site line:
+
+- "64 active sites, which were used both for recording the electrical activity and for stimulation."
+- Strong voltage pulse: early phase "terminating within 25 ms"; late phase "which could last several hundreds of milliseconds."
+- Early-phase spikes "precise timing with a small jitter."
+- That 25 ms early / hundreds-of-ms late pair is another clock stack entry. It is not Maeda's burst-propagation velocity and it is not Bakkum's dAP delay-shift. Different paper, same lab family as Jimbo 1999.
+
+### Maeda velocity vs Bakkum delay-shift (problem 40)
+Maeda, Robinson, Kawana J Neurosci 15:6834–6845 (1995) / PMID 7472441 / PMC6578010 — already identified under problem 37 as Kawana PEA, not MCS 60:
+
+Abstract numbers already on the map: burst frequency ~0.01 to 0.5 Hz; propagation velocity from ~5 to 100 mm/s with maturation 3–40 days after plating.
+
+Body extract from the journal PDF family:
+- "The average speed of propagation estimated from these results was ~50 mm/sec." That is one network / one figure-3 sample, not the 5–100 mm/s developmental range.
+- "Propagation from the source was not completely smooth, but showed local variations in speed."
+- Evoked: "local stimulation using a current pulse of 100 µsec duration at a single electrode in the array."
+- Periodic stimulation at 1 to 30 s intervals "produced slower propagation velocities and smaller numbers of spikes per burst at shorter stimulation intervals."
+- Initiation locus "varies from burst to burst."
+
+Units: 5–100 mm/s = 0.005–0.1 m/s = 0.005–0.1 mm/ms. The ~50 mm/s sample is 0.05 mm/ms.
+
+Bakkum, Chao, Potter PLoS ONE 3:e2088 (2008) / PMC2324202 — object A class:
+
+- "59 functional electrodes"; "30 µm diameter electrodes spaced 0.2 mm apart." Multi Channel Systems. Custom all-channel stimulator + Meabench + MCCard at 25 kHz. Same 30 µm / 200 µm / 59-site family as Wagenaar 2005.
+- Stimuli for the delay measurements: "symmetric positive then negative voltage pulses of 400 µs duration and 500 mV magnitude per phase."
+- dAPs: latencies from the downswing of the biphasic pulse; PSTH peaks, 0.04 ms bins. "Could not be detected sooner than about 2 ms after stimulus (due to artifact)"; majority earlier than 25 ms; few up to 25 ms.
+- Minimum stim–record distance 0.2 mm; "majority of distances … closer to the minimum" because of the grid; histogram of distances normalized by all possible inter-electrode distances.
+- Velocity sentence printed there: "Estimating the average conduction velocity to be 0.25 mm/ms (Fig. 1D, histogram peak multiplied by a safety factor of 2)" — they treat that as unmyelinated-axon scale. 0.25 mm/ms = 250 mm/s.
+- Plasticity numbers already on the map: "up to 4 ms or 40% after minutes and 13 ms or 74% after hours"; amplitude "up to 87%." One tracked example: "latency decreased by 13 ms or 74%" after hours of patterned stimulation.
+- Induction of the delay change needed synaptic transmission; expression persisted in APV + CNQX + bicuculline. TTX used in characterization to kill propagating spikes.
+
+Four different published meters, left unmerged:
+- Maeda 1995 burst-front speed on a Kawana PEA: 5–100 mm/s (developmental range), ~50 mm/s in one sample, current pulse 100 µs.
+- Bakkum 2008 estimated axonal conduction on the MCS 200 µm dish: 0.25 mm/ms after a ×2 safety factor on a latency-vs-distance histogram peak.
+- Bakkum 2008 activity-dependent change in that latency: 4 ms / 40% (minutes) and 13 ms / 74% (hours). A shift, not a speed.
+- Jimbo 2000 early-phase window on the 64-site NTT dish: ≤25 ms, late phase hundreds of ms.
+
+Arithmetic that is not in the papers and is not computed here as a bound: crossing the 1.4 mm MCS recording-area side at Maeda's mature 100 mm/s would be 14 ms; at Bakkum's 0.25 mm/ms estimate it would be 5.6 ms. Those products are not published travel times on either array. Do not insert them as measurements. The 13 ms delay-shift is larger than the 2 ms artifact floor on the same dish and sits inside Jimbo's 25 ms early window and inside Wagenaar 2005's 10–20 ms direct-response window already on the map. Still not one clock.
+
+Maeda's 5–100 mm/s is a burst-propagation speed that slowed when they shortened the stim interval. Bakkum's 4–13 ms is a plastic change in a directly evoked spike's latency on a different array. Problem 40 stays unmerged on purpose.
+
+### Attempts / dead ends (continued)
+- Jimbo 1999 full methods (electrode diameter, pitch, pulse volts) not in the PMC abstract/front-matter extract. Volt number still only SALPA's clause.
+- Pancrazio 1998 abstract has no volt-scale stimulus table. Dead on source-quote volts for both SALPA co-citations.
+- Maeda 1995 journal PDF 403'd last pass; ~50 mm/s sample and 100 µs current pulse taken from the publicly circulating full-text extract / PMC family, not re-typed from a blocked PDF this pass.
+- Bakkum Fig. 1D histogram-peak before the ×2 safety factor was not copied as a raw mm/ms tick. 0.25 mm/ms is the printed estimate after the factor.
+- No Shannon figure. Problem 4 stays empty.
+- Year-2 site-count still unprinted. Problem 22 unchanged.
+- 10 µm vs 30 µm head-to-head yield still unpulled. Problem 23 unchanged.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits. Jimbo 2003 1.2 ms stim↔record switch added to the clock list, not converted.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment. Bakkum 2008 tracked dAP latency, not a spike-sorting cluster identity through the shift.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm sentence vs Potter 10 µm "range" sentence unmerged. Axonal-projection length (BMC Fig. 9) and Bakkum 0.25 mm/ms estimate are further spatial scales.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–38. status as previous list.
+39. Jimbo 1999 = NTT/Kawana PEA, 64 pathways / up to 72 recorded neurons, 40-ms correlation window. No volt number and no artifact-ms window in the pulled abstract. Pancrazio 1998 = 32×14 µm gold/Pt-black + CMOS cross-point, also no volt sentence in the abstract. Jimbo 2003 switch 1.2 ms is a later box. SALPA "order of a volt" stays a citation clause.
+40. Maeda burst-front 5–100 mm/s (sample ~50 mm/s) on PEA ≠ Bakkum 0.25 mm/ms axonal estimate ≠ Bakkum 4–13 ms latency shift on MCS 30 µm / 200 µm. Current pulse 100 µs (Maeda) vs 500 mV / 400 µs/phase (Bakkum). Do not merge travel times.
+41. (started below) Whether Bakkum's "could not be detected sooner than about 2 ms after stimulus (due to artifact)" is the same 2 ms as the SALPA algorithm claim or the same 2 ms as the 2005 Meabench non-stim recovery.
+42. (not started) Pancrazio 1998 printed stimulus amplitude, if any, in the body beyond the abstract. Still a co-citation, not object A.
