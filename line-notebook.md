@@ -1560,4 +1560,84 @@ Maeda's 5–100 mm/s is a burst-propagation speed that slowed when they shortene
 39. Jimbo 1999 = NTT/Kawana PEA, 64 pathways / up to 72 recorded neurons, 40-ms correlation window. No volt number and no artifact-ms window in the pulled abstract. Pancrazio 1998 = 32×14 µm gold/Pt-black + CMOS cross-point, also no volt sentence in the abstract. Jimbo 2003 switch 1.2 ms is a later box. SALPA "order of a volt" stays a citation clause.
 40. Maeda burst-front 5–100 mm/s (sample ~50 mm/s) on PEA ≠ Bakkum 0.25 mm/ms axonal estimate ≠ Bakkum 4–13 ms latency shift on MCS 30 µm / 200 µm. Current pulse 100 µs (Maeda) vs 500 mV / 400 µs/phase (Bakkum). Do not merge travel times.
 41. (started below) Whether Bakkum's "could not be detected sooner than about 2 ms after stimulus (due to artifact)" is the same 2 ms as the SALPA algorithm claim or the same 2 ms as the 2005 Meabench non-stim recovery.
-42. (not started) Pancrazio 1998 printed stimulus amplitude, if any, in the body beyond the abstract. Still a co-citation, not object A.
+42. (started below) Pancrazio 1998 printed stimulus amplitude, if any, in the body beyond the abstract. Still a co-citation, not object A.
+
+### Three printed "2 ms" sentences (problem 41)
+Bakkum, Chao, Potter PLoS ONE 3:e2088 (2008), already on the map. Two sentences in the same paper, both citing Wagenaar and Potter J Neurosci Methods 2002 as [28]:
+
+- "They could not be detected sooner than about 2 ms nor on the stimulating electrode due to the presence of electrical stimulation artifact [28]."
+- "Artifact suppression allowed us to detect dAPs 2 ms after being evoked [28]."
+
+That [28] is SALPA. The first sentence folds two claims: a 2 ms floor, and no detection on the stimulating electrode. The second sentence names artifact suppression as the thing that opens 2 ms.
+
+Wagenaar and Potter J Neurosci Methods 120:113–120 (2002), lab PDF / ScienceDirect results extract:
+
+- Abstract: "The algorithm, SALPA, reduces the period after stimulation during which action potentials cannot be detected by an order of magnitude, to less than 2 ms."
+- Demo hardware: MultiChannel Systems 60-channel dishes; "10 μm diameter electrodes, 200 μm interelectrode spacing"; sampled 12 bit, 25 kHz. That is the 10 µm tip object, not the 30 µm Bakkum 2008 / Wagenaar 2005 object.
+- Protocol in the methods extract: "One electrode was used for stimulation, while all the others were used for recording." "single biphasic voltage pulses of 600 mV, lasting 400 µs per phase, positive phase first" on five-month-old cultures. ScienceDirect results line: "Rat cortical cultures were stimulated with 600 mV biphasic pulses."
+- Explicit exclusion printed there: "With current commercially available hardware, SALPA is less well suited for recordings from the stimulated electrode, because saturation on that channel lasts beyond the duration of the early phase of the response."
+
+Wagenaar, Madhavan, Pine, Potter J Neurosci 25:680–688 (2005) methods already on the map:
+
+"Meabench SALPA (Wagenaar and Potter 2002) allowed us to detect action potentials as early as 2 msec after stimulation (except on the electrode used for stimulation, which remained saturated by stimulation artifacts for 50–150 msec)."
+
+Hardware in that paper is the 30 µm TiN / 200 µm / 60-site MCS object.
+
+Three printed 2 ms clauses, same lab line, not one measurement:
+
+- SALPA 2002 algorithm claim: <2 ms on channels where the polynomial fit applies; demo on 10 µm / 200 µm MCS; 600 mV / 400 µs/phase; stimulated electrode excluded because saturation outlasts the early phase.
+- 2005 methods: 2 msec on non-stim sites via that algorithm; 50–150 msec saturation on the stimulating site; 30 µm object.
+- Bakkum 2008: "about 2 ms" / "2 ms after being evoked" by citing [28]; also "nor on the stimulating electrode"; 30 µm object; 500 mV / 400 µs/phase probes.
+
+Do not average 2 ms with 50–150 ms. Do not treat the 10 µm SALPA demo dish as the 30 µm Bakkum dish. The 2 ms number is the non-stimulating-site recovery they attribute to SALPA. The stimulating-site dead time stays the 40–160 / 50–150 / 61 ms mean stack already listed under problems 25 and 31.
+
+Bakkum 2008 dAP tracking (problem 6 adjacent, still not identity-through-shift):
+
+- Detection: |V| > 5 SD rms noise.
+- PSTH peaks, 0.04 ms bins, 10 min windows stepped 1 min, Gaussian kernel 31 samples, up to 25 ms latency.
+- Peak kept as the same dAP if it overlaps the previous peak within "the width of the Gaussian at the peak's half height plus 440 µs (11 samples) on either side."
+- That tolerance "allowed tracking a dAP that changed latency."
+- Assigned dAPs "verified manually in raster plots and by waveform." "Only stable dAPs were considered."
+- Jitter printed there: 160 µs.
+
+That is peak-in-histogram identity with a 440 µs slack, not a spike-sorting cluster followed through the 4–13 ms delay shift. Problem 6 stays open.
+
+### Pancrazio 1998 body voltage (problem 42)
+Abstract numbers already on the map: 32 × 14 µm gold / Pt-black, four refs, CMOS gain 50, noise 12–16 µVrms, myocyte 0.9–2.1 mV p-p, spinal-cord 100–400 µV p-p. Cross-point stim-or-record.
+
+No printed stimulus-amplitude number (volts or millivolts of the pulse delivered to an electrode) was sitting in the abstract, PubMed, or the secondary extracts opened this pass. Elsevier full text not pulled. Academia listing exists; body tables not copied.
+
+Sibling Pancrazio et al. Sens Actuators B 53:179–185 (1998) portable biosensor: bandpass 80 Hz–2.8 kHz; gain 1000 or 5000; input-referred noise 8.7 µVrms lab / 10.6 µVrms outdoor; chick myocardiocytes. No volt-scale stimulus table in that abstract either.
+
+SALPA's "typically on the order of a volt (Pancrazio et al., 1998, Jimbo et al., 1999)" therefore still has no source-quote volt from either co-citation body this pass. Problem 42 stays empty of a printed Pancrazio pulse amplitude. Different object from A in any case.
+
+### Attempts / dead ends (continued)
+- Pancrazio 1998 Biosens Bioelectron body still not a pulled PDF. Dead on a volt table.
+- SALPA "600 μV" that appeared in one HTML scrape was a unit-prefix error; ScienceDirect results and the reprint methods line print 600 mV.
+- Bakkum Fig. 1D raw histogram peak before the ×2 safety factor still uncopied.
+- Still no Shannon figure. Problem 4 unchanged.
+- Year-2 site-count still unprinted. Problem 22 unchanged.
+- 10 µm vs 30 µm yield still unpulled head-to-head. Problem 23 unchanged. SALPA demo and Bakkum 2008 now explicitly different tip diameters on the same 200 µm MCS layout.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits. Three 2 ms clauses listed, not converted.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment. Bakkum 2008 tracks PSTH-peak identity with 440 µs slack; not a sorter cluster.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged. SALPA demo now named as the 10 µm / 200 µm MCS part.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head. SALPA 2002 = 10 µm demo; Bakkum 2008 / Wagenaar 2005 = 30 µm.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–40. status as previous list.
+41. three 2 ms sentences unmerged: SALPA <2 ms algorithm on non-stim channels (10 µm demo, 600 mV / 400 µs); 2005 methods 2 msec non-stim / 50–150 msec stim-site (30 µm); Bakkum "about 2 ms" by citing SALPA, plus not on the stimulating electrode (30 µm, 500 mV). Stim-site dead time stays the 40–160 / 61 / 50–150 ms stack.
+42. Pancrazio 1998 body still has no pulled pulse-amplitude number. Abstract and sibling 1998 portable paper also lack a volt table. SALPA "order of a volt" remains a citation clause.
+43. (not started) Whether the SALPA 2002 "lost time" results table prints a number other than the abstract's "less than 2 ms" for non-stim channels at 600 mV.
+44. (not started) Jimbo 1999 methods electrode diameter / pitch / tetanus volts in the Biophysical Journal body. Abstract still empty of those.
