@@ -1639,5 +1639,74 @@ SALPA's "typically on the order of a volt (Pancrazio et al., 1998, Jimbo et al.,
 25–40. status as previous list.
 41. three 2 ms sentences unmerged: SALPA <2 ms algorithm on non-stim channels (10 µm demo, 600 mV / 400 µs); 2005 methods 2 msec non-stim / 50–150 msec stim-site (30 µm); Bakkum "about 2 ms" by citing SALPA, plus not on the stimulating electrode (30 µm, 500 mV). Stim-site dead time stays the 40–160 / 61 / 50–150 ms stack.
 42. Pancrazio 1998 body still has no pulled pulse-amplitude number. Abstract and sibling 1998 portable paper also lack a volt table. SALPA "order of a volt" remains a citation clause.
-43. (not started) Whether the SALPA 2002 "lost time" results table prints a number other than the abstract's "less than 2 ms" for non-stim channels at 600 mV.
-44. (not started) Jimbo 1999 methods electrode diameter / pitch / tetanus volts in the Biophysical Journal body. Abstract still empty of those.
+43. (started below) Whether the SALPA 2002 "lost time" results table prints a number other than the abstract's "less than 2 ms" for non-stim channels at 600 mV.
+44. (started below) Jimbo 1999 methods electrode diameter / pitch / tetanus volts in the Biophysical Journal body. Abstract still empty of those.
+
+### SALPA lost time vs the abstract <2 ms (problem 43)
+Wagenaar and Potter J Neurosci Methods 120:113–120 (2002) reprint / lab PDF already on the map.
+
+Definition printed there: lost time = "the latency after depegging of the electronics at which the artifact is successfully suppressed." It "does not include the duration of amplifier and ADC saturation (1.04 ± 0.02 ms)" in one extract; Fig. 4 caption family: "Lost time does not include the duration of amplifier and ADC saturation (1.04 ms). Charted values are mean and standard deviation of the data collected from 55 electrodes."
+
+Two clocks stacked inside the same paper:
+- Saturation / depeg: 1.04 ms (Fig. 4 caption) or 1.04 ± 0.02 ms (body extract). That is ADC/amplifier rail time, not the polynomial-fit window.
+- Lost time after depeg: the abstract's "less than 2 ms" and the body "usable output as early as 2 ms post stimulus."
+
+Fig. 3: lost time and PNR reduction traded off by varying SALPA filter half-length; results shown for four dishes separately; rest of the article used filter half-length 3 ms (N = 75 samples at 25 kHz, t_sample = 40 µs). No mean-ms number for those four dishes was copied off the figure this pass. Dead on a transcribed Fig. 3 tick table.
+
+Fig. 4: comparison across filter methods on 55 electrodes, mean ± SD. The plotted lost-time means themselves were not typed out of the panel. Dead on a second numeric mean besides the abstract <2 ms and the 1.04 ms saturation.
+
+Hardware recap, now with impedance from the reprint methods line: MCS 60 electrodes, "sixty 10 μm diameter electrodes", 200 µm spacing, "electrode impedance nominally 300 kΩ at 1 kHz" in one extract (another extract left impedance unnumbered). 12-bit, 25 kHz. One site stimulated, the others recorded. 600 mV biphasic, 400 µs/phase, positive first. Stimulus duration marked 0.8 ms in Fig. 6 grey bars.
+
+SALPA is still "less well suited" for the stimulated electrode. The 55-electrode Fig. 4 set is therefore the non-stim pool if they followed the methods sentence. Do not treat 1.04 ms saturation + <2 ms lost time as a single 3 ms dead window unless a paper adds them; they are printed as separate.
+
+Problem 4 still has no bits. Adding 1.04 ms saturation to the clock stack does not create a Shannon rate.
+
+### Jimbo 1999 body geometry and tetanus (problem 44)
+Jimbo, Tateno, Robinson Biophys J 76:670–678 (1999). Cell HTML methods snippet pulled this pass (full PDF 503 / PMC PDF walled):
+
+- "The 64 electrode terminals were arranged in a grid covering an area of 1.6 × 1.3 mm (Fig. 1)."
+- Test protocol: "A test stimulus pulse was applied from each of the 64 sites and scanned sequentially, and the extracellular spike responses to each test stimulus were recorded at all 64 sites for 160 ms." "The stimulus was applied at 3-s intervals from sequential stimulation sites."
+- Tetanus: "For tetanic stimulation, 20 trains of 10 pulses of the same intensity and duration at 20 Hz were applied at 5-s intervals." Then the 64 × 10 evoked responses recorded again.
+
+Electrode diameter, pitch, metal, and the volt / microsecond numbers for "the same intensity and duration" were not in that snippet. Dead on a source-quote volt and on a micrometre tip size.
+
+1.6 × 1.3 mm is a fourth published array-span pair. Already on the map for object A: 1.4 mm side, 1.72 mm max pairwise, ~5 mm culture drop. Jimbo 1999 is the NTT 64-site PEA, not object A. Do not compute a pitch from 1.6/7 here; the paper did not print one in the pulled snippet.
+
+SALPA 2002 cites this paper for a recovery number the 1999 abstract does not print:
+
+"Jimbo et al. (1999) were able to record 5 ms after stimulation, even from the stimulated electrode, but the implementation details are not described."
+
+That 5 ms is SALPA's attribution, not a transcribed Jimbo methods sentence this pass. It sits next to Jimbo 2003's 1.2 ms switch (later box, same lab family) and next to the MCS/SALPA 2 ms non-stim / 50–150 ms stim-site stack. Leave the 5 ms tagged as citation-not-source-quote until the 1999 body sentence is copied.
+
+Jimbo, Robinson, Kawana IEEE Trans Biomed Eng 45:1297–1304 (1998) is the year-before sibling: 64 embedded electrodes, focal tetanus, whole-cell + extracellular. Not opened this pass. Logged as the neighbor methods paper, not as a substitute for the 1999 volt/diameter hole.
+
+### Attempts / dead ends (continued)
+- SALPA Fig. 3 four-dish lost-time ticks and Fig. 4 55-electrode means not transcribed. 1.04 ms saturation and abstract <2 ms stay as the printed numbers.
+- Jimbo 1999 PDF 503 / PMC reCAPTCHA. Diameter, pitch, pulse volts still missing. 1.6 × 1.3 mm grid area and 20×10-pulse / 20 Hz tetanus now listed.
+- 5 ms-from-stimulated-electrode remains SALPA's sentence about Jimbo 1999, not a quote from Jimbo.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm head-to-head yield still unpulled.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits. 1.04 ms SALPA saturation listed next to <2 ms lost-time-after-depeg, not added into a bit-rate.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–42. status as previous list.
+43. SALPA lost time ≠ saturation. Saturation 1.04 ms (Fig. 4) / 1.04 ± 0.02 ms. Lost time after depeg = abstract <2 ms; Fig. 3/4 means uncopied. Filter half-length used: 3 ms. 55 electrodes in Fig. 4. Stim electrode still excluded.
+44. Jimbo 1999 grid 1.6 × 1.3 mm, 64 sites; test 160 ms windows at 3 s; tetanus 20 trains × 10 pulses at 20 Hz, 5 s between trains. Diameter / pitch / volts not in the pulled snippet. SALPA attributes "5 ms after stimulation, even from the stimulated electrode" to this paper without implementation details.
+45. (not started) Jimbo, Robinson, Kawana IEEE TBE 45:1297–1304 (1998) as the neighbor 64-site tetanus paper. Pulse volts and electrode diameter if printed there.
+46. (not started) Whether "nominally 300 kΩ at 1 kHz" on the SALPA 10 µm MCS part is the same band as the MCS datasheet 250–400 kΩ (10 µm) already on the map.
