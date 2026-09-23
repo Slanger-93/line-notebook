@@ -1708,5 +1708,59 @@ Jimbo, Robinson, Kawana IEEE Trans Biomed Eng 45:1297–1304 (1998) is the year-
 25–42. status as previous list.
 43. SALPA lost time ≠ saturation. Saturation 1.04 ms (Fig. 4) / 1.04 ± 0.02 ms. Lost time after depeg = abstract <2 ms; Fig. 3/4 means uncopied. Filter half-length used: 3 ms. 55 electrodes in Fig. 4. Stim electrode still excluded.
 44. Jimbo 1999 grid 1.6 × 1.3 mm, 64 sites; test 160 ms windows at 3 s; tetanus 20 trains × 10 pulses at 20 Hz, 5 s between trains. Diameter / pitch / volts not in the pulled snippet. SALPA attributes "5 ms after stimulation, even from the stimulated electrode" to this paper without implementation details.
-45. (not started) Jimbo, Robinson, Kawana IEEE TBE 45:1297–1304 (1998) as the neighbor 64-site tetanus paper. Pulse volts and electrode diameter if printed there.
-46. (not started) Whether "nominally 300 kΩ at 1 kHz" on the SALPA 10 µm MCS part is the same band as the MCS datasheet 250–400 kΩ (10 µm) already on the map.
+45. (started below) Jimbo, Robinson, Kawana IEEE TBE 45:1297–1304 (1998) as the neighbor 64-site tetanus paper. Pulse volts and electrode diameter if printed there.
+46. (started below) Whether "nominally 300 kΩ at 1 kHz" on the SALPA 10 µm MCS part is the same band as the MCS datasheet 250–400 kΩ (10 µm) already on the map.
+
+### Jimbo 1998 IEEE TBE (problem 45)
+Jimbo, Robinson, Kawana IEEE Trans Biomed Eng 45:1297–1304 (1998) / PMID 9805828 / DOI 10.1109/10.725326.
+
+Abstract already noted under problem 44: rat cortical neurons on planar arrays with 64 embedded electrodes; whole-cell from single neurons plus multisite extracellular; focal tetanus; more action potentials and faster burst propagation after tetanus; late components of synaptic current increased, early peak little or unchanged; interpreted as more reliable monosynaptic transmission.
+
+IEEE Xplore full text not pulled this pass (login wall). PubMed abstract page returned no methods body. No electrode diameter, pitch, metal, pulse volts, or pulse width was sitting in the abstract or in the secondary listings opened here.
+
+Do not fill those holes from later NTT papers (Jimbo 1999 1.6 × 1.3 mm grid; Jimbo 2000 64 active sites; Jimbo 2003 1.2 ms switch). Same lab family, different years, not a substitute for the 1998 methods paragraph.
+
+Problem 45 stays empty of a printed volt and a printed micrometre tip on that specific paper. The 1998 object remains "64 embedded electrodes" plus the tetanus-effect sentences above.
+
+### 300 kΩ vs 250–400 kΩ on 10 µm MCS (problem 46)
+Three published vendor strings for the same MCS 60StandardMEA family, already partly on the map:
+
+- MCS 60StandardMEA layout PDF (public, June 2023 extract): "Electrode impedance < 100 kΩ for 30 µm electrodes, 250–400 kΩ for 10 μm electrodes."
+- MCS MEA60-system manual extract: "The impedance of a flat, round titanium nitride (TiN) electrode is < 100 kΩ for 30 µm electrodes and approximately 250 to 400 kΩ for electrodes with smaller diameters." Later in the same family: "250 to 400 kΩ for 10 µm electrodes, depending on the electrode diameter."
+- Older Standard 60MEA owner-manual extract: "Electrode impedance 30–50 kΩ for 30 μm electrodes, 250–400 kΩ for 10 μm electrodes."
+
+The 10 µm band is 250–400 kΩ in all three vendor pages pulled here. The 30 µm band is not one number: <100 kΩ on the current layout sheet and the MEA60 manual; 30–50 kΩ on the older owner manual. Leave those two 30 µm windows unmerged.
+
+SALPA 2002 reprint methods (10 µm / 200 µm MCS, problem 43): "electrode impedance nominally 300 kΩ at 1 kHz" in one extract. 300 kΩ sits inside the vendor 250–400 kΩ window for 10 µm. Frequency: SALPA prints 1 kHz; MCS layout PDF in this pass does not print the test frequency next to 250–400 kΩ; JVE 2010 health window already on the map is 10 kΩ–100 kΩ at 1 kHz and was written for in-use rejection, not as a factory 10 µm spec.
+
+300 kΩ nominal is therefore a SALPA methods sentence that lands inside the vendor 10 µm band. It is not a measured table from the four dishes in SALPA Fig. 3, and it is not the JVE pass/fail window (that window tops out at 100 kΩ and would reject a healthy 10 µm site if applied naively). Do not treat 300 kΩ as a third independent measurement.
+
+### Attempts / dead ends (continued)
+- Jimbo 1998 IEEE PDF still behind the Xplore wall. Diameter and volts unfilled.
+- MCS 30 µm impedance has two vendor bands (<100 kΩ vs 30–50 kΩ). Not collapsed.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–44. status as previous list.
+45. Jimbo 1998 IEEE TBE abstract only: 64 embedded electrodes, focal tetanus, late synaptic components up. Diameter, pitch, metal, pulse volts not in the pulled abstract. Full text not opened.
+46. SALPA 300 kΩ @ 1 kHz (10 µm MCS) sits inside vendor 250–400 kΩ for 10 µm. 30 µm vendor band split: <100 kΩ (current sheets) vs 30–50 kΩ (older owner manual). JVE 10–100 kΩ @ 1 kHz is an in-use reject window, not the 10 µm factory spec.
+47. (not started) Whether any MCS public sheet prints the impedance test frequency next to the 250–400 kΩ (10 µm) line.
+48. (not started) Jimbo 1999 Fig. 1 caption: whether it prints electrode diameter or pitch under the 1.6 × 1.3 mm grid sentence.
