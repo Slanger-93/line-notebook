@@ -1762,5 +1762,59 @@ SALPA 2002 reprint methods (10 µm / 200 µm MCS, problem 43): "electrode impeda
 25–44. status as previous list.
 45. Jimbo 1998 IEEE TBE abstract only: 64 embedded electrodes, focal tetanus, late synaptic components up. Diameter, pitch, metal, pulse volts not in the pulled abstract. Full text not opened.
 46. SALPA 300 kΩ @ 1 kHz (10 µm MCS) sits inside vendor 250–400 kΩ for 10 µm. 30 µm vendor band split: <100 kΩ (current sheets) vs 30–50 kΩ (older owner manual). JVE 10–100 kΩ @ 1 kHz is an in-use reject window, not the 10 µm factory spec.
-47. (not started) Whether any MCS public sheet prints the impedance test frequency next to the 250–400 kΩ (10 µm) line.
-48. (not started) Jimbo 1999 Fig. 1 caption: whether it prints electrode diameter or pitch under the 1.6 × 1.3 mm grid sentence.
+47. (started below) Whether any MCS public sheet prints the impedance test frequency next to the 250–400 kΩ (10 µm) line.
+48. (started below) Jimbo 1999 Fig. 1 caption: whether it prints electrode diameter or pitch under the 1.6 × 1.3 mm grid sentence.
+
+### Impedance test frequency on MCS public sheets (problem 47)
+60StandardMEA layout PDF (June 2023, already on the map): "Electrode impedance < 100 kΩ for 30 µm electrodes, 250 - 400 kΩ for 10 μm electrodes." No kHz next to that line. Same omission on the 60HexaMEA layout sheet, which reprints "250 - 400 kΩ for 10 µm and 20 µm electrodes" without a frequency.
+
+MCS MEA Manual (public PDF family already used for reuse bounds): same 250–400 kΩ for 10 µm / <100 kΩ for 30 µm, still no test frequency on those sentences.
+
+A different MCS product does print the frequency on the same page as its own impedance band:
+- 96W700/100F-288 multiwell layout: gold 100 µm electrodes, "Electrode impedance 25 - 50 kΩ @ 1 kHz." Not the 10 µm TiN 60Standard part.
+
+Vendor tester that the 60-site dishes are meant to sit in:
+- MEA-IT brochure / product page: "Test signal 100 mV; 1 kHz Sinus." Range 5 kΩ … 2 MΩ.
+- MEA-IT System Manual: "electrodes with 30 µm have an impedance of about 30 - 100 kOhm and smaller electrodes with a diameter of 10 µm have an impedance of about 250 - 400 kOhm." That restatement sits in the chapter that describes the 1 kHz measurement. It also reprints a 30 µm window as "about 30–100 kOhm," which is a third 30 µm vendor phrase next to <100 kΩ and 30–50 kΩ already listed under problem 46.
+
+Test-60MEA dummy probe datasheet: "The impedance between signal source and contact pads averages 120 kΩ at 1 kHz." That is the test fixture, not a 10 µm TiN site.
+
+So: the 60StandardMEA 250–400 kΩ line itself is still printed without a frequency. The company's impedance instrument is specified at 1 kHz, and the MEA-IT manual restates the 10 µm band in that instrument's chapter. SALPA's "nominally 300 kΩ at 1 kHz" matches the instrument frequency, not a number written on the 60Standard layout sheet. Do not treat the multiwell "@ 1 kHz" gold-100 µm line as the 10 µm TiN spec.
+
+### Jimbo 1999 Fig. 1 caption (problem 48)
+Cell fulltext 403 this pass. PMC HTML front matter / reCAPTCHA on the PDF. Methods snippet already on the map under problem 44 printed the grid area in running text ("64 electrode terminals were arranged in a grid covering an area of 1.6 × 1.3 mm (Fig. 1)") and did not attach a diameter or pitch to that sentence.
+
+Fig. 1 caption itself was not copied. Dead on whether the caption adds a micrometre tip or a centre-to-centre spacing under the photograph.
+
+Do not invent a pitch from 1.6 mm / 7. Diameter and volts for the 1999 tetanus pulses remain empty (problem 44 / 45).
+
+### Attempts / dead ends (continued)
+- 60StandardMEA layout sheet still has no kHz on the 250–400 line. Frequency lives on the MEA-IT tester spec and on a different (100 µm gold multiwell) sheet.
+- Jimbo 1999 Fig. 1 caption unpulled. 1.6 × 1.3 mm stays a running-text area, not a transcribed caption.
+- Jimbo 1998 IEEE still Xplore-walled.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–46. status as previous list.
+47. 60StandardMEA 250–400 kΩ line has no printed test frequency. MEA-IT tester = 100 mV / 1 kHz sine. MEA-IT manual restates 10 µm as ~250–400 kOhm in that chapter and 30 µm as ~30–100 kOhm (third 30 µm window). Multiwell gold 100 µm sheet does print "25–50 kΩ @ 1 kHz"; different object.
+48. Jimbo 1999 Fig. 1 caption not copied. Running text still only 1.6 × 1.3 mm area. Diameter / pitch / volts still empty.
+49. (not started) MCS MEA1060-Inv-BC manual current-stim warning on 10 µm TiN: 100 µA on electrode 33 exceeds amplifier input. Whether that page prints a voltage or an impedance for that example.
+50. (not started) Whether Jimbo 2000 Biol Cybern methods (64-site sibling already on the map for the 25 ms / hundreds-of-ms phases) prints the missing diameter / volts that 1998 and 1999 still lack.
