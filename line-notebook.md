@@ -1816,5 +1816,72 @@ Do not invent a pitch from 1.6 mm / 7. Diameter and volts for the 1999 tetanus p
 25–46. status as previous list.
 47. 60StandardMEA 250–400 kΩ line has no printed test frequency. MEA-IT tester = 100 mV / 1 kHz sine. MEA-IT manual restates 10 µm as ~250–400 kOhm in that chapter and 30 µm as ~30–100 kOhm (third 30 µm window). Multiwell gold 100 µm sheet does print "25–50 kΩ @ 1 kHz"; different object.
 48. Jimbo 1999 Fig. 1 caption not copied. Running text still only 1.6 × 1.3 mm area. Diameter / pitch / volts still empty.
-49. (not started) MCS MEA1060-Inv-BC manual current-stim warning on 10 µm TiN: 100 µA on electrode 33 exceeds amplifier input. Whether that page prints a voltage or an impedance for that example.
-50. (not started) Whether Jimbo 2000 Biol Cybern methods (64-site sibling already on the map for the 25 ms / hundreds-of-ms phases) prints the missing diameter / volts that 1998 and 1999 still lack.
+49. (started below) MCS MEA1060-Inv-BC manual current-stim warning on 10 µm TiN: 100 µA on electrode 33 exceeds amplifier input. Whether that page prints a voltage or an impedance for that example.
+50. (started below) Whether Jimbo 2000 Biol Cybern methods (64-site sibling already on the map for the 25 ms / hundreds-of-ms phases) prints the missing diameter / volts that 1998 and 1999 still lack.
+
+### MEA1060-Inv-BC current-stim example (problem 49)
+MCS MEA1060-Inv-BC Manual (public PDF, already the source of the 400 µs Wait on the map).
+
+Printed example: "Current driven stimulation (100 µA, electrode 33) on 10 µm TiN electrodes." "Due to the higher electrode impedance, the maximum input voltage of the MEA1060-BC amplifier is exceeded when applying a 100 µA pulse, and a proper operation is not possible."
+
+No computed voltage for that 100 µA pulse was printed. No ohm number for electrode 33 was printed on that warning page. The manual states the voltage that appears under current drive "depends on the electrode impedance" and that impedance "depends on several parameters, for example, the electrode's degree of wear and its hydrophilicity, and therefore cannot be predicted."
+
+Amplifier ceiling printed there:
+- "The input voltage of the MEA1060-BC amplifier is limited to +/- 5 V."
+- "Maximum recommended stimulus input voltage ± 5 V" in the technical-specifications appendix.
+- Exceeding that range: "unpredictable noise and artifacts"; "in rare cases, even damage to the amplifier electronics."
+
+Recommendation printed there: "MCS recommends to use voltage driven stimulation only." Current drive "may work with larger (30 μm) TiN electrodes that have a low impedance, but this cannot be guaranteed by the manufacturer."
+
+That 10 µm vs 30 µm current-drive sentence sits next to problem 23 (still no head-to-head yield) and problem 46 (split 30 µm impedance bands). It is a vendor warning, not a measured yield table.
+
+Wait / blanking numbers on the same manual, now listed separately from the brochure <1 ms trigger:
+- Factory-set Wait of 40 µs "added to all user defined Wait values." User Wait = 0 therefore totals 40 µs.
+- "For strong stimuli, a Wait of up to 400 µs can be necessary." Already on the map.
+- "MCS considers a delay in the range of 100 µs suitable for discharging the electrode and recommends a minimum blanking pulse that starts with the stimulus and stops 100 µs after the stimulus."
+- "MCS recommends to try out 500 µs and then decrease the time length stepwise."
+- Wait length "has to be optimized empirically for each experimental setup."
+
+Do not add 40 µs + 100 µs + 400 µs + 500 µs into one dead-time. They are printed as factory offset, recommended discharge, strong-stim upper, and a starting-try value.
+
+Ohm's-law arithmetic that the manual does not print and is not computed here: 100 µA × 250–400 kΩ would be 25–40 V, which is above the ±5 V input ceiling. That product is not a measurement on electrode 33. Leave it unwritten as a bound.
+
+### Jimbo 2000 Biol Cybern methods (problem 50)
+Jimbo, Kawana, Parodi, Torre Biol Cybern 83:1–20 (2000). Abstract already on the map under problem 39 / 40:
+- "multielectrode dish with 64 active sites, which were used both for recording the electrical activity and for stimulation."
+- "brief voltage pulse" / "strong voltage pulse."
+- Early phase "terminating within 25 ms"; late phase "several hundreds of milliseconds."
+
+Springer full text not opened this pass. Abstract and secondary listings still have no electrode diameter, pitch, metal, or a printed volt / microsecond for those pulses. Dead on the same holes as Jimbo 1998 and Jimbo 1999.
+
+Do not fill 2000 from 1999's 1.6 × 1.3 mm running-text area. Same lab family, still not a transcribed 2000 methods line.
+
+### Attempts / dead ends (continued)
+- Inv-BC 100 µA / electrode 33 / 10 µm example prints no resulting volts and no ohms for that site. Ceiling is ±5 V stimulus input.
+- Jimbo 2000 methods body unopened. Diameter and volts still missing across 1998 / 1999 / 2000.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits. Inv-BC Wait stack now has 40 µs factory add-on, 100 µs recommended post-stim blanking, 400 µs strong-stim, 500 µs starting try; not converted.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head. Inv-BC now warns current-drive may work on 30 µm and fails the 100 µA / 10 µm example.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–48. status as previous list.
+49. 100 µA on electrode 33 / 10 µm TiN exceeds MEA1060-BC ±5 V input. No printed volts or ohms for that pulse. Current drive "not guaranteed" on 30 µm. Wait addenda: 40 µs factory, 100 µs recommended blanking-after, 400 µs strong, 500 µs try-then-cut.
+50. Jimbo 2000 abstract still only "brief" / "strong" voltage pulse and 64 sites. Methods body not opened. Diameter and volts still empty on the 1998–2000 NTT line.
+51. (not started) Whether the Inv-BC ±5 V stimulus-input ceiling is the same number as SALPA's "order of a volt" citation clause, or a different object (amplifier rail vs pulse delivered to the bath).
+52. (not started) Jimbo 2000 early-phase "small jitter" — whether the body prints a microsecond number next to the 25 ms window already on the map.
