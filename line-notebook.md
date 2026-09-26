@@ -1883,5 +1883,57 @@ Do not fill 2000 from 1999's 1.6 × 1.3 mm running-text area. Same lab family, s
 25–48. status as previous list.
 49. 100 µA on electrode 33 / 10 µm TiN exceeds MEA1060-BC ±5 V input. No printed volts or ohms for that pulse. Current drive "not guaranteed" on 30 µm. Wait addenda: 40 µs factory, 100 µs recommended blanking-after, 400 µs strong, 500 µs try-then-cut.
 50. Jimbo 2000 abstract still only "brief" / "strong" voltage pulse and 64 sites. Methods body not opened. Diameter and volts still empty on the 1998–2000 NTT line.
-51. (not started) Whether the Inv-BC ±5 V stimulus-input ceiling is the same number as SALPA's "order of a volt" citation clause, or a different object (amplifier rail vs pulse delivered to the bath).
-52. (not started) Jimbo 2000 early-phase "small jitter" — whether the body prints a microsecond number next to the 25 ms window already on the map.
+51. (started below) Whether the Inv-BC ±5 V stimulus-input ceiling is the same number as SALPA's "order of a volt" citation clause, or a different object (amplifier rail vs pulse delivered to the bath).
+52. (started below) Jimbo 2000 early-phase "small jitter" — whether the body prints a microsecond number next to the 25 ms window already on the map.
+
+### ±5 V rail vs "order of a volt" (problem 51)
+Three printed volt objects, not one number:
+
+1. MCS MEA1060-Inv-BC Manual (problem 49): "Maximum recommended stimulus input voltage ± 5 V." "The input voltage of the MEA1060-BC amplifier is limited to +/- 5 V." That is the amplifier stimulus-input ceiling. The 100 µA / electrode 33 / 10 µm example is said to exceed it. No bath-electrode voltage is printed for that pulse.
+
+2. Wagenaar and Potter J Neurosci Methods 2002 (SALPA), citation clause already on the map: stimuli "typically on the order of a volt (Pancrazio et al., 1998, Jimbo et al., 1999)." Neither co-citation body has yielded a source-quote volt (problems 42 and 44). The same paper's own demo prints "single biphasic voltage pulses of 600 mV, lasting 400 µs per phase" on the 10 µm MCS dish. 600 mV is not "±5 V" and is not an amplifier-rail spec.
+
+3. Bakkum, Chao, Potter PLoS ONE 2008, already on the map: "symmetric positive then negative voltage pulses of 400 µs duration and 500 mV magnitude per phase" on the 30 µm MCS dish.
+
+Do not fold ±5 V, "order of a volt," 600 mV, and 500 mV into one stimulus amplitude. ±5 V is a headstage input limit. 500 mV and 600 mV are pulses the Potter-line papers say they delivered. "Order of a volt" is a citation clause whose cited bodies are still empty of a volt table.
+
+The Inv-BC manual also says current-drive voltage "cannot be predicted" from impedance because of wear and hydrophilicity. That sentence blocks treating the ±5 V ceiling as the voltage that appeared at electrode 33.
+
+### Jimbo 2000 "small jitter" (problem 52)
+Jimbo, Kawana, Parodi, Torre Biol Cybern 83:1–20 (2000). Abstract sentence already on the map: "Action potentials evoked during the early phase occurred with a precise timing with a small jitter."
+
+No microsecond or millisecond number is attached to "small jitter" in the abstract. Springer body still not opened this pass. Dead on a printed jitter width next to the 25 ms early-phase window.
+
+Neighbor paper, not a substitute: Jimbo and Robinson Bioelectrochemistry 51:107–115 (2000), cortical slice cultures on a 64-site 8×8 planar array, 50 kHz/channel sampling. Abstract there: synchronized bursting "propagates rapidly, at speeds of up to 10 cm/s"; "increased correlation of spike times spread over tens or hundreds of milliseconds." That is a slice-culture propagation paper, not the dissociated-culture 2000 Biol Cybern methods, and it does not print a microsecond jitter for the early-phase spikes of Biol Cybern. Do not merge 10 cm/s into Maeda's 5–100 mm/s or Bakkum's 0.25 mm/ms.
+
+Bakkum 2008 already prints 160 µs jitter on a different array (MCS 30 µm / 200 µm). That number is not a fill-in for Jimbo 2000.
+
+### Attempts / dead ends (continued)
+- ±5 V stays an amplifier stimulus-input ceiling. SALPA "order of a volt" stays a citation clause. 500 mV and 600 mV stay the printed Potter-line bath pulses.
+- Jimbo 2000 body still unopened. "Small jitter" still has no printed width.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–50. status as previous list.
+51. ±5 V = MEA1060-BC stimulus-input ceiling. "Order of a volt" = SALPA citation clause (Pancrazio 1998, Jimbo 1999), bodies still empty of a volt table. Printed Potter-line pulses: 600 mV (SALPA, 10 µm) and 500 mV (Bakkum, 30 µm). Not one amplitude.
+52. Jimbo 2000 abstract "small jitter" has no printed µs. Body not opened. Bioelectrochemistry 2000 sibling (slice, 8×8, 50 kHz, up to 10 cm/s, correlation over tens–hundreds of ms) is not that jitter number. Bakkum 160 µs stays on the MCS dish.
+53. (not started) Whether the Bioelectrochemistry 2000 "up to 10 cm/s" burst speed is the same meter as Maeda 1995 5–100 mm/s, or a different array (slice culture vs Kawana PEA).
+54. (not started) Inv-BC "100 µs after the stimulus" recommended blanking vs Wagenaar/Potter 2010 "blanking TTL 1 ms during stimulus." Same MCS family; whether the manuals name the same TTL.
