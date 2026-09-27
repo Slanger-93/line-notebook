@@ -1935,5 +1935,69 @@ Bakkum 2008 already prints 160 µs jitter on a different array (MCS 30 µm / 200
 25–50. status as previous list.
 51. ±5 V = MEA1060-BC stimulus-input ceiling. "Order of a volt" = SALPA citation clause (Pancrazio 1998, Jimbo 1999), bodies still empty of a volt table. Printed Potter-line pulses: 600 mV (SALPA, 10 µm) and 500 mV (Bakkum, 30 µm). Not one amplitude.
 52. Jimbo 2000 abstract "small jitter" has no printed µs. Body not opened. Bioelectrochemistry 2000 sibling (slice, 8×8, 50 kHz, up to 10 cm/s, correlation over tens–hundreds of ms) is not that jitter number. Bakkum 160 µs stays on the MCS dish.
-53. (not started) Whether the Bioelectrochemistry 2000 "up to 10 cm/s" burst speed is the same meter as Maeda 1995 5–100 mm/s, or a different array (slice culture vs Kawana PEA).
-54. (not started) Inv-BC "100 µs after the stimulus" recommended blanking vs Wagenaar/Potter 2010 "blanking TTL 1 ms during stimulus." Same MCS family; whether the manuals name the same TTL.
+53. (started below) Whether the Bioelectrochemistry 2000 "up to 10 cm/s" burst speed is the same meter as Maeda 1995 5–100 mm/s, or a different array (slice culture vs Kawana PEA).
+54. (started below) Inv-BC "100 µs after the stimulus" recommended blanking vs Wagenaar/Potter 2010 "blanking TTL 1 ms during stimulus." Same MCS family; whether the manuals name the same TTL.
+
+### 10 cm/s vs 5–100 mm/s (problem 53)
+Unit conversion the papers do not print: 10 cm/s = 100 mm/s. That equality is arithmetic, not a shared measurement. Do not treat it as one velocity.
+
+Maeda, Robinson, Kawana J Neurosci 15:6834–6845 (1995), PMC6578010 abstract:
+- Dissociated cultured cortical neurons, 3–40 d after plating.
+- "multisite recording through planar electrode arrays (PEAs)."
+- Burst frequency "approximately from 0.01 to 0.5 Hz" and propagation velocity "from 5 to 100 mm/sec" with maturation.
+- Body extract already on the map: average speed "−50 mm/sec" in one figure discussion; local stimulation "current pulse of 100 µsec duration."
+- Same discussion: observed burst velocities "one to two orders of magnitude smaller than conduction velocities in the smallest unmyelinated nerve fibers (about 1 m/sec)." So Maeda's 5–100 mm/s is synaptic-network burst travel, not axon conduction. That sentence is why problem 40 already refuses to merge it with Bakkum's 0.25 mm/ms safety-factor estimate.
+
+Jimbo and Robinson Bioelectrochemistry 51:107–115 (2000), PMID 10910158:
+- Cortical slice cultures, not the dissociated PEA dish.
+- "64 recording sites" "arranged in an 8×8 grid"; sampling "50 kHz/channel."
+- Abstract: synchronized bursting "propagates rapidly, at speeds of up to 10 cm/s."
+- Body not opened this pass (ScienceDirect abstract wall). Diameter, pitch, and metal not pulled. Dead on whether that 8×8 is the same PEA as Maeda 1995 or Jimbo 1999's 1.6 × 1.3 mm grid.
+
+Same lab family (Jimbo / Robinson / NTT). Different preparation (slice culture vs dissociated culture). Same numeric ceiling only after converting cm/s to mm/s. Problem 40's "do not merge travel times" still holds. Bakkum 4–13 ms delay-shift on the MCS 200 µm dish stays a third object.
+
+### Blanking TTL widths (problem 54)
+Inv-BC manual, same PDF as problem 49:
+- "The stimulation is triggered with a TTL pulse, the so-called blanking signal."
+- "A TTL pulse (blanking signal) that has to be timed exactly with the stimulus pulse triggers both the stimulation and the blanking."
+- During that pulse: selected stim electrodes connected to the stimulus inputs; "all MEA electrodes are disconnected from the amplifier." Last pre-blanking sample held.
+- "You can only stimulate during an active TTL pulse."
+- Recommended minimum: blanking "starts with the stimulus and stops 100 µs after the stimulus."
+- MCS digital output "about 20 µs faster than the analog output."
+- Pulse recipe on the same pages: "100 µs for each phase" and "amplitude between 100 mV and 3000 mV." Example already noted: 1 V monophasic, 100 µs, Wait 0, PBS, 60MEA200/30iR-Ti.
+- That 100 mV–3000 mV window is a fourth printed volt object next to problem 51. It is a vendor recipe, not SALPA's 600 mV and not the ±5 V input ceiling.
+
+Wagenaar, Rolston, Potter Front Neuroeng 2010 (PMC2972682), already on the map: "Blanking TTL 1 ms during stimulus" on a 60-channel MCS MEA1060-BC + xPC Target. That 1 ms is the width they programmed for that closed loop. The extract does not say it is the Inv-BC "stops 100 µs after the stimulus" recommendation, and it does not name the Inv-BC product (it names MEA1060-BC).
+
+Same family, same word "blanking TTL" / "blanking signal." Printed durations differ: 1 ms (2010 experiment) vs a pulse that outlasts the stimulus by 100 µs (Inv-BC recommendation) vs Wait up to 400 µs after the TTL ends. Pin-for-pin identity of the 2010 TTL and the Inv-BC blanking input was not printed in the extracts opened this pass. Leave them unmerged.
+
+### Attempts / dead ends (continued)
+- 10 cm/s and 5–100 mm/s share a numeric ceiling only after unit conversion. Slice vs dissociated. Not merged.
+- Bioelectrochemistry 2000 body still walled. Pitch and tip size unfilled.
+- Blanking TTL: same word, two printed widths, pin identity unconfirmed.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits. Blanking widths still unmerged, not converted.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–52. status as previous list.
+53. 10 cm/s (Jimbo & Robinson 2000 slice, 8×8, 50 kHz) equals 100 mm/s only as arithmetic. Maeda 1995 is dissociated PEA, 5–100 mm/s synaptic burst travel, ~1 m/s unmyelinated axon cited as faster. Not the same array. Bioelectrochem pitch/diameter unpulled.
+54. Inv-BC blanking signal is the stim-trigger TTL; recommended to stop 100 µs after the stimulus; MCS digital lead ~20 µs. 2010 paper programs a 1 ms blanking TTL on MEA1060-BC. Same word, different printed width, pin identity not confirmed. Inv-BC recipe also prints 100 mV–3000 mV / 100 µs per phase.
+55. (not started) Whether the Inv-BC 1 V / 100 µs PBS example on 60MEA200/30iR-Ti is the same pulse object as SALPA 600 mV / 400 µs, or a vendor bench recipe on a different tip (30 µm iR).
+56. (not started) Maeda 1995 "100 µsec" current pulse vs Inv-BC 100 µs/phase voltage recipe. Whether Maeda prints the current amplitude next to that 100 µs.
