@@ -1999,5 +1999,59 @@ Same family, same word "blanking TTL" / "blanking signal." Printed durations dif
 25–52. status as previous list.
 53. 10 cm/s (Jimbo & Robinson 2000 slice, 8×8, 50 kHz) equals 100 mm/s only as arithmetic. Maeda 1995 is dissociated PEA, 5–100 mm/s synaptic burst travel, ~1 m/s unmyelinated axon cited as faster. Not the same array. Bioelectrochem pitch/diameter unpulled.
 54. Inv-BC blanking signal is the stim-trigger TTL; recommended to stop 100 µs after the stimulus; MCS digital lead ~20 µs. 2010 paper programs a 1 ms blanking TTL on MEA1060-BC. Same word, different printed width, pin identity not confirmed. Inv-BC recipe also prints 100 mV–3000 mV / 100 µs per phase.
-55. (not started) Whether the Inv-BC 1 V / 100 µs PBS example on 60MEA200/30iR-Ti is the same pulse object as SALPA 600 mV / 400 µs, or a vendor bench recipe on a different tip (30 µm iR).
-56. (not started) Maeda 1995 "100 µsec" current pulse vs Inv-BC 100 µs/phase voltage recipe. Whether Maeda prints the current amplitude next to that 100 µs.
+55. (started below) Whether the Inv-BC 1 V / 100 µs PBS example on 60MEA200/30iR-Ti is the same pulse object as SALPA 600 mV / 400 µs, or a vendor bench recipe on a different tip (30 µm iR).
+56. (started below) Maeda 1995 "100 µsec" current pulse vs Inv-BC 100 µs/phase voltage recipe. Whether Maeda prints the current amplitude next to that 100 µs.
+
+### Inv-BC 1 V PBS example vs SALPA 600 mV (problem 55)
+Inv-BC manual example already extracted under problem 54: "Monopolar voltage driven stimulation, 1 V (monophasic), 100 µs duration at a 24 ms interval, Wait 0, MEA filled with PBS" on a "(Used) 60MEA200/30iR-Ti."
+
+Part-number reading, not a new measurement: 60MEA200/30iR-Ti is the MCS 60-site family, 200 µm pitch, 30 µm tip, internal reference, TiN. Object A. Not the SALPA 10 µm demo.
+
+SALPA 2002 methods, already on the map: "single biphasic voltage pulses of 600 mV, lasting 400 µs per phase," positive first, on "sixty 10 μm diameter electrodes," 200 µm spacing, culture recording, one site stimulated.
+
+Printed differences, left unmerged:
+- Amplitude: 1 V vs 600 mV.
+- Shape: monophasic vs biphasic.
+- Width: 100 µs vs 400 µs/phase.
+- Bath: PBS bench example vs the SALPA recording dish.
+- Tip: 30 µm vs 10 µm.
+- Interval: 24 ms in the Inv-BC example; not the SALPA protocol.
+
+Same vendor family. Not the same pulse object. The Inv-BC 100 mV–3000 mV recipe window (problem 54) contains both 600 mV and 1 V as numbers, which does not make the two protocols one experiment.
+
+### Maeda 100 µs current pulse (problem 56)
+Maeda, Robinson, Kawana J Neurosci 1995 body extract already on the map: "local stimulation using a current pulse of 100 µsec duration at a single electrode in the array."
+
+No microamp, nanoamp, or milliamp number was attached to that sentence in the extract. PMC6578010 reCAPTCHA this pass. Dead on a printed current amplitude next to the 100 µs.
+
+Inv-BC 100 µs/phase is a voltage recipe (100 mV–3000 mV), not a current pulse. Shared width only. Drive mode differs. The Inv-BC 100 µA / electrode 33 example (problem 49) is a current number, but it is a warning that the amplifier input is exceeded on 10 µm TiN, not a Maeda methods line. Do not paste 100 µA onto Maeda's 100 µs.
+
+### Attempts / dead ends (continued)
+- 1 V / 100 µs / PBS / 30 µm stays a vendor bench example. SALPA 600 mV / 400 µs / 10 µm stays a different protocol.
+- Maeda current amplitude next to 100 µs still unprinted.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head. Inv-BC bench example is the 30 µm part; SALPA demo is the 10 µm part. Still no yield table.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–54. status as previous list.
+55. Inv-BC 1 V monophasic 100 µs, Wait 0, PBS, 60MEA200/30iR-Ti. SALPA 600 mV biphasic 400 µs/phase on 10 µm / 200 µm. Same family, not the same pulse.
+56. Maeda 1995 prints "current pulse of 100 µsec" and no current amplitude in the pulled sentence. Inv-BC 100 µs is a voltage recipe. 100 µA on electrode 33 is the Inv-BC warning, not Maeda.
+57. (not started) Whether Maeda 1995 methods print electrode diameter and pitch for the PEA that carried the 5–100 mm/s bursts.
+58. (not started) Inv-BC 24 ms example interval vs Jimbo 1999 3 s test-stimulus interval. Different objects already; whether either paper calls that interval a refractory bound.
