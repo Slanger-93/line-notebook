@@ -2053,5 +2053,56 @@ Inv-BC 100 µs/phase is a voltage recipe (100 mV–3000 mV), not a current pulse
 25–54. status as previous list.
 55. Inv-BC 1 V monophasic 100 µs, Wait 0, PBS, 60MEA200/30iR-Ti. SALPA 600 mV biphasic 400 µs/phase on 10 µm / 200 µm. Same family, not the same pulse.
 56. Maeda 1995 prints "current pulse of 100 µsec" and no current amplitude in the pulled sentence. Inv-BC 100 µs is a voltage recipe. 100 µA on electrode 33 is the Inv-BC warning, not Maeda.
-57. (not started) Whether Maeda 1995 methods print electrode diameter and pitch for the PEA that carried the 5–100 mm/s bursts.
-58. (not started) Inv-BC 24 ms example interval vs Jimbo 1999 3 s test-stimulus interval. Different objects already; whether either paper calls that interval a refractory bound.
+57. (started below) Whether Maeda 1995 methods print electrode diameter and pitch for the PEA that carried the 5–100 mm/s bursts.
+58. (started below) Inv-BC 24 ms example interval vs Jimbo 1999 3 s test-stimulus interval. Different objects already; whether either paper calls that interval a refractory bound.
+
+### Maeda 1995 PEA geometry (problem 57)
+Maeda, Robinson, Kawana J Neurosci 15:6834–6845 (1995). Abstract and the body extracts already on the map name "planar electrode arrays (PEAs)" and "a single electrode in the array." They do not print a micrometre tip diameter or a centre-to-centre pitch in those extracts.
+
+PMC6578010 reCAPTCHA this pass. J Neurosci PDF 503 earlier. Secondary listings that cite Maeda for "64-electrode MEAs" (e.g. later review text) do not quote a Maeda methods line for diameter or pitch. Do not fill from Jimbo 1999's 1.6 × 1.3 mm running-text area or from MCS 200 µm / 10–30 µm sheets. Maeda is the NTT PEA, not object A.
+
+Problem 57 stays empty of a source-quote micrometre on that paper. The 5–100 mm/s burst velocities remain attached to an unnamed pitch.
+
+### 24 ms vs 3 s vs Maeda refractory (problem 58)
+Three printed intervals, not one refractory number:
+
+1. Inv-BC manual example (problem 54 / 55): 1 V monophasic, 100 µs, "at a 24 ms interval," Wait 0, PBS, 60MEA200/30iR-Ti. That 24 ms is the spacing of the vendor artifact-suppression demo train. The manual does not call it a refractory period.
+
+2. Jimbo, Tateno, Robinson Biophys J 1999 methods snippet already on the map: "The stimulus was applied at 3-s intervals from sequential stimulation sites." That 3 s is the scan interval while walking the test pulse around 64 sites. The pulled snippet does not call it a refractory bound.
+
+3. Maeda 1995 abstract / body already on the map does name burst refractoriness, and it is neither 24 ms nor 3 s:
+   - "Stimulated bursts exhibited both an absolute refractory period and a relative refractory period, in which partially propagating bursts could be elicited."
+   - "Periodic electrical stimulation (at 1 to 30 sec intervals) produced slower propagation velocities and smaller numbers of spikes per burst at shorter stimulation intervals."
+   - Body extract: immature cultures "much longer absolute refractory periods of about 3 sec."
+
+The Maeda ~3 s absolute-refractory figure and the Jimbo 1999 3-s scan interval are the same numeral on different objects (burst recovery vs sequential-site test protocol). Do not collapse them. The Inv-BC 24 ms train is a third object on a different dish.
+
+### Attempts / dead ends (continued)
+- Maeda 1995 diameter and pitch still unquoted.
+- 24 ms, 3 s scan, 1–30 s periodic, ~3 s immature absolute refractory: listed separately.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–56. status as previous list.
+57. Maeda 1995 PEA still unnamed in micrometres. 5–100 mm/s sits on that unnamed pitch. Do not fill from Jimbo 1999 or MCS sheets.
+58. Inv-BC 24 ms is a PBS demo interval, not a refractory. Jimbo 1999 3 s is a sequential-site scan interval, not a refractory. Maeda 1995 does name burst absolute / relative refractory and prints 1–30 s periodic stim plus ~3 s immature absolute refractory. Same 3 s numeral, two objects.
+59. (not started) Whether the Maeda 1995 "about 3 sec" immature absolute refractory is measured on the same cultures that later reach 100 mm/s, or a different DIV window.
+60. (not started) Jimbo 1999 tetanus: 20 trains × 10 pulses at 20 Hz, 5 s between trains. Whether 20 Hz (50 ms interpulse) is inside the Maeda relative-refractory window or a different protocol.
