@@ -2104,5 +2104,57 @@ The Maeda ~3 s absolute-refractory figure and the Jimbo 1999 3-s scan interval a
 25–56. status as previous list.
 57. Maeda 1995 PEA still unnamed in micrometres. 5–100 mm/s sits on that unnamed pitch. Do not fill from Jimbo 1999 or MCS sheets.
 58. Inv-BC 24 ms is a PBS demo interval, not a refractory. Jimbo 1999 3 s is a sequential-site scan interval, not a refractory. Maeda 1995 does name burst absolute / relative refractory and prints 1–30 s periodic stim plus ~3 s immature absolute refractory. Same 3 s numeral, two objects.
-59. (not started) Whether the Maeda 1995 "about 3 sec" immature absolute refractory is measured on the same cultures that later reach 100 mm/s, or a different DIV window.
-60. (not started) Jimbo 1999 tetanus: 20 trains × 10 pulses at 20 Hz, 5 s between trains. Whether 20 Hz (50 ms interpulse) is inside the Maeda relative-refractory window or a different protocol.
+59. (started below) Whether the Maeda 1995 "about 3 sec" immature absolute refractory is measured on the same cultures that later reach 100 mm/s, or a different DIV window.
+60. (started below) Jimbo 1999 tetanus: 20 trains × 10 pulses at 20 Hz, 5 s between trains. Whether 20 Hz (50 ms interpulse) is inside the Maeda relative-refractory window or a different protocol.
+
+### Maeda DIV windows (problem 59)
+Maeda 1995 abstract already on the map: maturation "from 3 to 40 d after plating"; frequency "from 0.01 to 0.5 Hz" and velocity "from 5 to 100 mm/sec" across that span.
+
+Body extracts already on the map name two example ages, not one culture-day:
+- Immature: "the 9 DIV culture in Figure 10" had "much longer absolute refractory periods of about 3 sec" and "longer latencies of evoked bursts (slower propagation velocity)."
+- Mature: "In the mature culture (26 DIV), stimuli at 1 sec intervals each evoked a burst, but of shorter duration and fewer spikes than at longer stimulus intervals."
+
+100 mm/s is the upper end of the 3–40 d series, not a number printed on the 9 DIV figure. 3 s absolute refractory is printed on the 9 DIV example. Same paper, same developmental series, different DIV windows. Do not treat "the cultures that later reach 100 mm/s" as the 9 DIV measurement.
+
+The paper does not print a velocity next to the 9 DIV 3 s sentence in the extracts pulled here. Slower-at-immature is qualitative in that paragraph.
+
+### Jimbo 20 Hz vs Maeda burst refractory (problem 60)
+Jimbo 1999 methods already on the map: tetanus = "20 trains of 10 pulses of the same intensity and duration at 20 Hz … at 5-s intervals."
+
+Unit conversion the paper does not print: 20 Hz = 50 ms between pulses inside a train. 10 pulses at 20 Hz is a 450 ms train. 5 s is the interval between trains.
+
+Maeda 1995 burst refractory is a seconds-scale object: absolute ~3 s at 9 DIV; periodic stimulation tested at 1–30 s; mature 26 DIV still fires a burst at 1 s intervals. That is inter-burst recovery, not intra-train pulse spacing.
+
+Jimbo 20 Hz / 50 ms is inside a tetanus train used to induce pathway-specific potentiation/depression. The 5 s inter-train interval sits inside Maeda's 1–30 s periodic-stim window numerically and is a different protocol (tetanus induction vs Maeda's periodic burst-evoking pulses). Do not drop 50 ms into Maeda's relative-refractory window.
+
+Cell fulltext extract this pass adds a third Jimbo 1999 timescale, not a Maeda fill-in: "activity that was closely correlated before tetanus with spikes elicited through the tetanized pathway was enhanced, whereas activity outside a 40-ms time window of correlation to tetanic pathway spikes was depressed." One example spike train "concentrated in the first 50 ms." Those 40 ms / 50 ms figures are correlation / early-response windows after a test pulse, not Maeda burst refractoriness.
+
+### Attempts / dead ends (continued)
+- 9 DIV ~3 s refractory and 26 DIV 1 s still-evokes-burst are the printed age anchors. 100 mm/s is the series ceiling, not a 9 DIV number.
+- 20 Hz tetanus, 5 s inter-train, 40 ms correlation window, Maeda 1–30 s periodic: listed separately.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–58. status as previous list.
+59. Maeda 9 DIV: ~3 s absolute refractory, slower bursts. Maeda 26 DIV: 1 s intervals still evoke a burst. 100 mm/s is the 3–40 d series ceiling, not printed on the 9 DIV sentence.
+60. Jimbo 1999 20 Hz = 50 ms intra-train; 5 s between trains; 40 ms pre-tetanus correlation window. Maeda refractory is inter-burst (1–30 s periodic; ~3 s immature absolute). Not the same clock.
+61. (not started) Whether Jimbo 1999 prints the pulse volts / width for "the same intensity and duration" used in both the 3 s test scan and the 20 Hz tetanus.
+62. (not started) Wagenaar 2004 / 2005 "early component" latencies "up to 20 ms" (cited next to Jimbo 2000) vs Jimbo 2000 "early phase, terminating within 25 ms." Same family of sentences; whether they share a printed jitter.
