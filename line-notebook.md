@@ -2156,5 +2156,62 @@ Cell fulltext extract this pass adds a third Jimbo 1999 timescale, not a Maeda f
 25–58. status as previous list.
 59. Maeda 9 DIV: ~3 s absolute refractory, slower bursts. Maeda 26 DIV: 1 s intervals still evoke a burst. 100 mm/s is the 3–40 d series ceiling, not printed on the 9 DIV sentence.
 60. Jimbo 1999 20 Hz = 50 ms intra-train; 5 s between trains; 40 ms pre-tetanus correlation window. Maeda refractory is inter-burst (1–30 s periodic; ~3 s immature absolute). Not the same clock.
-61. (not started) Whether Jimbo 1999 prints the pulse volts / width for "the same intensity and duration" used in both the 3 s test scan and the 20 Hz tetanus.
-62. (not started) Wagenaar 2004 / 2005 "early component" latencies "up to 20 ms" (cited next to Jimbo 2000) vs Jimbo 2000 "early phase, terminating within 25 ms." Same family of sentences; whether they share a printed jitter.
+61. (started below) Whether Jimbo 1999 prints the pulse volts / width for "the same intensity and duration" used in both the 3 s test scan and the 20 Hz tetanus.
+62. (started below) Wagenaar 2004 / 2005 "early component" latencies "up to 20 ms" (cited next to Jimbo 2000) vs Jimbo 2000 "early phase, terminating within 25 ms." Same family of sentences; whether they share a printed jitter.
+
+### Jimbo 1999 pulse volts (problem 61)
+Jimbo, Tateno, Robinson Biophys J 76:670–678 (1999). Cell fulltext snippet this pass prints the test pulse:
+
+- "The test stimulus consisted of a single bipolar pulse (100 μs at +0.6 V, followed by 100 μs at −0.6V)."
+
+Tetanus sentence already on the map: "20 trains of 10 pulses of the same intensity and duration at 20 Hz were applied at 5-s intervals." The "same" points at that test pulse. No second volt table for the tetanus was in the snippet. Drive is voltage, bipolar, 100 µs per phase, ±0.6 V.
+
+0.6 V is the same numeral as SALPA's 600 mV. Not the same pulse: SALPA is 400 µs/phase on the 10 µm MCS dish; Jimbo 1999 is 100 µs/phase on the NTT 64-site array (1.6 × 1.3 mm running-text area already on the map; diameter still unquoted). Do not merge.
+
+This fills the volt hole on Jimbo 1999 that problems 42 / 44 / 51 left empty. It does not fill Jimbo 1998 or Jimbo 2000. It does not fill Maeda's current amplitude.
+
+### Early window and jitter (problem 62)
+Two printed windows, not one jitter:
+
+1. Jimbo, Kawana, Parodi, Torre Biol Cybern 83:1–20 (2000), abstract already on the map: early phase "terminating within 25 ms"; "precise timing with a small jitter." No microsecond width on "small jitter" (problem 52). Body still unopened.
+
+2. Wagenaar, Pine, Potter J Neurosci Methods 138:27–37 (2004), Potter-lab PDF:
+   - "Any response that does not depend on glutamatergic synapses. These occur in the first 10–20 ms post-stimulus, have less than 0.25 ms temporal jitter and can be close to 100% reliable."
+   - Early post-synaptic spikes: "between 5 and 50 ms post-stimulus. Their temporal precision varies around 2 ms."
+   - Array in that paper: 30 µm titanium nitride, 200 µm spacing. Object A family, not the NTT PEA.
+   - The extract does not cite Jimbo 2000 for the 25 ms early phase.
+
+A later review (Weihberger et al., cited on the map under problem 60's neighbor search) says the early component "has latencies up to 20 ms" and cites Jimbo 2000 and Wagenaar 2004 together. That is a citation sentence, not a shared measurement. Wagenaar's own printed jitter for the direct component is <0.25 ms. Jimbo 2000 still has no printed µs. Bakkum 2008's 160 µs stays on the MCS 30 µm dish and is a third number.
+
+Wagenaar 2004 also prints a pulse menu, not one protocol: voltage-controlled 100–1000 mV, widths 400 µs monophasic or 100–900 µs/phase biphasic; current-controlled 1–10 µA. Those ranges contain 600 mV and 0.6 V as numbers. They are not the Jimbo 1999 protocol and not the SALPA 600 mV / 400 µs demo.
+
+### Attempts / dead ends (continued)
+- Jimbo 1999 test pulse now printed: bipolar 100 µs at +0.6 V then 100 µs at −0.6 V. Tetanus inherits "same intensity and duration." Jimbo 1998 and 2000 volts still empty.
+- Wagenaar 2004 direct-response jitter <0.25 ms in 10–20 ms. Jimbo 2000 "small jitter" still unquantified. Not merged.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–60. status as previous list.
+61. Jimbo 1999 test pulse: bipolar, 100 µs at +0.6 V then 100 µs at −0.6 V. Tetanus sentence says same intensity and duration. Not SALPA's 600 mV / 400 µs. Not Jimbo 2000.
+62. Wagenaar 2004 direct responses: first 10–20 ms, jitter <0.25 ms, 30 µm / 200 µm TiN. Early post-synaptic ~2 ms precision, 5–50 ms. Jimbo 2000 early phase terminates within 25 ms with "small jitter" and no µs. Citation pairing in a later review is not a shared jitter.
+63. (not started) Whether Jimbo 1999's 0.6 V bipolar pulse is the pulse SALPA cites as "order of a volt (… Jimbo et al., 1999)," or SALPA is citing a different Jimbo sentence.
+64. (not started) Wagenaar 2004 <0.25 ms direct-response jitter vs Bakkum 2008 160 µs jitter. Same Potter-line MCS family; whether they are the same spike class.
