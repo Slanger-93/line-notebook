@@ -2213,5 +2213,60 @@ Wagenaar 2004 also prints a pulse menu, not one protocol: voltage-controlled 100
 25–60. status as previous list.
 61. Jimbo 1999 test pulse: bipolar, 100 µs at +0.6 V then 100 µs at −0.6 V. Tetanus sentence says same intensity and duration. Not SALPA's 600 mV / 400 µs. Not Jimbo 2000.
 62. Wagenaar 2004 direct responses: first 10–20 ms, jitter <0.25 ms, 30 µm / 200 µm TiN. Early post-synaptic ~2 ms precision, 5–50 ms. Jimbo 2000 early phase terminates within 25 ms with "small jitter" and no µs. Citation pairing in a later review is not a shared jitter.
-63. (not started) Whether Jimbo 1999's 0.6 V bipolar pulse is the pulse SALPA cites as "order of a volt (… Jimbo et al., 1999)," or SALPA is citing a different Jimbo sentence.
-64. (not started) Wagenaar 2004 <0.25 ms direct-response jitter vs Bakkum 2008 160 µs jitter. Same Potter-line MCS family; whether they are the same spike class.
+63. (started below) Whether Jimbo 1999's 0.6 V bipolar pulse is the pulse SALPA cites as "order of a volt (… Jimbo et al., 1999)," or SALPA is citing a different Jimbo sentence.
+64. (started below) Wagenaar 2004 <0.25 ms direct-response jitter vs Bakkum 2008 160 µs jitter. Same Potter-line MCS family; whether they are the same spike class.
+
+### SALPA citation vs Jimbo 1999 0.6 V (problem 63)
+Wagenaar and Potter J Neurosci Methods 2002 (SALPA), Potter-lab reprint and ScienceDirect extract:
+
+- "These may be as low as 10 μV (shown below), while stimuli are typically on the order of a volt (Pancrazio et al., 1998; Jimbo et al., 1999), causing substantial stimulation artifacts…"
+- Bibliography line: "Jimbo Y, Tateno T, Robinson HPC. Simultaneous induction of pathway-specific potentiation and depression in networks of cortical neurons. Biophys J 1999;76(2):670–8."
+
+That is the paper that prints the bipolar 100 µs / ±0.6 V test pulse (problem 61). SALPA does not quote that sentence, does not print 0.6 V, and does not print 100 µs next to the citation. The clause is a magnitude claim shared with Pancrazio 1998, whose body is still empty of a volt table (problem 42).
+
+0.6 V can be read as "on the order of a volt." That reading is not a quotation. SALPA's own demo remains 600 mV / 400 µs per phase on the 10 µm MCS dish. Jimbo 1999 remains 100 µs / ±0.6 V on the NTT array. Do not treat the citation as identifying those two protocols.
+
+Reprint OCR on one Potter-lab PDF rendered the spike floor as "10 mV." The journal extract prints "10 μV." Leave the unit-prefix collision logged. Not a new amplitude.
+
+### Direct-response jitter, two cuts (problem 64)
+Same Potter-line MCS family (30 µm TiN, 200 µm / 0.2 mm). Not one jitter number.
+
+1. Wagenaar, Pine, Potter J Neurosci Methods 2004, already on the map: direct responses "occur in the first 10–20 ms post-stimulus, have less than 0.25 ms temporal jitter and can be close to 100% reliable." Definition used there: responses that do not depend on glutamatergic synapses. Early post-synaptic spikes are a separate class (5–50 ms, precision around 2 ms).
+
+2. Bakkum, Chao, Potter PLoS ONE 2008, e2088: dAPs "observed up to 25 ms later" and "distinguished from subsequent sAPs based on their high reliability of occurrence (>80%), low jitter (≤160 µs), and consistency of waveform across trials [24–26]." Methods: histogram bin 0.04 ms (25 kHz); peaks up to 25 ms; a peak called dAP if height > 2 × highest valley + 0.5. dAPs "persist when synaptic activity is blocked" (NMDA-R, AMPA-R, GABA-R antagonists) and are eliminated with TTX. Average dAP jitter during patterned stimulation without blockers used as "160 µs" in the 0.25 mm/ms × 160 µs → 40 µm arithmetic. One PDF text layer printed "160 ms" next to that same 40 µm product. The product only matches 160 µs. Keep the printed µs cut; do not adopt the ms OCR.
+
+≤160 µs sits inside <0.25 ms as arithmetic. The papers do not say they measured the same spikes. Reliability bars differ (>80% vs close to 100%). Latency windows differ (up to 25 ms vs first 10–20 ms). Detection recipes differ (histogram peak rule vs the 2004 glutamatergic-independence sentence). Citation cluster [24–26] was not opened this pass, so whether one of those numbers is Wagenaar 2004 is unconfirmed.
+
+Bakkum stimulus already on the map: 400 µs / 500 mV per phase. Figure 6 of the same paper varies width at "6500 mV." That 6500 mV line is a fourth Potter-line volt object. Not the 500 mV protocol. Not Jimbo's 0.6 V.
+
+### Attempts / dead ends (continued)
+- SALPA cites Jimbo 1999 for "order of a volt" and does not quote the 0.6 V / 100 µs sentence.
+- Wagenaar 2004 <0.25 ms and Bakkum ≤160 µs stay separate cuts on related direct-evoked spikes.
+- Bakkum [24–26] not opened.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–62. status as previous list.
+63. SALPA cites Jimbo, Tateno, Robinson Biophys J 1999;76:670–8 for "order of a volt" and does not quote that paper's 100 µs / ±0.6 V test pulse. Pancrazio 1998 co-citation still empty. 0.6 V is not thereby identified as the cited pulse.
+64. Wagenaar 2004 direct responses: <0.25 ms jitter, 10–20 ms, ~100% reliable, glutamatergic-independent. Bakkum 2008 dAPs: ≤160 µs, >80% reliable, up to 25 ms, persist under synaptic block. Same MCS 30 µm / 200 µm family. Arithmetic inclusion is not a shared measurement. 6500 mV in Bakkum Fig. 6 is a separate volt object.
+65. (not started) Whether Bakkum 2008 references [24–26] for the dAP jitter cut include Wagenaar 2004, or a different paper's 160 µs.
+66. (not started) Bakkum Fig. 6 "6500 mV" width sweep vs the same paper's 500 mV / 400 µs protocol. Whether 6500 mV is a delivered bath pulse or a command that hits the ±5 V amplifier ceiling.
