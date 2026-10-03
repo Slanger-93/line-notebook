@@ -2268,5 +2268,58 @@ Bakkum stimulus already on the map: 400 µs / 500 mV per phase. Figure 6 of the 
 25–62. status as previous list.
 63. SALPA cites Jimbo, Tateno, Robinson Biophys J 1999;76:670–8 for "order of a volt" and does not quote that paper's 100 µs / ±0.6 V test pulse. Pancrazio 1998 co-citation still empty. 0.6 V is not thereby identified as the cited pulse.
 64. Wagenaar 2004 direct responses: <0.25 ms jitter, 10–20 ms, ~100% reliable, glutamatergic-independent. Bakkum 2008 dAPs: ≤160 µs, >80% reliable, up to 25 ms, persist under synaptic block. Same MCS 30 µm / 200 µm family. Arithmetic inclusion is not a shared measurement. 6500 mV in Bakkum Fig. 6 is a separate volt object.
-65. (not started) Whether Bakkum 2008 references [24–26] for the dAP jitter cut include Wagenaar 2004, or a different paper's 160 µs.
-66. (not started) Bakkum Fig. 6 "6500 mV" width sweep vs the same paper's 500 mV / 400 µs protocol. Whether 6500 mV is a delivered bath pulse or a command that hits the ±5 V amplifier ceiling.
+65. (started below) Whether Bakkum 2008 references [24–26] for the dAP jitter cut include Wagenaar 2004, or a different paper's 160 µs.
+66. (started below) Bakkum Fig. 6 "6500 mV" width sweep vs the same paper's 500 mV / 400 µs protocol. Whether 6500 mV is a delivered bath pulse or a command that hits the ±5 V amplifier ceiling.
+
+### Bakkum [24–26] (problem 65)
+Bakkum, Chao, Potter PLoS ONE 2008, e2088, bibliography attached to the dAP sentence:
+
+- 24. Lipski J (1981) Antidromic activation of neurones as an analytic tool in the study of the central nervous system. J Neurosci Methods 4:1–32.
+- 25. Marom S, Shahaf G (2002) Development, learning and memory in large random networks of cortical neurons: Lessons beyond anatomy. Q Rev Biophys 35:63–87.
+- 26. Wagenaar DA, Pine J, Potter SM (2004) Effective parameters for stimulation of dissociated cultures using multi-electrode arrays. J Neurosci Methods 138:27–37.
+
+Reference 26 is the paper already on the map with direct-response jitter "<0.25 ms," not a paper that prints 160 µs. Lipski 1981 is an antidromic-activation review. Marom and Shahaf 2002 is a culture-network review. Neither extract pulled here prints 160 µs.
+
+The 160 µs / ≤160 µs cut is Bakkum's own sentence, citing that cluster for the dAP class (reliability, low jitter, waveform consistency). It is not a quotation of Wagenaar's <0.25 ms. The stimulus line in the same paper also cites [26] for the 400 µs / 500 mV pulse. Citation identity and number identity stay separate.
+
+### 6500 mV token vs ±500 mV (problem 66)
+Two text layers of the same figure, not one voltage.
+
+PLoS HTML this pass: Figure 6 caption does not print a voltage. Methods sentence already on the map: "symmetric positive then negative voltage pulses of 400 µs duration and 500 mV magnitude per phase [26]."
+
+PLoS printable PDF text layer, same figure: "the width of rectangular stimuli were varied while magnitude was kept constant at 6500 m V" and alignment "y-intercepts at the 200 m V phase width." Caption itself still has no volts. "6500 m V" and "200 m V phase width" are text-layer tokens. 6500 mV would sit above the Inv-BC ±5 V stimulus-input ceiling. The paper does not say it hit that ceiling, and the HTML does not print 6500.
+
+Bakkum PhD thesis reprint of the same plot (Georgia Tech PDF, Figure 4.3): "the width of rectangular stimuli were varied while magnitude was kept constant at ±500 mV." That ±500 mV matches the PLoS methods sentence, not the 6500 token. Thesis alignment line in the same paragraph uses a 200 µs-class phase width in the surrounding prose; the PLoS text layer printed "200 m V." Unit prefix on the alignment anchor is unresolved between the two files.
+
+Do not treat 6500 mV as a delivered bath pulse. Do not merge it with 500 mV. Do not score it against the ±5 V rail until a source line prints 6500 mV as a command.
+
+### Attempts / dead ends (continued)
+- [24] Lipski 1981 and [25] Marom 2002 do not supply the 160 µs. [26] is Wagenaar 2004, whose printed jitter is <0.25 ms.
+- 6500 mV exists in a PDF text layer. Thesis reprint of the figure says ±500 mV. HTML caption has no volts.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–64. status as previous list.
+65. Bakkum [24] Lipski 1981, [25] Marom & Shahaf 2002, [26] Wagenaar Pine Potter 2004. The 160 µs cut is Bakkum's sentence. Wagenaar 2004 prints <0.25 ms, not 160 µs.
+66. PLoS HTML: 500 mV / 400 µs methods; Fig. 6 caption has no volts. Printable text layer: "6500 m V" and "200 m V phase width." Thesis reprint of the same plot: magnitude ±500 mV. 6500 mV not taken as a bath pulse or as a hit on the ±5 V rail.
+67. (not started) Whether the PLoS Fig. 6 alignment anchor "200 m V phase width" is the thesis's 200 µs phase width, or a real 200 mV amplitude.
+68. (not started) Bakkum custom all-channel stim board [55] vs Inv-BC ±5 V ceiling. Whether that board's compliance range is printed.
