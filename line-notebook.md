@@ -2321,5 +2321,61 @@ Do not treat 6500 mV as a delivered bath pulse. Do not merge it with 500 mV. Do 
 25–64. status as previous list.
 65. Bakkum [24] Lipski 1981, [25] Marom & Shahaf 2002, [26] Wagenaar Pine Potter 2004. The 160 µs cut is Bakkum's sentence. Wagenaar 2004 prints <0.25 ms, not 160 µs.
 66. PLoS HTML: 500 mV / 400 µs methods; Fig. 6 caption has no volts. Printable text layer: "6500 m V" and "200 m V phase width." Thesis reprint of the same plot: magnitude ±500 mV. 6500 mV not taken as a bath pulse or as a hit on the ±5 V rail.
-67. (not started) Whether the PLoS Fig. 6 alignment anchor "200 m V phase width" is the thesis's 200 µs phase width, or a real 200 mV amplitude.
-68. (not started) Bakkum custom all-channel stim board [55] vs Inv-BC ±5 V ceiling. Whether that board's compliance range is printed.
+67. (started below) Whether the PLoS Fig. 6 alignment anchor "200 m V phase width" is the thesis's 200 µs phase width, or a real 200 mV amplitude.
+68. (started below) Bakkum custom all-channel stim board [55] vs Inv-BC ±5 V ceiling. Whether that board's compliance range is printed.
+
+### 200 mV phase width (problem 67)
+Prior pass inferred a 200 µs alignment anchor from "surrounding prose." That inference is not a quote. Dead.
+
+Bakkum PhD thesis (Georgia Tech PDF), same paragraph as the ±500 mV magnitude sentence:
+
+- "the width of rectangular stimuli were varied while magnitude was kept constant at ±500 mV"
+- "the regressions' y-intercepts at the 200 mV phase width were set as 0 ms latency change."
+
+The thesis prints "200 mV phase width," not 200 µs. The PLoS printable text layer printed "200 m V phase width." The two files agree on the token. A phase width in millivolts is dimensionally a voltage, not a duration. The paragraph also keeps magnitude at ±500 mV, so 200 mV is not that magnitude. No sentence in the extract says the 200 mV token is a mis-set 200 µs. Leave the unit unresolved.
+
+Slope in the same paragraph: 1.10 ms/ms, read there as time-lock to the voltage downswing. That slope does not convert the 200 mV token into microseconds.
+
+### Stim-board compliance (problem 68)
+Bakkum 2008 methods cite a "custom built all-channel stimulation circuit board [55]" for the 400 µs / 500 mV pulses. Bibliography line 55 was not opened this pass. Title match, not a transcribed Bakkum reference line: Wagenaar and Potter, J Neural Eng 1:39 (2004), "A versatile all-channel stimulator for electrode arrays, with real-time control."
+
+That paper's circuit description (ResearchGate PDF extract):
+
+- External supply ±15 V.
+- "The maximal selectable range is ±10 V; we trim the range to ±1.0 V to prevent electrolysis and damage to electrodes."
+- At the ±1.0 V trim, 8-bit DAC "allows specification of stimulation voltages to 8 mV precision."
+- Modules plug into terminals on the Multi Channel Systems pre-amplifier.
+- Abstract: feedback stimulation "within 15 ms" with MeaBench. That 15 ms is a software-loop bound, not the Inv-BC Wait and not the brochure <1 ms trigger.
+
+±1.0 V trim contains the 500 mV protocol. ±10 V selectable contains a 6500 mV command if the trim were opened. The paper does not say the Bakkum experiments opened the trim. Inv-BC ±5 V remains the MCS amplifier stimulus-input ceiling, a different object from this board's DAC range. Do not score 6500 mV against either ceiling.
+
+### Attempts / dead ends (continued)
+- 200 µs inference for the alignment anchor withdrawn. Thesis and PLoS text layer both print a 200 mV phase-width token.
+- Board paper prints ±10 V selectable and ±1.0 V trim. Bakkum [55] identity is a title match, not a pulled bibliography line.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits. Board paper adds a 15 ms MeaBench feedback bound, not converted.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–66. status as previous list.
+67. Thesis and PLoS text layer both print "200 mV phase width" as the Fig. 6 alignment anchor, next to magnitude ±500 mV. Not quoted as 200 µs. Unit unresolved.
+68. Stim-board paper: selectable ±10 V, trimmed to ±1.0 V "to prevent electrolysis," 8 mV steps, ±15 V supply, MCS pre-amplifier plug-in, 15 ms feedback with MeaBench. Bakkum [55] not opened; title match only. Not the Inv-BC ±5 V rail.
+69. (not started) Whether Bakkum bibliography line 55 is Wagenaar and Potter J Neural Eng 2004, or a different board.
+70. (not started) Board-paper 15 ms feedback vs MCS brochure <1 ms trigger vs Inv-BC 100 µs blanking-after. Same MCS pre-amplifier family; three clocks.
