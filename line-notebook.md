@@ -2377,5 +2377,56 @@ That paper's circuit description (ResearchGate PDF extract):
 25–66. status as previous list.
 67. Thesis and PLoS text layer both print "200 mV phase width" as the Fig. 6 alignment anchor, next to magnitude ±500 mV. Not quoted as 200 µs. Unit unresolved.
 68. Stim-board paper: selectable ±10 V, trimmed to ±1.0 V "to prevent electrolysis," 8 mV steps, ±15 V supply, MCS pre-amplifier plug-in, 15 ms feedback with MeaBench. Bakkum [55] not opened; title match only. Not the Inv-BC ±5 V rail.
-69. (not started) Whether Bakkum bibliography line 55 is Wagenaar and Potter J Neural Eng 2004, or a different board.
-70. (not started) Board-paper 15 ms feedback vs MCS brochure <1 ms trigger vs Inv-BC 100 µs blanking-after. Same MCS pre-amplifier family; three clocks.
+69. (started below) Whether Bakkum bibliography line 55 is Wagenaar and Potter J Neural Eng 2004, or a different board.
+70. (started below) Board-paper 15 ms feedback vs MCS brochure <1 ms trigger vs Inv-BC 100 µs blanking-after. Same MCS pre-amplifier family; three clocks.
+
+### Bakkum reference 55 (problem 69)
+Bakkum, Chao, Potter PLoS ONE 2008 bibliography line 55, pulled this pass:
+
+- Wagenaar DA, Potter SM (2004) A versatile all-channel stimulator for electrode arrays, with real-time control. J Neural Eng 1:39–45.
+
+Methods sentence on the same page: "Electrically evoked activity was induced using symmetric positive then negative voltage pulses of 400 µs duration and 500 mV magnitude per phase [26] using a custom built all-channel stimulation circuit board [55] attached to the MEAs."
+
+Line 55 is that board paper. Not a different board. Title-match from the prior pass is now a transcribed bibliography line.
+
+### Three clocks (problem 70)
+Same MCS pre-amplifier family in the board paper ("plug into a set of terminals on the pre-amplifier (MultiChannel Systems)"). Three printed times, not one loop.
+
+1. Board paper abstract: feedback "within 15 ms" with MeaBench. Body (PMC2570177 extract): loop times 12.2–17.7 ms (98% confidence interval), worst case 24.8 ms, N = 5873 trials. That is spike-detect to stimulus out through the real-time Linux path. 15 ms is the abstract bound; 12.2–17.7 / 24.8 ms are the measured loop. Do not collapse those two sentences into one number.
+
+2. MCS brochure, already on the map: trigger pulses "within less than 100 µs" and stimulus "with less than 1 ms delay." On-board detection marketing bound. Not MeaBench.
+
+3. Inv-BC manual, already on the map: blanking recommended to stop 100 µs after the stimulus; Wait up to 400 µs for strong stimuli; factory Wait add-on 40 µs. Amplifier blanking / discharge, not a closed loop.
+
+2010 Front Neuroeng xPC path ("sub-millisecond deterministic feedback," 1 ms blanking TTL) stays a fourth object on MEA1060-BC. Not the 2004 parallel-port board.
+
+### Attempts / dead ends (continued)
+- Bakkum [55] is Wagenaar and Potter J Neural Eng 2004. Confirmed.
+- 15 ms abstract, 12.2–17.7 ms loop, 24.8 ms worst case, brochure <1 ms, Inv-BC 100 µs blanking-after: listed separately.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits. Three clocks listed, not converted.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–68. status as previous list.
+69. Bakkum [55] is Wagenaar and Potter, J Neural Eng 1:39–45 (2004), the all-channel stimulator. Methods attach the 400 µs / 500 mV pulses to that board.
+70. Board paper: abstract within 15 ms; measured loop 12.2–17.7 ms, worst 24.8 ms. Brochure: <100 µs trigger, <1 ms stimulus. Inv-BC: blanking stops 100 µs after the stimulus. Not one clock.
+71. (not started) Whether the board-paper 12.2–17.7 ms loop includes the Inv-BC blanking window, or is measured around it.
+72. (not started) Board-paper ±1.0 V trim vs the 500 mV pulses Bakkum cites that board for. Whether Bakkum prints the trim setting used.
