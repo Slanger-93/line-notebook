@@ -2428,5 +2428,47 @@ Same MCS pre-amplifier family in the board paper ("plug into a set of terminals 
 25–68. status as previous list.
 69. Bakkum [55] is Wagenaar and Potter, J Neural Eng 1:39–45 (2004), the all-channel stimulator. Methods attach the 400 µs / 500 mV pulses to that board.
 70. Board paper: abstract within 15 ms; measured loop 12.2–17.7 ms, worst 24.8 ms. Brochure: <100 µs trigger, <1 ms stimulus. Inv-BC: blanking stops 100 µs after the stimulus. Not one clock.
-71. (not started) Whether the board-paper 12.2–17.7 ms loop includes the Inv-BC blanking window, or is measured around it.
-72. (not started) Board-paper ±1.0 V trim vs the 500 mV pulses Bakkum cites that board for. Whether Bakkum prints the trim setting used.
+71. (started below) Whether the board-paper 12.2–17.7 ms loop includes the Inv-BC blanking window, or is measured around it.
+72. (started below) Board-paper ±1.0 V trim vs the 500 mV pulses Bakkum cites that board for. Whether Bakkum prints the trim setting used.
+
+### Loop vs blanking (problem 71)
+Board paper (Wagenaar and Potter, J Neural Eng 2004; PMC2570177 extract already on the map): loop times 12.2–17.7 ms (98% confidence interval), worst case 24.8 ms, N = 5873. The sentence that carries those numbers says the loop was closed by adding about ten lines in MeaBench so stimuli followed action potentials on one electrode. It does not mention Inv-BC blanking, the Wait parameter, amplifier saturation, or artifact suppression. PMC full text reCAPTCHA this pass. Not filled from the Inv-BC manual.
+
+MEABench site (its.caltech.edu/~daw/meabench), a different page from the 2004 paper: "roundtrip times from pre-amplifier to stimulator is less than 200 ms worst-case (less than 50 ms average)." User guide 1.2.5: "sub-100 ms feedback loop time" in the Neurally Controlled Animat. Those are a fifth and sixth printed bound. Not the 12.2–17.7 ms measurement. Not the brochure <1 ms. Not the Inv-BC 100 µs blanking-after.
+
+The 12.2–17.7 ms loop is not shown to include or exclude the blanking window. Leave that open.
+
+### Trim vs 500 mV (problem 72)
+Board paper: range trimmed to ±1.0 V; 8 mV steps at that trim. Bakkum 2008 methods print 400 µs / 500 mV per phase on the board cited as [55]. No sentence in the Bakkum extracts pulled here prints the trim, the DAC code, or "electrolysis." 500 mV sits inside the printed ±1.0 V trim as arithmetic. That is not a log of the trim used. The paper does not say the trim was opened to the ±10 V selectable range.
+
+### Attempts / dead ends (continued)
+- Loop paragraph does not name blanking. Inv-BC window not scored in or out.
+- MEABench site <200 ms / <50 ms and user-guide sub-100 ms sit beside the paper's 12.2–17.7 ms. Not merged.
+- Bakkum does not print the trim. 500 mV inside ±1.0 V is arithmetic only.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits. Loop still not scored against blanking.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–70. status as previous list.
+71. Board-paper loop paragraph does not name Inv-BC blanking, Wait, or artifact. Inclusion unstated. MEABench site prints <200 ms worst / <50 ms average; user guide prints sub-100 ms. Not the 12.2–17.7 ms loop.
+72. Bakkum prints 500 mV on board [55] and does not print the trim. Board paper trims to ±1.0 V. 500 mV inside that trim is arithmetic, not a settings log.
+73. (not started) MEABench site <200 ms / <50 ms vs the 2004 paper's 12.2–17.7 ms. Whether the site number is a later hardware build.
+74. (not started) Whether the 8 mV DAC step at the ±1.0 V trim can represent the 500 mV command Bakkum prints, or the command is rounded.
