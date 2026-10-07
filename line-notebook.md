@@ -2470,5 +2470,51 @@ Board paper: range trimmed to ±1.0 V; 8 mV steps at that trim. Bakkum 2008 meth
 25–70. status as previous list.
 71. Board-paper loop paragraph does not name Inv-BC blanking, Wait, or artifact. Inclusion unstated. MEABench site prints <200 ms worst / <50 ms average; user guide prints sub-100 ms. Not the 12.2–17.7 ms loop.
 72. Bakkum prints 500 mV on board [55] and does not print the trim. Board paper trims to ±1.0 V. 500 mV inside that trim is arithmetic, not a settings log.
-73. (not started) MEABench site <200 ms / <50 ms vs the 2004 paper's 12.2–17.7 ms. Whether the site number is a later hardware build.
-74. (not started) Whether the 8 mV DAC step at the ±1.0 V trim can represent the 500 mV command Bakkum prints, or the command is rounded.
+73. (started below) MEABench site <200 ms / <50 ms vs the 2004 paper's 12.2–17.7 ms. Whether the site number is a later hardware build.
+74. (started below) Whether the 8 mV DAC step at the ±1.0 V trim can represent the 500 mV command Bakkum prints, or the command is rounded.
+
+### Site clock vs 2004 loop (problem 73)
+MEABench page (its.caltech.edu/~daw/meabench) still prints "less than 200 ms worst-case (less than 50 ms average)." The page does not date that sentence. Download table on the same page:
+
+- MEABench-1.2.5, March 21, 2011. Note: configure script now requires an explicit hardware flag because "a majority of new users now seems to use the 'E' revision of the MCS hardware."
+- 1.2.4, March 7, 2011. 1.2.2, November 4, 2009. 1.2.0, February 25, 2009.
+
+User guide release 1.2.5, March 2011: "sub-100 ms feedback loop time in our Neurally Controlled Animat." References there: DeMarse, Wagenaar, Blau, Potter, Autonomous Robots 11:305–310 (2001); and the 2004 stimulator paper. The guide does not say the 2004 measurement (12.2–17.7 ms, worst 24.8 ms) was replaced. The 2011 note is about the MCS PCI-card "E" revision, not about the stimulator DAC or the loop trial.
+
+Three printed bounds remain: 2004 paper 12.2–17.7 / 24.8 ms; 2011 guide sub-100 ms (Animat); site page <200 ms worst / <50 ms average. Not shown to be one later build.
+
+### 8 mV step vs 500 mV (problem 74)
+Board paper: 8-bit DAC (TLC7628); "at that setting" (±1.0 V trim) "specification of stimulation voltages to 8 mV precision." "8 mV" is the printed word. The paper does not print 2 V / 256 or 7.8125 mV. It does not print a DAC code for 500 mV. Bakkum prints 500 mV and does not print a code or a rounding rule.
+
+Arithmetic the papers do not print: a symmetric ±1.0 V span is 2 V across 256 codes, 7.8125 mV per code; 500 / 7.8125 = 64. That product is not a quotation. The trim is a potentiometer, so the step is whatever the pot is set to. The paper does not log the pot. Rounding of the 500 mV command is unstated.
+
+### Attempts / dead ends (continued)
+- 2011 "E" revision note is the PCI card, not a replacement of the 12.2–17.7 ms loop.
+- 8 mV is printed. 7.8125 mV and code 64 are not.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–72. status as previous list.
+73. Site page <200 ms / <50 ms, undated sentence. 2011 guide: sub-100 ms Animat loop, cites the 2004 paper. 1.2.5 note is MCS "E" PCI-card revision, not a stim-loop rebuild. Three bounds, not one later build.
+74. Paper prints 8 mV precision at the ±1.0 V trim, 8-bit TLC7628. Does not print a DAC code for 500 mV. 7.8125 mV and code 64 are arithmetic, not quotations. Trim is a pot. Rounding unstated.
+75. (not started) Animat 2001 sub-100 ms citation in the 2011 guide vs the 2004 paper's 12.2–17.7 ms on the same named software. Whether the Animat loop used this board.
+76. (not started) REF102 10 V reference in the board-paper figure vs the ±1.0 V trim. Whether the step is set by the pot alone.
