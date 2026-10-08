@@ -2516,5 +2516,52 @@ Arithmetic the papers do not print: a symmetric ±1.0 V span is 2 V across 256 c
 25–72. status as previous list.
 73. Site page <200 ms / <50 ms, undated sentence. 2011 guide: sub-100 ms Animat loop, cites the 2004 paper. 1.2.5 note is MCS "E" PCI-card revision, not a stim-loop rebuild. Three bounds, not one later build.
 74. Paper prints 8 mV precision at the ±1.0 V trim, 8-bit TLC7628. Does not print a DAC code for 500 mV. 7.8125 mV and code 64 are arithmetic, not quotations. Trim is a pot. Rounding unstated.
-75. (not started) Animat 2001 sub-100 ms citation in the 2011 guide vs the 2004 paper's 12.2–17.7 ms on the same named software. Whether the Animat loop used this board.
-76. (not started) REF102 10 V reference in the board-paper figure vs the ±1.0 V trim. Whether the step is set by the pot alone.
+75. (started below) Animat 2001 sub-100 ms citation in the 2011 guide vs the 2004 paper's 12.2–17.7 ms on the same named software. Whether the Animat loop used this board.
+76. (started below) REF102 10 V reference in the board-paper figure vs the ±1.0 V trim. Whether the step is set by the pot alone.
+
+### Animat loop vs 2004 board (problem 75)
+DeMarse, Wagenaar, Blau, Potter, Autonomous Robots 11:305–310 (2001), PMC2440704:
+
+- "Feedback into the neuronal network was accomplished by inducing neural activity near one of five possible electrodes using custom hardware that delivered four +/−400 mV, 200 μs pulses."
+- "Feedback stimuli typically occurred within 100 ms after pattern detection."
+- Array: 60-channel Multi Channel Systems.
+
+That is the sub-100 ms sentence the 2011 guide cites. The pulse is four ±400 mV / 200 µs pulses, not the 2004 board's trimmed ±1.0 V menu and not Bakkum's 500 mV / 400 µs. The hardware is named "custom hardware" in 2001. The all-channel stimulator paper is 2004. The 2011 guide cites both papers and does not say the Animat loop ran on the 2004 board. Same group, same MEA family, different pulse, different year. Do not merge the clocks or the boards.
+
+### REF102 vs pot (problem 76)
+Board-paper figure caption (PubMed extract already on the map): REF102 is "a precision 10 V voltage reference (Texas Instruments)." Body: multi-turn potentiometers "tune the range of stimulation voltages as well as to center the range to zero." "The maximal selectable range is ±10 V; we trim the range to ±1.0 V."
+
+The 10 V part is the reference. The pots are the printed trim. The paper does not say the step is set by the pot alone, and it does not print a resistor equation from REF102 to the DAC span. REF102 datasheet output-adjust (a different pot, on the reference pin) is not this board's trim. Do not transplant it.
+
+8 mV precision remains the word printed at the ±1.0 V trim. Not derived here from the 10 V reference.
+
+### Attempts / dead ends (continued)
+- Animat 2001: ±400 mV / 200 µs × 4, within 100 ms, "custom hardware." Not shown to be the 2004 board.
+- REF102 is the 10 V reference. Pots set the printed span. No resistor equation.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–74. status as previous list.
+75. Animat 2001: four ±400 mV / 200 µs pulses, feedback within 100 ms, "custom hardware," 60-channel MCS. 2011 guide cites that paper for the sub-100 ms line. Not the 2004 board's 12.2–17.7 ms loop. Not Bakkum's 500 mV / 400 µs.
+76. REF102 is the 10 V reference in the board-paper figure. Pots trim the span to ±1.0 V and center it. No printed equation from the 10 V pin to the step. REF102 datasheet trim is a different pot.
+77. (not started) Animat 2001 "half-maximal" stimulus vs the 2004 ±1.0 V electrolysis trim. Whether 400 mV was chosen against that later ceiling.
+78. (not started) Whether the 2004 board's ±15 V supply and REF102 10 V reference share a rail with the MCS pre-amplifier, or are isolated.
