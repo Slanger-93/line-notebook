@@ -2563,5 +2563,52 @@ The 10 V part is the reference. The pots are the printed trim. The paper does no
 25–74. status as previous list.
 75. Animat 2001: four ±400 mV / 200 µs pulses, feedback within 100 ms, "custom hardware," 60-channel MCS. 2011 guide cites that paper for the sub-100 ms line. Not the 2004 board's 12.2–17.7 ms loop. Not Bakkum's 500 mV / 400 µs.
 76. REF102 is the 10 V reference in the board-paper figure. Pots trim the span to ±1.0 V and center it. No printed equation from the 10 V pin to the step. REF102 datasheet trim is a different pot.
-77. (not started) Animat 2001 "half-maximal" stimulus vs the 2004 ±1.0 V electrolysis trim. Whether 400 mV was chosen against that later ceiling.
-78. (not started) Whether the 2004 board's ±15 V supply and REF102 10 V reference share a rail with the MCS pre-amplifier, or are isolated.
+77. (started below) Animat 2001 "half-maximal" stimulus vs the 2004 ±1.0 V electrolysis trim. Whether 400 mV was chosen against that later ceiling.
+78. (started below) Whether the 2004 board's ±15 V supply and REF102 10 V reference share a rail with the MCS pre-amplifier, or are isolated.
+
+### Half-maximal vs later trim (problem 77)
+Animat 2001, same paragraph as the ±400 mV / 200 µs pulse (PMC2440704 extract already on the map): "The stimulus strength was chosen to produce approximately half-maximal response from the network."
+
+That sentence names the network response, not electrolysis, not electrode damage, and not a voltage ceiling. The ±1.0 V trim "to prevent electrolysis and damage to electrodes" is in the 2004 board paper. The Animat paper does not cite it. 400 mV sits inside that later trim as arithmetic. It is not a choice against that ceiling.
+
+### Rails and "isolation" (problem 78)
+Board paper (Caltech PDF 04-WP and PubMed figure caption):
+
+- Power "from an external ±15 V supply."
+- REF102 "precision 10 V voltage reference."
+- "four modules each of which contains isolation switches to gate signals to one of 16 electrodes." The switch named is MAX338, "1-to-8 electronic switch with very low leakage and charge injection." That is an analog mux, not a printed galvanic barrier.
+- Figure caption: digital ground and analog ground are separate symbols. "Jumpers J1 and J2 can be used to choose different grounding schemes. We leave both open on all four modules."
+- Modules "plug into a set of terminals on the pre-amplifier (MultiChannel Systems) which in turn directly connect to the MEA."
+
+No sentence says the ±15 V supply is the pre-amplifier's rail. No sentence says optical isolation. "Isolation switches" and open jumpers are the printed grounding objects. Shared-rail vs isolated stays unstated.
+
+### Attempts / dead ends (continued)
+- Half-maximal is a 2001 network-response sentence. Not the 2004 electrolysis trim.
+- MAX338 is the isolation switch. Open J1/J2. No shared-rail sentence. No optoisolator sentence.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–76. status as previous list.
+77. Animat 2001 chooses ±400 mV for half-maximal network response. Does not cite the 2004 ±1.0 V electrolysis trim. Arithmetic inclusion is not that choice.
+78. Board: external ±15 V, REF102 10 V reference, MAX338 called isolation switches, J1/J2 left open, plugs into MCS pre-amplifier terminals. No shared-rail sentence. No optoisolator sentence.
+79. (not started) What the open J1/J2 jumpers do to the return path. Whether the stim return is the MEA ground electrode.
+80. (not started) Animat "four +/−400 mV, 200 µs pulses" vs one biphasic pulse. Whether that is four biphasic pairs or four phases.
