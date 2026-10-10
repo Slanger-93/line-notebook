@@ -2610,5 +2610,53 @@ No sentence says the ±15 V supply is the pre-amplifier's rail. No sentence says
 25–76. status as previous list.
 77. Animat 2001 chooses ±400 mV for half-maximal network response. Does not cite the 2004 ±1.0 V electrolysis trim. Arithmetic inclusion is not that choice.
 78. Board: external ±15 V, REF102 10 V reference, MAX338 called isolation switches, J1/J2 left open, plugs into MCS pre-amplifier terminals. No shared-rail sentence. No optoisolator sentence.
-79. (not started) What the open J1/J2 jumpers do to the return path. Whether the stim return is the MEA ground electrode.
-80. (not started) Animat "four +/−400 mV, 200 µs pulses" vs one biphasic pulse. Whether that is four biphasic pairs or four phases.
+79. (started below) What the open J1/J2 jumpers do to the return path. Whether the stim return is the MEA ground electrode.
+80. (started below) Animat "four +/−400 mV, 200 µs pulses" vs one biphasic pulse. Whether that is four biphasic pairs or four phases.
+
+### Return electrode and open jumpers (problem 79)
+Board paper (Caltech 04-WP): "Each MEA (MultiChannel Systems, Reutlingen, Germany) has 59 such electrodes, and one large ground reference electrode that also served as return electrode for stimulation."
+
+That names the return: the MEA's large ground reference, not a separate bath electrode. Same sentence prints the 59-count. Spacing in that paper's methods extract: 200 µm. Diameter not in the extract.
+
+Jumpers, same figure caption: "Jumpers J1 and J2 can be used to choose different grounding schemes. We leave both open on all four modules." The paper does not print what open connects or disconnects, and does not say the open jumpers change the return electrode. Return identity and jumper function stay separate.
+
+### Four pulses vs one biphasic (problem 80)
+Two printed stimulus sentences, not one waveform.
+
+1. Animat 2001 (Autonomous Robots 11:305–310): "four +/−400 mV, 200 μs pulses." No adjacent sentence in the pulled extract says biphasic pair, phase count, or interpulse interval. Four pairs vs four phases is not stated.
+
+2. DeMarse, Wagenaar, Blau, Potter, 7th Joint Symposium on Neural Computation, 2000 (potterlab PDF): "Each collision with one of the four walls produced a 400 mV 200 µs single bi-phasic pulse on one of the four remaining electrodes." Same group, year before the Animat journal paper. "Single bi-phasic" is one pair. Hardware named there: "Multichannel Systems' STG1008 stimulator, and custom built hardware containing analog switches with a fiber-optic trigger." Not the 2004 all-channel board.
+
+Do not read the 2000 "single bi-phasic" back into the 2001 "four pulses." Do not read either as the 2004 board's menu.
+
+### Attempts / dead ends (continued)
+- Return is the MEA ground electrode in the 2004 board paper. Open J1/J2 function unprinted.
+- 2001 "four pulses" and 2000 "single bi-phasic" stay separate. STG1008 + fiber-optic switch is a third stim object.
+- Board paper prints 200 µm spacing on the 59-site MCS dish. Diameter still unprinted there.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–78. status as previous list.
+79. Board paper: 59 electrodes plus one large ground reference "that also served as return electrode for stimulation." J1/J2 left open; what open does is not printed. 200 µm spacing in that paper. Diameter unprinted.
+80. Animat 2001: "four +/−400 mV, 200 μs pulses," pair-vs-phase unstated. 2000 proceedings: "a 400 mV 200 µs single bi-phasic pulse," STG1008 plus fiber-optic analog-switch hardware. Not the same sentence. Not the 2004 board.
+81. (not started) STG1008 2000 fiber-optic path vs the 2004 parallel-port board. Whether the Animat 2001 "custom hardware" is the STG1008 rig.
+82. (not started) Board-paper 200 µm spacing vs the 10 µm / 30 µm diameter still unprinted in that paper. Which tip the return sentence sits on.
