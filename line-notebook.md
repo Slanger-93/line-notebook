@@ -2658,5 +2658,51 @@ Do not read the 2000 "single bi-phasic" back into the 2001 "four pulses." Do not
 25–78. status as previous list.
 79. Board paper: 59 electrodes plus one large ground reference "that also served as return electrode for stimulation." J1/J2 left open; what open does is not printed. 200 µm spacing in that paper. Diameter unprinted.
 80. Animat 2001: "four +/−400 mV, 200 μs pulses," pair-vs-phase unstated. 2000 proceedings: "a 400 mV 200 µs single bi-phasic pulse," STG1008 plus fiber-optic analog-switch hardware. Not the same sentence. Not the 2004 board.
-81. (not started) STG1008 2000 fiber-optic path vs the 2004 parallel-port board. Whether the Animat 2001 "custom hardware" is the STG1008 rig.
-82. (not started) Board-paper 200 µm spacing vs the 10 µm / 30 µm diameter still unprinted in that paper. Which tip the return sentence sits on.
+81. (started below) STG1008 2000 fiber-optic path vs the 2004 parallel-port board. Whether the Animat 2001 "custom hardware" is the STG1008 rig.
+82. (started below) Board-paper 200 µm spacing vs the 10 µm / 30 µm diameter still unprinted in that paper. Which tip the return sentence sits on.
+
+### STG1008 vs 2004 board (problem 81)
+DeMarse, Wagenaar, Blau, Potter, 7th Joint Symposium on Neural Computation, 2000:
+
+- "Stimulation voltages were produced with Multichannel Systems' STG1008 stimulator, and custom built hardware containing analog switches with a fiber-optic trigger connecting a single channel from the stimulator to one of four selectable electrodes on the MEA."
+- Pulse in the same paper: "a 400 mV 200 µs single bi-phasic pulse."
+
+That is a commercial MCS stimulator plus a four-electrode fiber-optic switch. The 2004 board is a parallel-port DAC driving all channels, no STG1008, no fiber-optic trigger. The Animat 2001 journal paper says only "custom hardware" and does not name STG1008. Identity of the 2001 rig with the 2000 STG1008 path is not printed. Three stim objects stay three.
+
+Same 2000 paper, geometry: "Electrodes were arranged in a 1.6 mm 8 x 8 grid. Each 10 µm diameter titanium-nitride electrode was separated by 200 µm." 10 µm TiN, 200 µm pitch. Not the 2004 board paper's tip.
+
+### Diameter under the return sentence (problem 82)
+Board paper (Caltech 04-WP), the sentence before the return line: "Signals were recorded through 30 µm titanium nitride electrodes spaced at 200 µm." Next sentence: "Each MEA (MultiChannel Systems, Reutlingen, Germany) has 59 such electrodes, and one large ground reference electrode that also served as return electrode for stimulation."
+
+The return sentence sits on 30 µm TiN, 200 µm pitch. Diameter was not unprinted. Prior pass that said so is incomplete. 10 µm remains the 2000 proceedings tip, a different paper. Do not merge the two diameters.
+
+### Attempts / dead ends (continued)
+- STG1008 + fiber-optic four-electrode switch is the 2000 rig. 2001 paper does not name it. 2004 board does not use it.
+- 2000 dish: 10 µm TiN, 200 µm, 1.6 mm grid. 2004 board paper: 30 µm TiN, 200 µm, return is the ground electrode.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head. Two Potter-line dishes now print both diameters, different papers, no yield comparison.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–80. status as previous list.
+81. 2000: STG1008 plus fiber-optic analog switch to one of four electrodes. 2001 Animat paper does not name STG1008. 2004 board is parallel-port, all-channel, no fiber-optic line. Not one rig.
+82. Board paper return sentence sits on "30 µm titanium nitride electrodes spaced at 200 µm." 2000 proceedings: 10 µm TiN, 200 µm, 1.6 mm grid. Different tips. Do not merge.
+83. (not started) 1.6 mm 8×8 grid in the 2000 proceedings vs the board-paper 200 µm spacing. Whether 1.6 mm is the side or a different array.
+84. (not started) STG1008 channel count vs the four-electrode fiber-optic switch. Whether the unused STG channels were blanked.
