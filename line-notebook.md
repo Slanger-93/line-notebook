@@ -2704,5 +2704,50 @@ The return sentence sits on 30 µm TiN, 200 µm pitch. Diameter was not unprinte
 25–80. status as previous list.
 81. 2000: STG1008 plus fiber-optic analog switch to one of four electrodes. 2001 Animat paper does not name STG1008. 2004 board is parallel-port, all-channel, no fiber-optic line. Not one rig.
 82. Board paper return sentence sits on "30 µm titanium nitride electrodes spaced at 200 µm." 2000 proceedings: 10 µm TiN, 200 µm, 1.6 mm grid. Different tips. Do not merge.
-83. (not started) 1.6 mm 8×8 grid in the 2000 proceedings vs the board-paper 200 µm spacing. Whether 1.6 mm is the side or a different array.
-84. (not started) STG1008 channel count vs the four-electrode fiber-optic switch. Whether the unused STG channels were blanked.
+83. (started below) 1.6 mm 8×8 grid in the 2000 proceedings vs the board-paper 200 µm spacing. Whether 1.6 mm is the side or a different array.
+84. (started below) STG1008 channel count vs the four-electrode fiber-optic switch. Whether the unused STG channels were blanked.
+
+### 1.6 mm vs 200 µm (problem 83)
+2000 proceedings, one sentence pair: "Electrodes were arranged in a 1.6 mm 8 x 8 grid. Each 10 µm diameter titanium-nitride electrode was separated by 200 µm."
+
+The paper prints both numbers. It does not say whether 1.6 mm is the side, the outer dimension, or the diagonal. Arithmetic the paper does not print: 7 intervals × 200 µm = 1.4 mm between outermost centers. 1.4 mm is not the printed 1.6 mm. Do not replace one with the other.
+
+Board-paper 200 µm is a different paper and a 30 µm tip. Same pitch word, different dish. Jimbo 1999's 1.6 × 1.3 mm grid, already on the map, is a third geometry. Do not merge.
+
+### STG1008 channels vs four electrodes (problem 84)
+MCS STG1000-series manual: "4 (STG1004) or 8 (STG1008)" analog output channels. Same table: output voltage −8 V to +8 V, resolution 2 mV; trigger-input to stimulus-output lag 120 ± 10 µs.
+
+2000 proceedings: the fiber-optic switch connects "a single channel from the stimulator to one of four selectable electrodes." One STG channel, four MEA sites. The paper does not say the other seven STG channels were blanked, grounded, or unused. No blanking sentence for those channels.
+
+120 ± 10 µs is a trigger-to-output lag on the STG. Not the Animat 100 ms feedback. Not the 2004 board's 15 ms loop. Not the brochure <1 ms.
+
+### Attempts / dead ends (continued)
+- 1.6 mm and 200 µm both printed. 1.4 mm arithmetic not a quotation. Not the board-paper dish. Not the Jimbo grid.
+- STG1008 is 8 channels. 2000 rig switches one channel to four electrodes. Unused channels unstated.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–82. status as previous list.
+83. 2000 proceedings: "1.6 mm 8 x 8 grid" and "separated by 200 µm," 10 µm TiN. Paper does not say which dimension 1.6 mm is. 7 × 200 µm = 1.4 mm is arithmetic, not a quotation. Not the 2004 board-paper 30 µm dish. Not the Jimbo 1.6 × 1.3 mm grid.
+84. STG1008: 8 analog channels, ±8 V, 2 mV resolution, trigger-to-stimulus 120 ± 10 µs. 2000 rig switches one channel to four electrodes. Unused channels not described. 120 µs is not the Animat 100 ms and not the 2004 15 ms loop.
+85. (not started) STG ±8 V / 2 mV vs the 2004 board's ±1.0 V trim / 8 mV. Whether 400 mV on the STG is a different compliance object.
+86. (not started) STG 120 ± 10 µs trigger lag vs the fiber-optic switch delay. Whether the 2000 paper prints a switch delay.
