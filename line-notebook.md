@@ -2749,5 +2749,48 @@ MCS STG1000-series manual: "4 (STG1004) or 8 (STG1008)" analog output channels. 
 25–82. status as previous list.
 83. 2000 proceedings: "1.6 mm 8 x 8 grid" and "separated by 200 µm," 10 µm TiN. Paper does not say which dimension 1.6 mm is. 7 × 200 µm = 1.4 mm is arithmetic, not a quotation. Not the 2004 board-paper 30 µm dish. Not the Jimbo 1.6 × 1.3 mm grid.
 84. STG1008: 8 analog channels, ±8 V, 2 mV resolution, trigger-to-stimulus 120 ± 10 µs. 2000 rig switches one channel to four electrodes. Unused channels not described. 120 µs is not the Animat 100 ms and not the 2004 15 ms loop.
-85. (not started) STG ±8 V / 2 mV vs the 2004 board's ±1.0 V trim / 8 mV. Whether 400 mV on the STG is a different compliance object.
-86. (not started) STG 120 ± 10 µs trigger lag vs the fiber-optic switch delay. Whether the 2000 paper prints a switch delay.
+85. (started below) STG ±8 V / 2 mV vs the 2004 board's ±1.0 V trim / 8 mV. Whether 400 mV on the STG is a different compliance object.
+86. (started below) STG 120 ± 10 µs trigger lag vs the fiber-optic switch delay. Whether the 2000 paper prints a switch delay.
+
+### STG compliance vs board trim (problem 85)
+STG1000-series manual, already on the map: output voltage −8 V to +8 V, resolution 2 mV. 2004 board paper: trimmed to ±1.0 V "to prevent electrolysis," 8 mV precision at that trim.
+
+400 mV sits inside both ranges as arithmetic. The compliance objects are different: STG ±8 V / 2 mV versus board ±1.0 V trim / 8 mV. The 2000 paper does not cite the board trim. The board paper does not cite the STG. 400 mV on the STG is not the board's 500 mV protocol. Do not merge the ceilings or the steps.
+
+### Switch delay (problem 86)
+STG manual: trigger-input to stimulus-output 120 ± 10 µs. That is the generator lag, not a fiber-optic switch delay.
+
+2000 proceedings names "analog switches with a fiber-optic trigger" and does not print a delay for that switch. No microsecond, no millisecond, no blanking width for the switch. The paper mentions electrical artifacts from stimulation and does not give a number for them.
+
+120 ± 10 µs stays the STG's printed lag. The switch delay is unprinted. Not the Animat 100 ms. Not the 2004 15 ms loop.
+
+### Attempts / dead ends (continued)
+- STG ±8 V / 2 mV and board ±1.0 V / 8 mV are different objects. 400 mV inside both is arithmetic.
+- No switch-delay number in the 2000 paper. 120 ± 10 µs is the STG lag.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–84. status as previous list.
+85. STG: ±8 V, 2 mV. Board: ±1.0 V trim, 8 mV. 400 mV inside both is arithmetic, not a shared compliance. Not the board's 500 mV protocol.
+86. STG trigger-to-output 120 ± 10 µs. 2000 paper names the fiber-optic switch and prints no delay for it. Switch delay unprinted.
+87. (not started) STG 2 mV resolution vs the 400 mV command. Whether 400 mV is an exact STG code.
+88. (not started) 2000 paper "electrical artifacts produced during a stimulation" vs the Inv-BC Wait. Whether a number is attached.
