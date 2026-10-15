@@ -2792,5 +2792,46 @@ STG manual: trigger-input to stimulus-output 120 ± 10 µs. That is the generato
 25–84. status as previous list.
 85. STG: ±8 V, 2 mV. Board: ±1.0 V trim, 8 mV. 400 mV inside both is arithmetic, not a shared compliance. Not the board's 500 mV protocol.
 86. STG trigger-to-output 120 ± 10 µs. 2000 paper names the fiber-optic switch and prints no delay for it. Switch delay unprinted.
-87. (not started) STG 2 mV resolution vs the 400 mV command. Whether 400 mV is an exact STG code.
-88. (not started) 2000 paper "electrical artifacts produced during a stimulation" vs the Inv-BC Wait. Whether a number is attached.
+87. (started below) STG 2 mV resolution vs the 400 mV command. Whether 400 mV is an exact STG code.
+88. (started below) 2000 paper "electrical artifacts produced during a stimulation" vs the Inv-BC Wait. Whether a number is attached.
+
+### 2 mV vs 400 mV (problem 87)
+STG1000-series manual: "Output voltage resolution 2 mV." Same table: "Resolution 13 bit." No DAC code for 400 mV is printed. The 2000 paper prints 400 mV and does not print a code or a rounding rule.
+
+Arithmetic the manual does not print: 400 / 2 = 200. That product is not a quotation. Exactness of the 400 mV command on the 13-bit DAC is unstated. Not the board paper's 8 mV step. Not Bakkum's 500 mV.
+
+### Artifact sentence vs Wait (problem 88)
+2000 proceedings: "this strategy allowed us to avoid problems with the electrical artifacts produced during a stimulation (cf. lower panel of Figure 3) that interfered with recording on neighboring channels."
+
+No millisecond, no microsecond, no blanking width, no Wait. The reference is to a figure panel, not a number. Inv-BC Wait (up to 400 µs; blanking stops 100 µs after the stimulus) is a different manual and a different year. The artifact sentence is not scored against that Wait.
+
+### Attempts / dead ends (continued)
+- 2 mV is printed. Code 200 is arithmetic. 13 bit is printed. No 400 mV code.
+- Artifact sentence has no number. Not the Inv-BC Wait.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–86. status as previous list.
+87. STG prints 2 mV resolution and 13 bit. 2000 paper prints 400 mV and no code. 400 / 2 = 200 is arithmetic, not a quotation. Not the board's 8 mV step.
+88. 2000 paper: artifacts "interfered with recording on neighboring channels," citing a figure panel. No number. Not the Inv-BC Wait.
+89. (not started) STG 13 bit vs the printed 2 mV. Whether ±8 V across 8192 codes is the resolution the manual means.
+90. (not started) 2000 figure panel of the artifact vs a measured duration. Whether the figure prints a time scale.
