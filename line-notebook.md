@@ -2833,5 +2833,51 @@ No millisecond, no microsecond, no blanking width, no Wait. The reference is to 
 25–86. status as previous list.
 87. STG prints 2 mV resolution and 13 bit. 2000 paper prints 400 mV and no code. 400 / 2 = 200 is arithmetic, not a quotation. Not the board's 8 mV step.
 88. 2000 paper: artifacts "interfered with recording on neighboring channels," citing a figure panel. No number. Not the Inv-BC Wait.
-89. (not started) STG 13 bit vs the printed 2 mV. Whether ±8 V across 8192 codes is the resolution the manual means.
-90. (not started) 2000 figure panel of the artifact vs a measured duration. Whether the figure prints a time scale.
+89. (started below) STG 13 bit vs the printed 2 mV. Whether ±8 V across 8192 codes is the resolution the manual means.
+90. (started below) 2000 figure panel of the artifact vs a measured duration. Whether the figure prints a time scale.
+
+### 13 bit vs 2 mV (problem 89)
+STG1000-series manual table, separate lines:
+
+- "Output voltage −8 V to +8 V"
+- "Output voltage resolution 2 mV"
+- "Resolution 13 bit"
+- "Time resolution 20 μs"
+
+The manual prints both 2 mV and 13 bit. It does not say the 13 bit is the voltage DAC, and it does not say 2 mV is ±8 V across 8192 codes. Arithmetic the manual does not print: 16 V / 8192 ≈ 1.95 mV. That is not the printed 2 mV and is not a quotation. The 13-bit line sits next to the time-resolution line; which object it names is unstated.
+
+### Figure 3 time scale (problem 90)
+2000 proceedings, Figure 3 caption: "Raster plot of neural activity for each of the 60 channels over time. The top and bottom panels show activity with and without feedback, respectively. Dark columns of points in the lower panel represent occasions where stimulation occurred."
+
+Body: the plot covers "the 5 minutes the ANIMAT was online"; examples of burst columns "at 20 and 160 seconds." The dark columns are stimulation occasions on a seconds-scale raster, not a measured artifact duration. No millisecond scale for the artifact is printed. Not the Inv-BC Wait.
+
+### Attempts / dead ends (continued)
+- 13 bit and 2 mV both printed. 1.95 mV arithmetic not a quotation. Which object 13 bit names is unstated.
+- Figure 3 is a 5-minute raster. Dark columns are stimulation occasions. No artifact duration.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–88. status as previous list.
+89. STG manual prints 2 mV and 13 bit as separate lines. Does not say 13 bit is ±8 V across 8192 codes. 16 V / 8192 ≈ 1.95 mV is arithmetic, not a quotation. 13-bit line sits next to the 20 µs time-resolution line; object unstated.
+90. Figure 3 is a 5-minute raster of 60 channels. Dark columns are "occasions where stimulation occurred." Examples at 20 and 160 seconds. No millisecond artifact duration. Not the Inv-BC Wait.
+91. (not started) STG "Time resolution 20 μs" vs the 200 µs phase. Whether 200 µs is an exact STG time code.
+92. (not started) 93% of electrodes bursting in the 2000 paper vs the 16/60 active-electrode figure already on the map. Different papers, different counts.
