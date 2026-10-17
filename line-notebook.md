@@ -2879,5 +2879,46 @@ Body: the plot covers "the 5 minutes the ANIMAT was online"; examples of burst c
 25–88. status as previous list.
 89. STG manual prints 2 mV and 13 bit as separate lines. Does not say 13 bit is ±8 V across 8192 codes. 16 V / 8192 ≈ 1.95 mV is arithmetic, not a quotation. 13-bit line sits next to the 20 µs time-resolution line; object unstated.
 90. Figure 3 is a 5-minute raster of 60 channels. Dark columns are "occasions where stimulation occurred." Examples at 20 and 160 seconds. No millisecond artifact duration. Not the Inv-BC Wait.
-91. (not started) STG "Time resolution 20 μs" vs the 200 µs phase. Whether 200 µs is an exact STG time code.
-92. (not started) 93% of electrodes bursting in the 2000 paper vs the 16/60 active-electrode figure already on the map. Different papers, different counts.
+91. (started below) STG "Time resolution 20 μs" vs the 200 µs phase. Whether 200 µs is an exact STG time code.
+92. (started below) 93% of electrodes bursting in the 2000 paper vs the 16/60 active-electrode figure already on the map. Different papers, different counts.
+
+### 20 µs vs 200 µs (problem 91)
+STG1000-series manual: "Time resolution 20 μs." 2000 proceedings: "a 400 mV 200 µs single bi-phasic pulse." The paper does not print a time code or a rounding rule.
+
+Arithmetic the manual does not print: 200 / 20 = 10. That product is not a quotation. Exactness of the 200 µs phase on the STG timer is unstated. Not the Inv-BC blanking width. Not the board paper's pulse.
+
+### 93% vs 16/60 (problem 92)
+2000 proceedings: "At four months in vitro, the culture's spontaneous activity typically consisted of the bursting of action potentials on over 93% of the electrodes." That is a burst-presence count on a 10 µm TiN dish at four months. Not a sorter yield. Not an active-electrode average.
+
+Middya 2021, already on the map: "significant neuronal activity could be observed in 16 out of 60 electrodes ... on an average" at two plating densities, PEDOT:PSS array. Different paper, different tip material, different criterion. Do not merge the two counts.
+
+### Attempts / dead ends (continued)
+- 20 µs is printed. Code 10 is arithmetic. No 200 µs time code.
+- 93% is a 2000 burst-presence sentence. 16/60 is a 2021 PEDOT average. Not the same count.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–90. status as previous list.
+91. STG prints time resolution 20 µs. 2000 paper prints 200 µs and no time code. 200 / 20 = 10 is arithmetic, not a quotation.
+92. 2000 paper: bursting on over 93% of electrodes at four months, 10 µm TiN. Middya 2021: 16/60 average, PEDOT, different criterion. Not the same count.
+93. (not started) 2000 "over 93%" vs the 59-count. Whether the reference electrode is in that percentage.
+94. (not started) Four-month DIV in the 2000 paper vs the Maeda refractory DIV window already on the map. Different preps.
