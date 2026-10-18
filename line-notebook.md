@@ -2920,5 +2920,46 @@ Middya 2021, already on the map: "significant neuronal activity could be observe
 25–90. status as previous list.
 91. STG prints time resolution 20 µs. 2000 paper prints 200 µs and no time code. 200 / 20 = 10 is arithmetic, not a quotation.
 92. 2000 paper: bursting on over 93% of electrodes at four months, 10 µm TiN. Middya 2021: 16/60 average, PEDOT, different criterion. Not the same count.
-93. (not started) 2000 "over 93%" vs the 59-count. Whether the reference electrode is in that percentage.
-94. (not started) Four-month DIV in the 2000 paper vs the Maeda refractory DIV window already on the map. Different preps.
+93. (started below) 2000 "over 93%" vs the 59-count. Whether the reference electrode is in that percentage.
+94. (started below) Four-month DIV in the 2000 paper vs the Maeda refractory DIV window already on the map. Different preps.
+
+### 93% vs 59 (problem 93)
+2000 proceedings: "bursting of action potentials on over 93% of the electrodes." Elsewhere in the same paper: "60 channels," "60 electrodes," "8x8 grid." The paper does not name a reference electrode and does not say whether the percentage is of 59 recording sites or of 60.
+
+The 59-count is MCS datasheet language and Hales JVE 2010 ("59 recording electrodes and one internal ground electrode"), already on the map. The 2000 paper does not cite that split. Arithmetic the paper does not print: 93% of 60, or of 59. Neither product is a quotation. Whether the reference is in the percentage is unstated.
+
+### Four months vs Maeda DIV (problem 94)
+2000 proceedings: "At four months in vitro." That is one age sentence on a 10 µm TiN dissociated culture.
+
+Maeda 1995, already on the map: ~3 s absolute refractory at 9 DIV; mature 26 DIV still fires a burst at 1 s intervals; 100 mm/s is the 3–40 d series ceiling. Different paper, different prep, different ages. Four months is not 9 DIV and not 26 DIV. Do not score the 2000 burst percentage against Maeda's refractory window.
+
+### Attempts / dead ends (continued)
+- 93% is of "the electrodes." 60 is printed. Reference not named. 59 is a different paper's count.
+- Four months is not Maeda's 9 DIV or 26 DIV.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–92. status as previous list.
+93. 2000 paper: "over 93% of the electrodes," and "60 electrodes" / "60 channels." Does not name a reference. 59-count is MCS / Hales, a different source. Arithmetic of 93% of 60 or of 59 is not a quotation.
+94. 2000: four months in vitro, 10 µm TiN. Maeda 1995: ~3 s absolute refractory at 9 DIV; 26 DIV still fires at 1 s intervals. Different preps, different ages.
+95. (not started) 2000 "selected at random among the set of electrodes in which action potentials were recorded" vs the 93% burst count. Whether those are the same set.
+96. (not started) 2000 four electrodes for motor and four for feedback vs the 59 or 60. Whether the remaining sites were recorded or ignored.
