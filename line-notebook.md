@@ -2961,5 +2961,44 @@ Maeda 1995, already on the map: ~3 s absolute refractory at 9 DIV; mature 26 DIV
 25–92. status as previous list.
 93. 2000 paper: "over 93% of the electrodes," and "60 electrodes" / "60 channels." Does not name a reference. 59-count is MCS / Hales, a different source. Arithmetic of 93% of 60 or of 59 is not a quotation.
 94. 2000: four months in vitro, 10 µm TiN. Maeda 1995: ~3 s absolute refractory at 9 DIV; 26 DIV still fires at 1 s intervals. Different preps, different ages.
-95. (not started) 2000 "selected at random among the set of electrodes in which action potentials were recorded" vs the 93% burst count. Whether those are the same set.
-96. (not started) 2000 four electrodes for motor and four for feedback vs the 59 or 60. Whether the remaining sites were recorded or ignored.
+95. (started below) 2000 "selected at random among the set of electrodes in which action potentials were recorded" vs the 93% burst count. Whether those are the same set.
+96. (started below) 2000 four electrodes for motor and four for feedback vs the 59 or 60. Whether the remaining sites were recorded or ignored.
+
+### Selection set vs 93% (problem 95)
+2000 proceedings: "Of the 60 electrodes, four were chosen for feedback and four to produce motor movements. They were selected at random among the set of electrodes in which action potentials were recorded."
+
+That names a selection criterion for the eight chosen electrodes. The 93% sentence is a separate description of typical spontaneous activity at four months: "bursting of action potentials on over 93% of the electrodes." The paper does not say the selection set is the 93% set, and does not say "action potentials were recorded" is the same gate as "bursting." Two sentences, not one set.
+
+### Remaining sites (problem 96)
+Same paper, Figure 3: "a raster plot representing neural activity for each of the 60 channels." The remaining sites appear in the raster. The paper does not say they were ignored. The four motor and four feedback electrodes are a chosen subset of the recorded set. Not a claim that only eight sites were acquired.
+
+### Attempts / dead ends (continued)
+- Selection set is "electrodes in which action potentials were recorded." 93% is a typical burst count. Not shown to be the same set.
+- Figure 3 is 60 channels. Remaining sites were recorded. Not ignored.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–94. status as previous list.
+95. 2000: eight electrodes "selected at random among the set of electrodes in which action potentials were recorded." 93% is a separate "bursting ... on over 93%" sentence. Not shown to be the same set.
+96. Figure 3 is a raster of 60 channels. Remaining sites were recorded. The four motor and four feedback electrodes are a chosen subset.
+97. (not started) 2000 "integrated over 200 ms" motor step vs the STG 20 µs time resolution. Whether 200 ms is an STG time or a software window.
+98. (not started) 2000 "a few minutes of recording to choose which of the 60 electrodes" vs the 5-minute online sessions. Whether the choice window is the same clock as the raster.
