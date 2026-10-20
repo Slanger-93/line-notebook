@@ -3000,5 +3000,46 @@ Same paper, Figure 3: "a raster plot representing neural activity for each of th
 25–94. status as previous list.
 95. 2000: eight electrodes "selected at random among the set of electrodes in which action potentials were recorded." 93% is a separate "bursting ... on over 93%" sentence. Not shown to be the same set.
 96. Figure 3 is a raster of 60 channels. Remaining sites were recorded. The four motor and four feedback electrodes are a chosen subset.
-97. (not started) 2000 "integrated over 200 ms" motor step vs the STG 20 µs time resolution. Whether 200 ms is an STG time or a software window.
-98. (not started) 2000 "a few minutes of recording to choose which of the 60 electrodes" vs the 5-minute online sessions. Whether the choice window is the same clock as the raster.
+97. (started below) 2000 "integrated over 200 ms" motor step vs the STG 20 µs time resolution. Whether 200 ms is an STG time or a software window.
+98. (started below) 2000 "a few minutes of recording to choose which of the 60 electrodes" vs the 5-minute online sessions. Whether the choice window is the same clock as the raster.
+
+### 200 ms integration vs STG 20 µs (problem 97)
+2000 proceedings: "Neural activity on four of these channels was integrated over 200 ms producing a single step in four associated directions."
+
+That is a software window on the recorded spike counts for the motor step. The STG1000-series manual "Time resolution 20 μs" is the stimulus-generator timer, already on the map. The 200 ms sentence does not cite the STG and does not say the integration is an STG time code. Arithmetic the paper does not print: 200 ms / 20 µs = 10,000. That product is not a quotation. Two clocks.
+
+### Choice window vs 5-minute raster (problem 98)
+Same paper: "followed by a few minutes of recording to choose which of the 60 electrodes would be used to produce movement and receive feedback. The stimulating wires were then attached and the ANIMAT was then put online for 5 minutes without the stimulator providing feedback. The stimulator was then activated and the ANIMAT was put online for another 5 minutes with feedback."
+
+Figure 3 is the 5-minute online raster without feedback. The "few minutes" is a prior choice recording. The paper does not say the choice window is the same clock as the raster, and does not print a duration for "few minutes." Three sessions, not one clock.
+
+### Attempts / dead ends (continued)
+- 200 ms is a software integration for the motor step. STG 20 µs is the generator timer. Not the same clock.
+- Choice recording is "a few minutes," unquantified. Figure 3 is one of the two 5-minute online sessions. Not the same clock.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–96. status as previous list.
+97. 2000: neural activity "integrated over 200 ms" for the motor step. STG time resolution is 20 µs. 200 ms / 20 µs = 10,000 is arithmetic, not a quotation. Software window, not an STG time code.
+98. Choice recording is "a few minutes," unquantified, before the wires are attached. Figure 3 is the 5-minute online raster without feedback. A second 5-minute session with feedback follows. Three sessions, not one clock.
+99. (not started) 2000 "stimulating wires were then attached" vs the fiber-optic switch. Whether the wires are the STG output or the switch path.
+100. (not started) 2000 two 5-minute sessions vs the Animat 2001 "typically occurred within 100 ms." Whether the 2000 sessions print a feedback latency.
