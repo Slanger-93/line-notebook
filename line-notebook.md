@@ -3041,5 +3041,46 @@ Figure 3 is the 5-minute online raster without feedback. The "few minutes" is a 
 25–96. status as previous list.
 97. 2000: neural activity "integrated over 200 ms" for the motor step. STG time resolution is 20 µs. 200 ms / 20 µs = 10,000 is arithmetic, not a quotation. Software window, not an STG time code.
 98. Choice recording is "a few minutes," unquantified, before the wires are attached. Figure 3 is the 5-minute online raster without feedback. A second 5-minute session with feedback follows. Three sessions, not one clock.
-99. (not started) 2000 "stimulating wires were then attached" vs the fiber-optic switch. Whether the wires are the STG output or the switch path.
-100. (not started) 2000 two 5-minute sessions vs the Animat 2001 "typically occurred within 100 ms." Whether the 2000 sessions print a feedback latency.
+99. (started below) 2000 "stimulating wires were then attached" vs the fiber-optic switch. Whether the wires are the STG output or the switch path.
+100. (started below) 2000 two 5-minute sessions vs the Animat 2001 "typically occurred within 100 ms." Whether the 2000 sessions print a feedback latency.
+
+### Wires vs fiber-optic switch (problem 99)
+2000 proceedings names two objects earlier: "Multichannel Systems' STG1008 stimulator, and custom built hardware containing analog switches with a fiber-optic trigger connecting a single channel from the stimulator to one of four selectable electrodes on the MEA."
+
+Later sentence: "The stimulating wires were then attached." The paper does not say the wires are the STG output, the fiber-optic switch path, or a third connection. Identity of the wires with either named object is unprinted.
+
+### 5-minute sessions vs 100 ms (problem 100)
+2000 proceedings: two 5-minute online sessions, one without feedback and one with. No sentence prints a feedback latency for those sessions. No millisecond from detection to stimulus is given.
+
+Animat 2001 (Autonomous Robots 11:305–310), already on the map: "Feedback stimuli typically occurred within 100 ms after pattern detection." That is a different paper, different year, different hardware sentence ("custom hardware"). The 2000 sessions do not print that 100 ms. Do not score the 5-minute sessions against it.
+
+### Attempts / dead ends (continued)
+- Wires sentence is not identified with the STG output or the fiber-optic switch. Three objects stay three.
+- 2000 sessions print no feedback latency. 100 ms is the 2001 paper.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–98. status as previous list.
+99. 2000 paper names STG1008 and fiber-optic analog switches. Later sentence: "stimulating wires were then attached." Does not say which object the wires are. Identity unprinted.
+100. 2000: two 5-minute online sessions. No feedback latency printed. Animat 2001 "within 100 ms" is a different paper. Not the same clock.
+101. (not started) 2000 "channels 51, 54, 62, and 76" feedback sites vs the 8×8 numbering. Whether those numbers are row-column codes or a different scheme.
+102. (not started) 2000 "Silicon Graphics 540" workstation vs the STG trigger path. Whether the 200 ms integration ran on that machine.
