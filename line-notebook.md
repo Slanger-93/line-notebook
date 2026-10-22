@@ -3082,5 +3082,46 @@ Animat 2001 (Autonomous Robots 11:305–310), already on the map: "Feedback stim
 25–98. status as previous list.
 99. 2000 paper names STG1008 and fiber-optic analog switches. Later sentence: "stimulating wires were then attached." Does not say which object the wires are. Identity unprinted.
 100. 2000: two 5-minute online sessions. No feedback latency printed. Animat 2001 "within 100 ms" is a different paper. Not the same clock.
-101. (not started) 2000 "channels 51, 54, 62, and 76" feedback sites vs the 8×8 numbering. Whether those numbers are row-column codes or a different scheme.
-102. (not started) 2000 "Silicon Graphics 540" workstation vs the STG trigger path. Whether the 200 ms integration ran on that machine.
+101. (started below) 2000 "channels 51, 54, 62, and 76" feedback sites vs the 8×8 numbering. Whether those numbers are row-column codes or a different scheme.
+102. (started below) 2000 "Silicon Graphics 540" workstation vs the STG trigger path. Whether the 200 ms integration ran on that machine.
+
+### Channel numbers vs 8×8 (problem 101)
+2000 proceedings: "Channels 27, 45, 56, and 87 (column x row) were chosen to produce movements, while channels 51, 54, 62, and 76 were chosen to receive electrical feedback."
+
+The parenthetical "(column x row)" is attached only to the motor list. The feedback list is not given the same label. The paper does not say whether 51, 54, 62, 76 are also column-x-row codes, and does not print a decoding rule for the two-digit numbers onto the 8×8 grid. 8×8 numbering is printed elsewhere as "8x8 grid." Mapping of these codes onto sites is unprinted.
+
+### SGI 540 vs STG trigger (problem 102)
+Same paper: "The computer used to record data, to provide the virtual environment, and to control the delivery of feedback was a Silicon Graphics 540 Visual Workstation with four Pentium 550 Mhz processors, 512 Meg of RAM, and running Linux Red Hat v6.0 along with custom device drivers to record from Multichannel Systems' PCI data card and to operate the stimulation device."
+
+The SGI is named as the machine that records, provides the environment, and controls delivery of feedback. The 200 ms integration is the motor-step calculation, already on the map. The paper does not say the integration ran on the SGI, and does not say the SGI's trigger path is the STG's trigger-input. STG 120 ± 10 µs lag remains the generator's printed number. Two objects.
+
+### Attempts / dead ends (continued)
+- Motor channels carry "(column x row)." Feedback channels do not. Decoding rule unprinted.
+- SGI 540 controls delivery of feedback. 200 ms integration not assigned to that machine. STG trigger path not named as the SGI's output.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–100. status as previous list.
+101. 2000: motor channels "27, 45, 56, and 87 (column x row)"; feedback channels "51, 54, 62, and 76" without the parenthetical. Decoding onto the 8×8 grid unprinted.
+102. SGI 540 is the machine that records, provides the environment, and controls delivery of feedback. 200 ms integration not assigned to it. STG trigger path not named as its output.
+103. (not started) 2000 "25 KHz" acquisition vs the STG 20 µs time resolution. Whether those clocks share a sample boundary.
+104. (not started) 2000 "custom device drivers" vs the fiber-optic switch. Whether the drivers operated the switch or only the STG.
