@@ -3123,5 +3123,46 @@ The SGI is named as the machine that records, provides the environment, and cont
 25–100. status as previous list.
 101. 2000: motor channels "27, 45, 56, and 87 (column x row)"; feedback channels "51, 54, 62, and 76" without the parenthetical. Decoding onto the 8×8 grid unprinted.
 102. SGI 540 is the machine that records, provides the environment, and controls delivery of feedback. 200 ms integration not assigned to it. STG trigger path not named as its output.
-103. (not started) 2000 "25 KHz" acquisition vs the STG 20 µs time resolution. Whether those clocks share a sample boundary.
-104. (not started) 2000 "custom device drivers" vs the fiber-optic switch. Whether the drivers operated the switch or only the STG.
+103. (started below) 2000 "25 KHz" acquisition vs the STG 20 µs time resolution. Whether those clocks share a sample boundary.
+104. (started below) 2000 "custom device drivers" vs the fiber-optic switch. Whether the drivers operated the switch or only the STG.
+
+### 25 kHz vs STG 20 µs (problem 103)
+2000 proceedings: "simultaneous recording from 60 channels at 25 KHz." That is the acquisition rate of the MCS PCI A/D board.
+
+STG1000-series manual: "Time resolution 20 μs." That is the stimulus-generator timer, already on the map. The 2000 paper does not say the two clocks share a sample boundary, and does not print a common tick. Arithmetic the paper does not print: 1 / 25000 = 40 µs. That is not a quotation. Two clocks.
+
+### Drivers vs fiber-optic switch (problem 104)
+Same paper: "custom device drivers to record from Multichannel Systems' PCI data card and to operate the stimulation device."
+
+The drivers are named for the PCI card and the stimulation device. The fiber-optic analog switches are named earlier as "custom built hardware." The paper does not say the drivers operated the switch, and does not say they operated only the STG. Scope of the drivers relative to the switch is unprinted.
+
+### Attempts / dead ends (continued)
+- 25 kHz is the acquisition rate. STG 20 µs is the generator timer. 40 µs is arithmetic, not a quotation. Shared sample boundary unprinted.
+- Drivers are for the PCI card and the stimulation device. Fiber-optic switch is separate custom hardware. Driver scope relative to the switch unprinted.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–102. status as previous list.
+103. 2000: 25 kHz acquisition. STG: 20 µs time resolution. 1/25000 = 40 µs is arithmetic, not a quotation. Shared sample boundary unprinted.
+104. Drivers are "to record from Multichannel Systems' PCI data card and to operate the stimulation device." Fiber-optic switch is separate custom hardware. Driver scope relative to the switch unprinted.
+105. (not started) 2000 "35°C" thermostatic control vs the Maeda DIV temperature. Whether the 2000 culture temperature is printed as a match.
+106. (not started) 2000 "papain" dissociation vs the Maeda prep. Whether the enzyme is the same.
