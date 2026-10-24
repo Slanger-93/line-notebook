@@ -3164,5 +3164,46 @@ The drivers are named for the PCI card and the stimulation device. The fiber-opt
 25–102. status as previous list.
 103. 2000: 25 kHz acquisition. STG: 20 µs time resolution. 1/25000 = 40 µs is arithmetic, not a quotation. Shared sample boundary unprinted.
 104. Drivers are "to record from Multichannel Systems' PCI data card and to operate the stimulation device." Fiber-optic switch is separate custom hardware. Driver scope relative to the switch unprinted.
-105. (not started) 2000 "35°C" thermostatic control vs the Maeda DIV temperature. Whether the 2000 culture temperature is printed as a match.
-106. (not started) 2000 "papain" dissociation vs the Maeda prep. Whether the enzyme is the same.
+105. (started below) 2000 "35°C" thermostatic control vs the Maeda DIV temperature. Whether the 2000 culture temperature is printed as a match.
+106. (started below) 2000 "papain" dissociation vs the Maeda prep. Whether the enzyme is the same.
+
+### 35°C vs Maeda temperature (problem 105)
+2000 proceedings: "The temperature of the culture during recordings was thermostatically controlled at 35°C." That is a recording-session temperature on the 10 µm TiN dish.
+
+Maeda 1995, already on the map for DIV windows and velocities, does not print a culture or recording temperature in the pulled extracts. Full methods remain paywalled. No match is printed. 35°C is not scored against an unpulled Maeda temperature.
+
+### Papain vs Maeda enzyme (problem 106)
+2000 proceedings: "Embryonic day 18 rat cortical tissue was dissociated by trituration and digestion in papain."
+
+Maeda 1995 methods for dissociation enzyme are not in the pulled set. No enzyme name is quoted. Whether the enzyme is the same is unprinted. Do not import a later protocol onto Maeda.
+
+### Attempts / dead ends (continued)
+- 35°C is a 2000 recording temperature. Maeda temperature unpulled. No match printed.
+- Papain is the 2000 enzyme. Maeda enzyme unpulled. Not shown to be the same.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–104. status as previous list.
+105. 2000: recording temperature "thermostatically controlled at 35°C." Maeda 1995 temperature not in the pulled extracts. No match printed.
+106. 2000: "dissociated by trituration and digestion in papain." Maeda enzyme unpulled. Not shown to be the same.
+107. (not started) 2000 "Embryonic day 18" vs Maeda plating age. Whether Maeda prints an embryonic day.
+108. (not started) 2000 "35°C" during recordings vs the incubator temperature. Whether the paper prints a culture-temperature separate from the recording temperature.
