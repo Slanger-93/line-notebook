@@ -3205,5 +3205,46 @@ Maeda 1995 methods for dissociation enzyme are not in the pulled set. No enzyme 
 25–104. status as previous list.
 105. 2000: recording temperature "thermostatically controlled at 35°C." Maeda 1995 temperature not in the pulled extracts. No match printed.
 106. 2000: "dissociated by trituration and digestion in papain." Maeda enzyme unpulled. Not shown to be the same.
-107. (not started) 2000 "Embryonic day 18" vs Maeda plating age. Whether Maeda prints an embryonic day.
-108. (not started) 2000 "35°C" during recordings vs the incubator temperature. Whether the paper prints a culture-temperature separate from the recording temperature.
+107. (started below) 2000 "Embryonic day 18" vs Maeda plating age. Whether Maeda prints an embryonic day.
+108. (started below) 2000 "35°C" during recordings vs the incubator temperature. Whether the paper prints a culture-temperature separate from the recording temperature.
+
+### E18 vs Maeda plating age (problem 107)
+2000 proceedings: "Embryonic day 18 rat cortical tissue."
+
+Maeda 1995, already on the map for DIV windows, does not print an embryonic day in the pulled extracts. Full methods remain paywalled. A later Maeda paper (1998) prints "embryonic 17 Wister rats, as described in Maeda et al. (1995b)." That is a different paper citing Maeda. Do not import the 1998 E17 onto the 1995 paper. Whether Maeda 1995 prints an embryonic day is unprinted.
+
+### 35°C vs incubator (problem 108)
+2000 proceedings: "The temperature of the culture during recordings was thermostatically controlled at 35°C."
+
+The paper does not print a separate incubator temperature for the culture period before the recording session. No second temperature is quoted. Whether the culture temperature differed from 35°C is unstated.
+
+### Attempts / dead ends (continued)
+- E18 is the 2000 plating age. Maeda 1995 embryonic day unpulled. 1998 E17 is a different paper.
+- 35°C is the recording temperature. Separate incubator temperature unprinted.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–106. status as previous list.
+107. 2000: "Embryonic day 18." Maeda 1995 embryonic day not in the pulled extracts. 1998 E17 is a different paper citing Maeda. Not imported.
+108. 2000: 35°C is the recording temperature. Separate incubator temperature unprinted.
+109. (not started) 2000 "polyethyleneimine" coating vs the Maeda coating. Whether the substrate is the same.
+110. (not started) 2000 "35°C" vs the MCS headstage temperature rating. Whether the vendor prints a matching window.
