@@ -3246,5 +3246,48 @@ The paper does not print a separate incubator temperature for the culture period
 25–106. status as previous list.
 107. 2000: "Embryonic day 18." Maeda 1995 embryonic day not in the pulled extracts. 1998 E17 is a different paper citing Maeda. Not imported.
 108. 2000: 35°C is the recording temperature. Separate incubator temperature unprinted.
-109. (not started) 2000 "polyethyleneimine" coating vs the Maeda coating. Whether the substrate is the same.
-110. (not started) 2000 "35°C" vs the MCS headstage temperature rating. Whether the vendor prints a matching window.
+109. (started below) 2000 "polyethyleneimine" coating vs the Maeda coating. Whether the substrate is the same.
+110. (started below) 2000 "35°C" vs the MCS headstage temperature rating. Whether the vendor prints a matching window.
+
+### PEI vs Maeda coating (problem 109)
+2000 proceedings: "cultured on a 60 channel multi-electrode array from Multichannel Systems coated with polyethyleneimine from a 5% solution (PEI- Sigma #cc-4195 & cc-4196) and 1 µg per ml of laminin."
+
+Maeda 1995 coating is not in the pulled extracts. Full methods remain paywalled. Whether the substrate is the same is unprinted. Do not import a later protocol onto Maeda.
+
+### 35°C vs MCS window (problem 110)
+2000 proceedings: recording temperature "thermostatically controlled at 35°C."
+
+MCS MEA1060 datasheet (public PDF): operating temperature "10 °C to 50 °C" for the Inv-Standard, Up-Standard, and Inv-BC-Standard models. Heating element: "from ambient temperature (min 10 °C) up to 50 °C."
+
+35°C sits inside the printed window as arithmetic. The 2000 paper does not cite the datasheet window. The datasheet does not cite the 2000 recording. Not a quoted match.
+
+### Attempts / dead ends (continued)
+- PEI is the 2000 coating. Maeda coating unpulled. Not shown to be the same.
+- 35°C inside 10–50 °C is arithmetic. Not a quoted match.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–108. status as previous list.
+109. 2000: polyethyleneimine from a 5% solution plus laminin. Maeda 1995 coating not in the pulled extracts. Not shown to be the same.
+110. 2000: 35°C recording. MCS MEA1060: 10 °C to 50 °C operating, heating to 50 °C. 35 inside that window is arithmetic, not a quoted match.
+111. (not started) 2000 "1 µg per ml of laminin" vs the Maeda substrate. Whether laminin is named.
+112. (not started) MCS "10 °C to 50 °C" vs the Inv-BC Wait. Whether the temperature window is scored against blanking.
