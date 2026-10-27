@@ -3289,5 +3289,48 @@ MCS MEA1060 datasheet (public PDF): operating temperature "10 °C to 50 °C" for
 25–108. status as previous list.
 109. 2000: polyethyleneimine from a 5% solution plus laminin. Maeda 1995 coating not in the pulled extracts. Not shown to be the same.
 110. 2000: 35°C recording. MCS MEA1060: 10 °C to 50 °C operating, heating to 50 °C. 35 inside that window is arithmetic, not a quoted match.
-111. (not started) 2000 "1 µg per ml of laminin" vs the Maeda substrate. Whether laminin is named.
-112. (not started) MCS "10 °C to 50 °C" vs the Inv-BC Wait. Whether the temperature window is scored against blanking.
+111. (started below) 2000 "1 µg per ml of laminin" vs the Maeda substrate. Whether laminin is named.
+112. (started below) MCS "10 °C to 50 °C" vs the Inv-BC Wait. Whether the temperature window is scored against blanking.
+
+### Laminin vs Maeda substrate (problem 111)
+2000 proceedings: "1 µg per ml of laminin." Laminin is named in the coating sentence, already on the map with PEI.
+
+Maeda 1995 substrate is not in the pulled extracts. Full methods remain paywalled. Whether laminin is named in Maeda is unprinted. Do not import a later protocol onto Maeda.
+
+### Temperature window vs Wait (problem 112)
+MCS MEA1060 datasheet: operating temperature "10 °C to 50 °C." Heating element up to 50 °C. Already on the map.
+
+MCS MEA1060-Inv-BC manual: Wait parameter "up to 400 µs can be necessary" for strong stimuli. Already on the map.
+
+The datasheet does not score the temperature window against the Wait. The Inv-BC manual does not score the Wait against the temperature window. Two printed numbers. Not a joint statement.
+
+### Attempts / dead ends (continued)
+- Laminin is named in the 2000 coating. Maeda substrate unpulled. Not shown to be the same.
+- 10–50 °C and 400 µs Wait are separate printed numbers. Not scored against each other.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–110. status as previous list.
+111. 2000: "1 µg per ml of laminin." Laminin is named. Maeda 1995 substrate not in the pulled extracts. Not shown to be the same.
+112. MCS: 10 °C to 50 °C operating. Inv-BC Wait: up to 400 µs. Not scored against each other.
+113. (not started) 2000 "5% solution" PEI vs the Sigma catalog numbers. Whether the catalog entry is quoted as a concentration match.
+114. (not started) Inv-BC Wait "up to 400 µs" vs the brochure "<1 ms." Whether the manual scores the Wait as inside the brochure bound.
