@@ -3332,5 +3332,48 @@ The datasheet does not score the temperature window against the Wait. The Inv-BC
 25–110. status as previous list.
 111. 2000: "1 µg per ml of laminin." Laminin is named. Maeda 1995 substrate not in the pulled extracts. Not shown to be the same.
 112. MCS: 10 °C to 50 °C operating. Inv-BC Wait: up to 400 µs. Not scored against each other.
-113. (not started) 2000 "5% solution" PEI vs the Sigma catalog numbers. Whether the catalog entry is quoted as a concentration match.
-114. (not started) Inv-BC Wait "up to 400 µs" vs the brochure "<1 ms." Whether the manual scores the Wait as inside the brochure bound.
+113. (started below) 2000 "5% solution" PEI vs the Sigma catalog numbers. Whether the catalog entry is quoted as a concentration match.
+114. (started below) Inv-BC Wait "up to 400 µs" vs the brochure "<1 ms." Whether the manual scores the Wait as inside the brochure bound.
+
+### 5% PEI vs Sigma numbers (problem 113)
+2000 proceedings: "polyethyleneimine from a 5% solution (PEI- Sigma #cc-4195 & cc-4196)."
+
+The paper prints the catalog numbers in the same parenthetical as the 5% claim. It does not quote a Sigma catalog entry, and does not print a concentration from the catalog. Whether the catalog entry matches 5% is unprinted. The numbers stay as printed.
+
+### Wait vs brochure (problem 114)
+MCS MEA1060-Inv-BC manual: Wait "up to 400 µs can be necessary" for strong stimuli. Already on the map.
+
+MCS brochure: "sending out trigger pulses within less than 100 µs and trigger a stimulus with less than 1 ms delay." Already on the map.
+
+The manual does not score the Wait as inside the brochure bound. The brochure does not score the trigger delay against the Wait. 400 µs < 1 ms is arithmetic. Not a quoted inclusion.
+
+### Attempts / dead ends (continued)
+- 5% and the Sigma numbers are printed in one parenthetical. Catalog concentration unquoted.
+- 400 µs Wait and <1 ms brochure bound are separate. Inclusion not printed.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–112. status as previous list.
+113. 2000: "5% solution (PEI- Sigma #cc-4195 & cc-4196)." Catalog entry not quoted. Concentration match unprinted.
+114. Inv-BC Wait up to 400 µs. Brochure <1 ms trigger. Manual does not score the Wait as inside the brochure bound. 400 µs < 1 ms is arithmetic.
+115. (not started) 2000 "Sigma #cc-4195 & cc-4196" vs a current Sigma catalog. Whether those catalog numbers still resolve to PEI.
+116. (not started) Brochure "<100 µs" trigger vs the STG 120 ± 10 µs lag. Whether the brochure scores its own trigger against the STG lag.
