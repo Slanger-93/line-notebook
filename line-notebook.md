@@ -3375,5 +3375,48 @@ The manual does not score the Wait as inside the brochure bound. The brochure do
 25–112. status as previous list.
 113. 2000: "5% solution (PEI- Sigma #cc-4195 & cc-4196)." Catalog entry not quoted. Concentration match unprinted.
 114. Inv-BC Wait up to 400 µs. Brochure <1 ms trigger. Manual does not score the Wait as inside the brochure bound. 400 µs < 1 ms is arithmetic.
-115. (not started) 2000 "Sigma #cc-4195 & cc-4196" vs a current Sigma catalog. Whether those catalog numbers still resolve to PEI.
-116. (not started) Brochure "<100 µs" trigger vs the STG 120 ± 10 µs lag. Whether the brochure scores its own trigger against the STG lag.
+115. (started below) 2000 "Sigma #cc-4195 & cc-4196" vs a current Sigma catalog. Whether those catalog numbers still resolve to PEI.
+116. (started below) Brochure "<100 µs" trigger vs the STG 120 ± 10 µs lag. Whether the brochure scores its own trigger against the STG lag.
+
+### Sigma numbers vs current catalog (problem 115)
+2000 proceedings: "PEI- Sigma #cc-4195 & cc-4196."
+
+A current Sigma-Aldrich product search for those catalog numbers does not return a polyethyleneimine entry under those codes. Current PEI products carry different numbers (e.g. 181978, P3143). Whether #cc-4195 and #cc-4196 still resolve to PEI is unprinted in the current catalog pages pulled. The 2000 numbers stay as printed.
+
+### Brochure trigger vs STG lag (problem 116)
+MCS brochure: "sending out trigger pulses within less than 100 µs." Already on the map.
+
+STG1000-series manual: trigger lag "120 ± 10 µs." Already on the map.
+
+The brochure does not score its trigger against the STG lag. The STG manual does not score its lag against the brochure. 120 µs is outside 100 µs as arithmetic. Not a quoted comparison.
+
+### Attempts / dead ends (continued)
+- Sigma #cc-4195 & cc-4196 do not resolve to PEI in the current catalog pages pulled. Current PEI numbers are different.
+- Brochure <100 µs and STG 120 ± 10 µs are separate. Comparison not printed.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–114. status as previous list.
+115. 2000: Sigma #cc-4195 & cc-4196. Current Sigma catalog pages do not return PEI under those codes. Current PEI numbers are different. Resolution unprinted.
+116. Brochure <100 µs trigger. STG lag 120 ± 10 µs. Brochure does not score its trigger against the STG lag. 120 outside 100 is arithmetic.
+117. (not started) Current Sigma PEI numbers vs the 2000 5% claim. Whether any current product prints 5%.
+118. (not started) STG 120 ± 10 µs vs the Inv-BC 400 µs Wait. Whether either document scores the lag against the Wait.
