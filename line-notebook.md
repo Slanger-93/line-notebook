@@ -3418,5 +3418,48 @@ The brochure does not score its trigger against the STG lag. The STG manual does
 25–114. status as previous list.
 115. 2000: Sigma #cc-4195 & cc-4196. Current Sigma catalog pages do not return PEI under those codes. Current PEI numbers are different. Resolution unprinted.
 116. Brochure <100 µs trigger. STG lag 120 ± 10 µs. Brochure does not score its trigger against the STG lag. 120 outside 100 is arithmetic.
-117. (not started) Current Sigma PEI numbers vs the 2000 5% claim. Whether any current product prints 5%.
-118. (not started) STG 120 ± 10 µs vs the Inv-BC 400 µs Wait. Whether either document scores the lag against the Wait.
+117. (started below) Current Sigma PEI numbers vs the 2000 5% claim. Whether any current product prints 5%.
+118. (started below) STG 120 ± 10 µs vs the Inv-BC 400 µs Wait. Whether either document scores the lag against the Wait.
+
+### Current PEI vs 5% (problem 117)
+2000 proceedings: "polyethyleneimine from a 5% solution."
+
+Current Sigma-Aldrich PEI product pages pulled (P3143, 181978) print "50 % (w/v) in H 2 O" and "50 wt. % in H 2 O." No current product page in the pulled set prints 5%. Whether any current product matches the 2000 concentration is unprinted. Different catalog numbers, different concentrations printed.
+
+### STG lag vs Wait (problem 118)
+STG1000-series manual: trigger lag "120 ± 10 µs." Already on the map.
+
+MCS MEA1060-Inv-BC manual: Wait "up to 400 µs can be necessary." Already on the map.
+
+Neither document scores the lag against the Wait. 120 µs and 400 µs are separate printed numbers. Not a quoted comparison.
+
+### Attempts / dead ends (continued)
+- Current PEI pages print 50%. 2000 prints 5%. Not the same concentration in the pulled pages.
+- STG 120 ± 10 µs and Inv-BC 400 µs Wait are separate. Comparison not printed.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–116. status as previous list.
+117. Current Sigma PEI pages (P3143, 181978) print 50%. 2000 prints 5%. Not the same concentration in the pulled pages.
+118. STG lag 120 ± 10 µs. Inv-BC Wait up to 400 µs. Neither document scores the lag against the Wait.
+119. (not started) Current Sigma 50% PEI vs the 2000 dilution step. Whether the 2000 paper prints a dilution from a stock.
+120. (not started) STG 120 ± 10 µs vs the 2000 200 ms integration. Whether the paper scores the generator lag against the software window.
