@@ -3461,5 +3461,48 @@ Neither document scores the lag against the Wait. 120 µs and 400 µs are separa
 25–116. status as previous list.
 117. Current Sigma PEI pages (P3143, 181978) print 50%. 2000 prints 5%. Not the same concentration in the pulled pages.
 118. STG lag 120 ± 10 µs. Inv-BC Wait up to 400 µs. Neither document scores the lag against the Wait.
-119. (not started) Current Sigma 50% PEI vs the 2000 dilution step. Whether the 2000 paper prints a dilution from a stock.
-120. (not started) STG 120 ± 10 µs vs the 2000 200 ms integration. Whether the paper scores the generator lag against the software window.
+119. (started below) Current Sigma 50% PEI vs the 2000 dilution step. Whether the 2000 paper prints a dilution from a stock.
+120. (started below) STG 120 ± 10 µs vs the 2000 200 ms integration. Whether the paper scores the generator lag against the software window.
+
+### 50% vs dilution (problem 119)
+Current Sigma PEI pages (P3143, 181978) print 50%. Already on the map.
+
+2000 proceedings: "polyethyleneimine from a 5% solution." The paper does not print a dilution step from a higher stock, and does not name a stock concentration. Whether the 5% was diluted from 50% is unprinted. Two concentrations, no dilution sentence.
+
+### STG lag vs 200 ms (problem 120)
+STG1000-series manual: trigger lag "120 ± 10 µs." Already on the map.
+
+2000 proceedings: "integrated over 200 ms." Already on the map as a software window.
+
+The paper does not score the generator lag against the software window. The STG manual does not score its lag against a 200 ms integration. Two clocks. Not a quoted comparison.
+
+### Attempts / dead ends (continued)
+- 2000 prints "from a 5% solution." No dilution from a stock is printed. 50% is a current catalog number.
+- STG 120 ± 10 µs and 200 ms integration are separate clocks. Comparison not printed.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–118. status as previous list.
+119. Current Sigma PEI prints 50%. 2000 prints "from a 5% solution." No dilution from a stock is printed.
+120. STG lag 120 ± 10 µs. 2000 integration 200 ms. Paper does not score the generator lag against the software window.
+121. (not started) 2000 "1 µg per ml of laminin" vs a current Sigma laminin catalog. Whether the concentration is still listed.
+122. (not started) 200 ms integration vs the 25 kHz sample period. Whether the paper scores the window against the acquisition tick.
