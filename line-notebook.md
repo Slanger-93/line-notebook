@@ -3590,5 +3590,48 @@ The paper does not score the integration against the generator tick. The STG man
 25–122. status as previous list.
 123. Current Sigma L2020: 1-2 µg/cm². 2000: 1 µg/ml. Paper does not print a surface-coverage unit.
 124. 5000 samples is arithmetic from 200 ms and 25 kHz. STG time resolution is 20 µs. Paper does not score the integration against the generator tick.
-125. (not started) Current Sigma laminin stock "1–2 mg/mL" vs the 2000 "1 µg per ml." Whether the paper prints a dilution factor.
-126. (not started) STG 20 µs vs the 25 kHz sample period. Whether the generator timer shares a tick with the acquisition board.
+125. (started below) Current Sigma laminin stock "1–2 mg/mL" vs the 2000 "1 µg per ml." Whether the paper prints a dilution factor.
+126. (started below) STG 20 µs vs the 25 kHz sample period. Whether the generator timer shares a tick with the acquisition board.
+
+### Laminin stock vs dilution (problem 125)
+Current Sigma L2020: stock concentration "1–2 mg/mL." Already on the map.
+
+2000 proceedings: "1 µg per ml of laminin." The paper does not print a dilution factor, and does not name a stock concentration. Whether the 1 µg/ml was diluted from 1–2 mg/mL is unprinted. Two concentrations, no dilution sentence.
+
+### STG 20 µs vs 25 kHz (problem 126)
+STG1000-series manual: "Time resolution 20 μs." Already on the map.
+
+2000 proceedings: "simultaneous recording from 60 channels at 25 KHz." Already on the map.
+
+Arithmetic the paper does not print: 1 / 25000 = 40 µs. That is not a quotation. The paper does not say the generator timer shares a tick with the acquisition board. Two clocks.
+
+### Attempts / dead ends (continued)
+- 2000 prints 1 µg/ml. Current catalog prints 1–2 mg/mL stock. Dilution factor unprinted.
+- STG 20 µs and 25 kHz (40 µs arithmetic) are separate. Shared tick unprinted.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–124. status as previous list.
+125. Current Sigma L2020: 1–2 mg/mL stock. 2000: 1 µg/ml. Paper does not print a dilution factor.
+126. STG time resolution 20 µs. 2000 acquisition 25 kHz. 1/25000 = 40 µs is arithmetic, not a quotation. Shared tick unprinted.
+127. (not started) 2000 "1 µg per ml" laminin vs the MCS MEA coating volume. Whether the paper prints the volume applied.
+128. (not started) 40 µs sample period vs the Inv-BC 400 µs Wait. Whether either document scores the acquisition tick against the Wait.
