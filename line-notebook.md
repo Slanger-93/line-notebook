@@ -3676,5 +3676,48 @@ Neither document scores the acquisition tick against the Wait. 40 µs and 400 µ
 25–126. status as previous list.
 127. 2000: "1 µg per ml of laminin." Applied volume unprinted.
 128. 40 µs is arithmetic from 25 kHz. Inv-BC Wait up to 400 µs. Neither document scores the acquisition tick against the Wait.
-129. (not started) 2000 laminin concentration vs the MCS MEA surface area. Whether the paper prints a dish area.
-130. (not started) Inv-BC Wait vs the STG 20 µs timer. Whether the manual scores the Wait against the generator resolution.
+129. (started below) 2000 laminin concentration vs the MCS MEA surface area. Whether the paper prints a dish area.
+130. (started below) Inv-BC Wait vs the STG 20 µs timer. Whether the manual scores the Wait against the generator resolution.
+
+### Laminin vs dish area (problem 129)
+2000 proceedings: "1 µg per ml of laminin." Already on the map.
+
+The paper does not print a dish surface area, and does not print a culture-chamber area. Whether the coating was scored against a published MCS MEA area is unprinted. Concentration without area.
+
+### Wait vs STG resolution (problem 130)
+MCS MEA1060-Inv-BC manual: Wait "up to 400 µs can be necessary." Already on the map.
+
+STG1000-series manual: "Time resolution 20 μs." Already on the map.
+
+The Inv-BC manual does not score the Wait against the generator resolution. The STG manual does not score its timer against the Wait. Two printed numbers. Not a quoted comparison.
+
+### Attempts / dead ends (continued)
+- 2000 prints 1 µg/ml. Dish area unprinted.
+- Inv-BC Wait 400 µs and STG 20 µs are separate. Comparison not printed.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–128. status as previous list.
+129. 2000: "1 µg per ml of laminin." Dish surface area unprinted.
+130. Inv-BC Wait up to 400 µs. STG time resolution 20 µs. Manual does not score the Wait against the generator resolution.
+131. (not started) 2000 culture vs the MCS MEA electrode-field size. Whether the paper prints the 1.4 mm or 1.6 mm grid side.
+132. (not started) STG 20 µs vs the brochure "<100 µs" trigger. Whether either document scores the generator resolution against the brochure bound.
