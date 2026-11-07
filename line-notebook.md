@@ -3719,5 +3719,48 @@ The Inv-BC manual does not score the Wait against the generator resolution. The 
 25–128. status as previous list.
 129. 2000: "1 µg per ml of laminin." Dish surface area unprinted.
 130. Inv-BC Wait up to 400 µs. STG time resolution 20 µs. Manual does not score the Wait against the generator resolution.
-131. (not started) 2000 culture vs the MCS MEA electrode-field size. Whether the paper prints the 1.4 mm or 1.6 mm grid side.
-132. (not started) STG 20 µs vs the brochure "<100 µs" trigger. Whether either document scores the generator resolution against the brochure bound.
+131. (started below) 2000 culture vs the MCS MEA electrode-field size. Whether the paper prints the 1.4 mm or 1.6 mm grid side.
+132. (started below) STG 20 µs vs the brochure "<100 µs" trigger. Whether either document scores the generator resolution against the brochure bound.
+
+### 2000 grid side (problem 131)
+2000 proceedings: "Electrodes were arranged in a 1.6 mm 8 x 8 grid."
+
+The paper prints 1.6 mm. It does not print 1.4 mm. Whether 1.4 mm is a different MCS pitch product is unprinted in this paper. The printed grid side is 1.6 mm.
+
+### STG 20 µs vs brochure trigger (problem 132)
+STG1000-series manual: "Time resolution 20 μs." Already on the map.
+
+MCS brochure: "sending out trigger pulses within less than 100 µs." Already on the map.
+
+Neither document scores the generator resolution against the brochure trigger bound. 20 µs and <100 µs are separate. Not a quoted comparison.
+
+### Attempts / dead ends (continued)
+- 2000 prints "1.6 mm 8 x 8 grid." 1.4 mm unprinted in this paper.
+- STG 20 µs and brochure <100 µs are separate. Comparison not printed.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–130. status as previous list.
+131. 2000: "Electrodes were arranged in a 1.6 mm 8 x 8 grid." 1.4 mm unprinted in this paper.
+132. STG time resolution 20 µs. Brochure <100 µs trigger. Neither document scores the generator resolution against the brochure bound.
+133. (not started) 2000 "1.6 mm 8 x 8 grid" vs the MCS 200 µm pitch. Whether the paper prints the electrode pitch.
+134. (not started) Brochure "<100 µs" vs the Inv-BC 400 µs Wait. Whether the brochure scores its trigger against the Wait.
