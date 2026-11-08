@@ -3762,5 +3762,48 @@ Neither document scores the generator resolution against the brochure trigger bo
 25–130. status as previous list.
 131. 2000: "Electrodes were arranged in a 1.6 mm 8 x 8 grid." 1.4 mm unprinted in this paper.
 132. STG time resolution 20 µs. Brochure <100 µs trigger. Neither document scores the generator resolution against the brochure bound.
-133. (not started) 2000 "1.6 mm 8 x 8 grid" vs the MCS 200 µm pitch. Whether the paper prints the electrode pitch.
-134. (not started) Brochure "<100 µs" vs the Inv-BC 400 µs Wait. Whether the brochure scores its trigger against the Wait.
+133. (started below) 2000 "1.6 mm 8 x 8 grid" vs the MCS 200 µm pitch. Whether the paper prints the electrode pitch.
+134. (started below) Brochure "<100 µs" vs the Inv-BC 400 µs Wait. Whether the brochure scores its trigger against the Wait.
+
+### 2000 pitch (problem 133)
+2000 proceedings: "Electrodes were arranged in a 1.6 mm 8 x 8 grid. Each 10 µm diameter titanium-nitride electrode was separated by 200 µm."
+
+The paper prints both the 1.6 mm grid side and the 200 µm separation. Arithmetic the paper does not print: 7 × 200 µm = 1.4 mm. That product is not a quotation. The printed numbers stay as printed.
+
+### Brochure vs Wait (problem 134)
+MCS brochure: "sending out trigger pulses within less than 100 µs." Already on the map.
+
+MCS MEA1060-Inv-BC manual: Wait "up to 400 µs can be necessary." Already on the map.
+
+The brochure does not score its trigger against the Wait. The manual does not score the Wait against the brochure. Two printed numbers. Not a quoted comparison.
+
+### Attempts / dead ends (continued)
+- 2000 prints 1.6 mm grid and 200 µm separation. 7 × 200 µm = 1.4 mm is arithmetic, not a quotation.
+- Brochure <100 µs and Inv-BC 400 µs Wait are separate. Comparison not printed.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–132. status as previous list.
+133. 2000: "1.6 mm 8 x 8 grid" and "separated by 200 µm." 7 × 200 µm = 1.4 mm is arithmetic, not a quotation.
+134. Brochure <100 µs trigger. Inv-BC Wait up to 400 µs. Brochure does not score its trigger against the Wait.
+135. (not started) 2000 "10 µm diameter" vs the MCS 30 µm TiN option. Whether the paper prints a second diameter.
+136. (not started) Inv-BC Wait vs the 2000 200 ms integration. Whether the paper scores the Wait against the software window.
