@@ -3805,5 +3805,48 @@ The brochure does not score its trigger against the Wait. The manual does not sc
 25–132. status as previous list.
 133. 2000: "1.6 mm 8 x 8 grid" and "separated by 200 µm." 7 × 200 µm = 1.4 mm is arithmetic, not a quotation.
 134. Brochure <100 µs trigger. Inv-BC Wait up to 400 µs. Brochure does not score its trigger against the Wait.
-135. (not started) 2000 "10 µm diameter" vs the MCS 30 µm TiN option. Whether the paper prints a second diameter.
-136. (not started) Inv-BC Wait vs the 2000 200 ms integration. Whether the paper scores the Wait against the software window.
+135. (started below) 2000 "10 µm diameter" vs the MCS 30 µm TiN option. Whether the paper prints a second diameter.
+136. (started below) Inv-BC Wait vs the 2000 200 ms integration. Whether the paper scores the Wait against the software window.
+
+### 10 µm vs 30 µm (problem 135)
+2000 proceedings: "Each 10 µm diameter titanium-nitride electrode was separated by 200 µm."
+
+The paper prints 10 µm. It does not print 30 µm, and does not print a second diameter. Whether a 30 µm TiN option was available is unprinted in this paper. The printed diameter is 10 µm.
+
+### Wait vs 200 ms (problem 136)
+MCS MEA1060-Inv-BC manual: Wait "up to 400 µs can be necessary." Already on the map.
+
+2000 proceedings: "integrated over 200 ms." Already on the map.
+
+The paper does not score the Wait against the software window. The manual does not score the Wait against a 200 ms integration. Two clocks. Not a quoted comparison.
+
+### Attempts / dead ends (continued)
+- 2000 prints 10 µm diameter. 30 µm unprinted in this paper.
+- Inv-BC Wait 400 µs and 200 ms integration are separate. Comparison not printed.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–134. status as previous list.
+135. 2000: "Each 10 µm diameter titanium-nitride electrode." 30 µm unprinted in this paper.
+136. Inv-BC Wait up to 400 µs. 2000 integration 200 ms. Paper does not score the Wait against the software window.
+137. (not started) 2000 "10 µm" vs the MCS impedance window for 10 µm. Whether the paper prints an impedance.
+138. (not started) 200 ms integration vs the STG 120 ± 10 µs lag. Whether the paper scores the software window against the generator lag.
