@@ -3848,5 +3848,48 @@ The paper does not score the Wait against the software window. The manual does n
 25–134. status as previous list.
 135. 2000: "Each 10 µm diameter titanium-nitride electrode." 30 µm unprinted in this paper.
 136. Inv-BC Wait up to 400 µs. 2000 integration 200 ms. Paper does not score the Wait against the software window.
-137. (not started) 2000 "10 µm" vs the MCS impedance window for 10 µm. Whether the paper prints an impedance.
-138. (not started) 200 ms integration vs the STG 120 ± 10 µs lag. Whether the paper scores the software window against the generator lag.
+137. (started below) 2000 "10 µm" vs the MCS impedance window for 10 µm. Whether the paper prints an impedance.
+138. (started below) 200 ms integration vs the STG 120 ± 10 µs lag. Whether the paper scores the software window against the generator lag.
+
+### 10 µm impedance (problem 137)
+2000 proceedings: "Each 10 µm diameter titanium-nitride electrode was separated by 200 µm." Already on the map.
+
+The paper does not print an impedance, and does not print a kΩ value. MCS datasheets list 250–400 kΩ for 10 µm TiN at the frequency they use. Whether the paper's electrodes sat inside that window is unprinted. Diameter without impedance.
+
+### 200 ms vs STG lag (problem 138)
+2000 proceedings: "integrated over 200 ms." Already on the map.
+
+STG1000-series manual: trigger lag "120 ± 10 µs." Already on the map.
+
+The paper does not score the software window against the generator lag. The STG manual does not score its lag against a 200 ms integration. Two clocks. Not a quoted comparison.
+
+### Attempts / dead ends (continued)
+- 2000 prints 10 µm. Impedance unprinted.
+- 200 ms integration and STG 120 ± 10 µs lag are separate. Comparison not printed.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–136. status as previous list.
+137. 2000: "Each 10 µm diameter titanium-nitride electrode." Impedance unprinted.
+138. 2000 integration 200 ms. STG lag 120 ± 10 µs. Paper does not score the software window against the generator lag.
+139. (not started) MCS 250–400 kΩ (10 µm) vs the JVE 10 kΩ–100 kΩ pass window. Whether either document scores the 10 µm window against the JVE reject rule.
+140. (not started) STG 120 ± 10 µs vs the 25 kHz sample period. Whether the generator lag shares a tick with the acquisition board.
