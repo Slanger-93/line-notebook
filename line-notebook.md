@@ -3891,5 +3891,50 @@ The paper does not score the software window against the generator lag. The STG 
 25–136. status as previous list.
 137. 2000: "Each 10 µm diameter titanium-nitride electrode." Impedance unprinted.
 138. 2000 integration 200 ms. STG lag 120 ± 10 µs. Paper does not score the software window against the generator lag.
-139. (not started) MCS 250–400 kΩ (10 µm) vs the JVE 10 kΩ–100 kΩ pass window. Whether either document scores the 10 µm window against the JVE reject rule.
-140. (not started) STG 120 ± 10 µs vs the 25 kHz sample period. Whether the generator lag shares a tick with the acquisition board.
+139. (started below) MCS 250–400 kΩ (10 µm) vs the JVE 10 kΩ–100 kΩ pass window. Whether either document scores the 10 µm window against the JVE reject rule.
+140. (started below) STG 120 ± 10 µs vs the 25 kHz sample period. Whether the generator lag shares a tick with the acquisition board.
+
+### 10 µm impedance vs JVE window (problem 139)
+MCS datasheets: impedance 250–400 kΩ (10 µm TiN) at the frequency they use. Already on the map.
+
+Hales / JVE 2010: "Normal impedance readings around 1 kHz should range between 10,000 and 100,000 Ohms." Already on the map.
+
+Neither document scores the 10 µm window against the JVE reject rule. 250–400 kΩ sits outside 10–100 kΩ as arithmetic. Not a quoted rejection.
+
+### STG lag vs 25 kHz (problem 140)
+STG1000-series manual: trigger lag "120 ± 10 µs." Already on the map.
+
+2000 proceedings: "simultaneous recording from 60 channels at 25 KHz." Already on the map.
+
+Arithmetic the paper does not print: 1 / 25000 = 40 µs. That is not a quotation. The paper does not say the generator lag shares a tick with the acquisition board. Two clocks.
+
+### Attempts / dead ends (continued)
+- MCS 250–400 kΩ (10 µm) and JVE 10–100 kΩ are separate. Rejection not printed.
+- STG 120 ± 10 µs and 25 kHz (40 µs arithmetic) are separate. Shared tick unprinted.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–138. status as previous list.
+139. MCS: 250–400 kΩ (10 µm). JVE: 10 kΩ–100 kΩ pass. Neither document scores the 10 µm window against the JVE reject rule. 250–400 outside 10–100 is arithmetic.
+140. STG lag 120 ± 10 µs. 2000 acquisition 25 kHz. 1/25000 = 40 µs is arithmetic, not a quotation. Shared tick unprinted.
+141. (not started) JVE 10–100 kΩ vs the MCS <100 kΩ (30 µm) listing. Whether either document scores the 30 µm bound against the JVE window.
+142. (not started) 40 µs sample period vs the STG 20 µs timer. Whether the acquisition tick is an integer multiple of the generator resolution.
