@@ -3936,5 +3936,50 @@ Arithmetic the paper does not print: 1 / 25000 = 40 µs. That is not a quotation
 25–138. status as previous list.
 139. MCS: 250–400 kΩ (10 µm). JVE: 10 kΩ–100 kΩ pass. Neither document scores the 10 µm window against the JVE reject rule. 250–400 outside 10–100 is arithmetic.
 140. STG lag 120 ± 10 µs. 2000 acquisition 25 kHz. 1/25000 = 40 µs is arithmetic, not a quotation. Shared tick unprinted.
-141. (not started) JVE 10–100 kΩ vs the MCS <100 kΩ (30 µm) listing. Whether either document scores the 30 µm bound against the JVE window.
-142. (not started) 40 µs sample period vs the STG 20 µs timer. Whether the acquisition tick is an integer multiple of the generator resolution.
+141. (started below) JVE 10–100 kΩ vs the MCS <100 kΩ (30 µm) listing. Whether either document scores the 30 µm bound against the JVE window.
+142. (started below) 40 µs sample period vs the STG 20 µs timer. Whether the acquisition tick is an integer multiple of the generator resolution.
+
+### 30 µm vs JVE window (problem 141)
+MCS datasheets: impedance <100 kΩ (30 µm TiN) at the frequency they use. Already on the map.
+
+Hales / JVE 2010: "Normal impedance readings around 1 kHz should range between 10,000 and 100,000 Ohms." Already on the map.
+
+Neither document scores the 30 µm bound against the JVE window. <100 kΩ and 10–100 kΩ are separate printed ranges. Not a quoted match.
+
+### 40 µs vs STG 20 µs (problem 142)
+Arithmetic from problem 126: 1 / 25000 = 40 µs. Not a quotation.
+
+STG1000-series manual: "Time resolution 20 μs." Already on the map.
+
+Arithmetic the documents do not print: 40 / 20 = 2. That product is not a quotation. Neither document says the acquisition tick is an integer multiple of the generator resolution. Two clocks.
+
+### Attempts / dead ends (continued)
+- MCS <100 kΩ (30 µm) and JVE 10–100 kΩ are separate. Match not printed.
+- 40 µs is arithmetic. STG 20 µs is the generator timer. Integer multiple unprinted.
+- Still no Shannon figure.
+- Year-2 site-count still unprinted.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N still empty.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–140. status as previous list.
+141. MCS: <100 kΩ (30 µm). JVE: 10 kΩ–100 kΩ pass. Neither document scores the 30 µm bound against the JVE window.
+142. 40 µs is arithmetic from 25 kHz. STG time resolution is 20 µs. 40 / 20 = 2 is arithmetic, not a quotation. Integer multiple unprinted.
+143. (not started) MCS <100 kΩ (30 µm) vs the 2000 paper's 10 µm electrodes. Whether the paper prints a 30 µm electrode.
+144. (not started) Integer multiple of STG 20 µs vs the Inv-BC 400 µs Wait. Whether the manual scores the Wait as an integer number of generator ticks.
