@@ -3981,5 +3981,63 @@ Arithmetic the documents do not print: 40 / 20 = 2. That product is not a quotat
 25–140. status as previous list.
 141. MCS: <100 kΩ (30 µm). JVE: 10 kΩ–100 kΩ pass. Neither document scores the 30 µm bound against the JVE window.
 142. 40 µs is arithmetic from 25 kHz. STG time resolution is 20 µs. 40 / 20 = 2 is arithmetic, not a quotation. Integer multiple unprinted.
-143. (not started) MCS <100 kΩ (30 µm) vs the 2000 paper's 10 µm electrodes. Whether the paper prints a 30 µm electrode.
-144. (not started) Integer multiple of STG 20 µs vs the Inv-BC 400 µs Wait. Whether the manual scores the Wait as an integer number of generator ticks.
+143. (started below) MCS <100 kΩ (30 µm) vs the 2000 paper's 10 µm electrodes. Whether the paper prints a 30 µm electrode.
+144. (started below) Integer multiple of STG 20 µs vs the Inv-BC 400 µs Wait. Whether the manual scores the Wait as an integer number of generator ticks.
+
+### 30 µm vs 2000 10 µm (problem 143)
+MCS datasheets: impedance <100 kΩ (30 µm TiN). Already on the map.
+
+2000 proceedings: "Each 10 µm diameter titanium-nitride electrode was separated by 200 µm." Already on the map.
+
+The paper does not print 30 µm. Whether a 30 µm electrode was used is unprinted in this paper. Different diameter.
+
+### Wait integer (problem 144)
+Arithmetic from problem 142: 40 / 20 = 2. Not a quotation.
+
+MCS MEA1060-Inv-BC manual: Wait "up to 400 µs can be necessary." Already on the map. Same manual: "A factory-set Wait of 40 µs is added to all user defined Wait values."
+
+The manual does not score the Wait as an integer number of generator ticks. 400 / 20 = 20 is arithmetic, not a quotation. Two clocks.
+
+### Year-2 N from Barrese 2013 (fills empty field in problem 22)
+Barrese et al. 2013: "These arrays were explanted at 38 days with 64/96 (67%) viable channels and 735 days with 20/96 (21%) viable channels."
+
+Same paper: "Of these 26 arrays that recorded for longer than one year, 61% recorded for a full second year, 27% recorded for a full third year, 15% recorded for over four years, and 8% recorded for over five years..."
+
+Year-2 site-count is no longer empty. 61% of 26 arrays is arithmetic the paper does not print as a site count. Viable channels at 735 days is 20/96. Not merged with the longevity paper's SNR > 1.5 bar.
+
+### Laminin volume from Potter & DeMarse 2001 (fills empty field in problems 127, 129)
+Potter & DeMarse 2001: "Twenty µl of 1 mg/ml laminin (Sigma #L2020, stored at −70 °C) was diluted in 1 ml of medium (recipe below), and a 10-µl droplet was applied to the center of the MEA, covering the electrode region."
+
+2000 proceedings prints "1 µg per ml of laminin" and no volume. This paper prints 1 mg/ml stock, a dilution into 1 ml, and a 10-µl droplet. Different paper, different concentration, different volume. Not a quotation from the 2000 paper.
+
+### Attempts / dead ends (continued)
+- 2000 prints 10 µm. 30 µm unprinted in this paper.
+- Inv-BC Wait up to 400 µs and factory-set 40 µs are separate from STG 20 µs. Integer multiple unprinted.
+- Year-2 N now has the Barrese percentages and the 20/96 at 735 days. Not a site-count table.
+- Potter 2001 prints the 10-µl droplet and the dilution. 2000 volume still unprinted.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994 figure still missing.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–142. status as previous list.
+143. MCS: <100 kΩ (30 µm). 2000: 10 µm diameter. Paper does not print 30 µm.
+144. Inv-BC Wait up to 400 µs plus factory-set 40 µs. STG 20 µs. Manual does not score the Wait as an integer number of generator ticks. 400 / 20 = 20 is arithmetic, not a quotation.
+145. (not started) Potter 2001 1 mg/ml laminin vs the 2000 1 µg/ml. Whether either paper prints a dilution factor from the other.
+146. (not started) Factory-set Wait of 40 µs vs the 25 kHz sample period. Whether the manual scores the factory offset against the acquisition tick.
