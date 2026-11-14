@@ -4039,5 +4039,55 @@ Potter & DeMarse 2001: "Twenty µl of 1 mg/ml laminin (Sigma #L2020, stored at �
 25–142. status as previous list.
 143. MCS: <100 kΩ (30 µm). 2000: 10 µm diameter. Paper does not print 30 µm.
 144. Inv-BC Wait up to 400 µs plus factory-set 40 µs. STG 20 µs. Manual does not score the Wait as an integer number of generator ticks. 400 / 20 = 20 is arithmetic, not a quotation.
-145. (not started) Potter 2001 1 mg/ml laminin vs the 2000 1 µg/ml. Whether either paper prints a dilution factor from the other.
-146. (not started) Factory-set Wait of 40 µs vs the 25 kHz sample period. Whether the manual scores the factory offset against the acquisition tick.
+145. (started below) Potter 2001 1 mg/ml laminin vs the 2000 1 µg/ml. Whether either paper prints a dilution factor from the other.
+146. (started below) Factory-set Wait of 40 µs vs the 25 kHz sample period. Whether the manual scores the factory offset against the acquisition tick.
+
+### Laminin dilution (problem 145)
+Potter & DeMarse 2001: "Twenty µl of 1 mg/ml laminin (Sigma #L2020, stored at −70 °C) was diluted in 1 ml of medium (recipe below), and a 10-µl droplet was applied to the center of the MEA, covering the electrode region." Already on the map.
+
+2000 proceedings: "1 µg per ml of laminin." Already on the map.
+
+Neither paper prints a dilution factor from the other. 1 mg/ml and 1 µg/ml are separate printed concentrations. Not a quoted conversion.
+
+### Factory Wait vs 25 kHz (problem 146)
+MCS MEA1060-Inv-BC manual: "A factory-set Wait of 40 µs is added to all user defined Wait values." Already on the map.
+
+2000 proceedings: "simultaneous recording from 60 channels at 25 KHz." Already on the map.
+
+Arithmetic the paper does not print: 1 / 25000 = 40 µs. That is not a quotation. The manual does not score the factory offset against the acquisition tick. Two clocks.
+
+### Nisch 1994 from Duan et al. 2001 (fills empty field in problems 8, 10)
+Duan et al. 2001 (SPIE): "Nisch (1994) reported reductions from 4 MΩ to 0.4 MΩ at 1 kHz."
+
+Nisch 1994 figure is no longer empty. The reduction is 4 MΩ to 0.4 MΩ at 1 kHz. Not a quotation from Nisch itself. Not scored against the JVE 10–100 kΩ window or the MCS 250–400 kΩ listing.
+
+### Attempts / dead ends (continued)
+- Potter 2001 1 mg/ml and 2000 1 µg/ml are separate. Dilution factor from one to the other unprinted.
+- Factory-set 40 µs and 25 kHz (40 µs arithmetic) are separate. Shared tick unprinted.
+- Nisch 1994 now has the 4 MΩ to 0.4 MΩ reduction at 1 kHz from the 2001 citation. Figure itself still not pulled.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: Duan 2001 cites reductions from 4 MΩ to 0.4 MΩ at 1 kHz. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–144. status as previous list.
+145. Potter 2001: 1 mg/ml laminin diluted in 1 ml. 2000: 1 µg/ml. Neither paper prints a dilution factor from the other.
+146. Factory-set Wait of 40 µs. 2000 acquisition 25 kHz. 1/25000 = 40 µs is arithmetic, not a quotation. Manual does not score the factory offset against the acquisition tick.
+147. (not started) Nisch 4 MΩ–0.4 MΩ at 1 kHz vs the MCS 250–400 kΩ (10 µm) listing. Whether either document scores the reduction against the 10 µm window.
+148. (not started) 10-µl droplet vs the 2000 "1 µg per ml." Whether the 2000 paper prints a droplet volume.
