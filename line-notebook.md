@@ -4089,5 +4089,55 @@ Nisch 1994 figure is no longer empty. The reduction is 4 MΩ to 0.4 MΩ at 1 kHz
 25–144. status as previous list.
 145. Potter 2001: 1 mg/ml laminin diluted in 1 ml. 2000: 1 µg/ml. Neither paper prints a dilution factor from the other.
 146. Factory-set Wait of 40 µs. 2000 acquisition 25 kHz. 1/25000 = 40 µs is arithmetic, not a quotation. Manual does not score the factory offset against the acquisition tick.
-147. (not started) Nisch 4 MΩ–0.4 MΩ at 1 kHz vs the MCS 250–400 kΩ (10 µm) listing. Whether either document scores the reduction against the 10 µm window.
-148. (not started) 10-µl droplet vs the 2000 "1 µg per ml." Whether the 2000 paper prints a droplet volume.
+147. (started below) Nisch 4 MΩ–0.4 MΩ at 1 kHz vs the MCS 250–400 kΩ (10 µm) listing. Whether either document scores the reduction against the 10 µm window.
+148. (started below) 10-µl droplet vs the 2000 "1 µg per ml." Whether the 2000 paper prints a droplet volume.
+
+### Nisch vs 10 µm window (problem 147)
+Duan et al. 2001 (SPIE): "Nisch (1994) reported reductions from 4 MΩ to 0.4 MΩ at 1 kHz." Already on the map.
+
+MCS datasheets: impedance 250–400 kΩ (10 µm TiN) at the frequency they use. Already on the map.
+
+Neither document scores the reduction against the 10 µm window. 0.4 MΩ = 400 kΩ is arithmetic, not a quotation. Two ranges.
+
+### Droplet vs 1 µg/ml (problem 148)
+Potter & DeMarse 2001: "a 10-µl droplet was applied to the center of the MEA, covering the electrode region." Already on the map.
+
+2000 proceedings: "1 µg per ml of laminin." Already on the map.
+
+The 2000 paper does not print a droplet volume. Whether the coating was applied as a droplet is unprinted in this paper. Different paper, different unit.
+
+### 200 µm overlap from Thiagarajan et al. 2010 (fills empty field on electrode-field independence)
+Thiagarajan et al. 2010: "At an electrode spacing of 200 µm as used in the present study, there is no detectable overlap between electrode fields [81]."
+
+The sentence prints no detectable overlap at 200 µm. It does not print a mixing fraction, and does not score against Kajikawa lateral spread or the MCS 30–100 µm source radius. Not a quoted independence bound for LFP.
+
+### Attempts / dead ends (continued)
+- Nisch 4 MΩ–0.4 MΩ and MCS 250–400 kΩ are separate. Score against 10 µm window unprinted.
+- 2000 prints 1 µg/ml. Droplet volume unprinted in this paper.
+- Thiagarajan 2010 prints no detectable overlap at 200 µm. Mixing fraction unprinted.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: Duan 2001 cites reductions from 4 MΩ to 0.4 MΩ at 1 kHz. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–146. status as previous list.
+147. Nisch: 4 MΩ to 0.4 MΩ at 1 kHz. MCS: 250–400 kΩ (10 µm). Neither document scores the reduction against the 10 µm window. 0.4 MΩ = 400 kΩ is arithmetic, not a quotation.
+148. Potter 2001: 10-µl droplet. 2000: 1 µg/ml. Paper does not print a droplet volume.
+149. (not started) Thiagarajan 2010 "no detectable overlap" at 200 µm vs the MCS "up to 100 µm from a neuron." Whether either document scores the overlap claim against the source radius.
+150. (not started) 0.4 MΩ vs the JVE 10–100 kΩ pass window. Whether either document scores the Nisch reduction against the JVE reject rule.
