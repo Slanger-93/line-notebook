@@ -4139,5 +4139,55 @@ The sentence prints no detectable overlap at 200 µm. It does not print a mixing
 25–146. status as previous list.
 147. Nisch: 4 MΩ to 0.4 MΩ at 1 kHz. MCS: 250–400 kΩ (10 µm). Neither document scores the reduction against the 10 µm window. 0.4 MΩ = 400 kΩ is arithmetic, not a quotation.
 148. Potter 2001: 10-µl droplet. 2000: 1 µg/ml. Paper does not print a droplet volume.
-149. (not started) Thiagarajan 2010 "no detectable overlap" at 200 µm vs the MCS "up to 100 µm from a neuron." Whether either document scores the overlap claim against the source radius.
-150. (not started) 0.4 MΩ vs the JVE 10–100 kΩ pass window. Whether either document scores the Nisch reduction against the JVE reject rule.
+149. (started below) Thiagarajan 2010 "no detectable overlap" at 200 µm vs the MCS "up to 100 µm from a neuron." Whether either document scores the overlap claim against the source radius.
+150. (started below) 0.4 MΩ vs the JVE 10–100 kΩ pass window. Whether either document scores the Nisch reduction against the JVE reject rule.
+
+### Overlap vs source radius (problem 149)
+Thiagarajan et al. 2010: "At an electrode spacing of 200 µm as used in the present study, there is no detectable overlap between electrode fields [81]." Already on the map.
+
+MCS datasheet: "spike activity can be detected at distances of up to 100 µm from a neuron in an acute brain slice." Already on the map.
+
+Neither document scores the overlap claim against the source radius. 200 µm and 100 µm are separate. Not a quoted comparison.
+
+### 0.4 MΩ vs JVE window (problem 150)
+Duan et al. 2001 (SPIE): "Nisch (1994) reported reductions from 4 MΩ to 0.4 MΩ at 1 kHz." Already on the map.
+
+Hales / JVE 2010: "Normal impedance readings around 1 kHz should range between 10,000 and 100,000 Ohms." Already on the map.
+
+Neither document scores the Nisch reduction against the JVE reject rule. 0.4 MΩ = 400 kΩ sits outside 10–100 kΩ as arithmetic. Not a quoted rejection.
+
+### Nisch impedance from Rutten 2002 (fills empty field on Nisch plating target)
+Rutten 2002: "Two essential prerequisites for high-quality recordings are (a) lowering the high impedance of the tiny electrode sites to about 1 MΩ by additional electroplating of Pt-black (85) and (b) increasing the sealing resistance between cell and substrate by promoting adhesion."
+
+The sentence prints lowering to about 1 MΩ by Pt-black, citing (85). It does not print 4 MΩ or 0.4 MΩ. Not scored against the Duan citation or the JVE window. Different paper, different target.
+
+### Attempts / dead ends (continued)
+- Thiagarajan no-overlap at 200 µm and MCS up to 100 µm are separate. Score unprinted.
+- 0.4 MΩ and JVE 10–100 kΩ are separate. Rejection not printed.
+- Rutten 2002 prints about 1 MΩ by Pt-black. Not the same number as Duan's 0.4 MΩ.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: Duan 2001 cites reductions from 4 MΩ to 0.4 MΩ at 1 kHz. Rutten 2002 cites lowering to about 1 MΩ by Pt-black (85). Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–148. status as previous list.
+149. Thiagarajan 2010: no detectable overlap at 200 µm. MCS: up to 100 µm from a neuron. Neither document scores the overlap claim against the source radius.
+150. Duan: 0.4 MΩ at 1 kHz. JVE: 10 kΩ–100 kΩ pass. Neither document scores the Nisch reduction against the JVE reject rule. 0.4 MΩ outside 10–100 kΩ is arithmetic.
+151. (not started) Rutten "about 1 MΩ" vs Duan "0.4 MΩ." Whether either document scores the plating target against the reduction.
+152. (not started) Pt-black plating vs the MCS TiN impedance listings. Whether either document scores the plating against the TiN window.
