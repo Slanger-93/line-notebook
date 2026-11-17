@@ -4189,5 +4189,55 @@ The sentence prints lowering to about 1 MΩ by Pt-black, citing (85). It does no
 25–148. status as previous list.
 149. Thiagarajan 2010: no detectable overlap at 200 µm. MCS: up to 100 µm from a neuron. Neither document scores the overlap claim against the source radius.
 150. Duan: 0.4 MΩ at 1 kHz. JVE: 10 kΩ–100 kΩ pass. Neither document scores the Nisch reduction against the JVE reject rule. 0.4 MΩ outside 10–100 kΩ is arithmetic.
-151. (not started) Rutten "about 1 MΩ" vs Duan "0.4 MΩ." Whether either document scores the plating target against the reduction.
-152. (not started) Pt-black plating vs the MCS TiN impedance listings. Whether either document scores the plating against the TiN window.
+151. (started below) Rutten "about 1 MΩ" vs Duan "0.4 MΩ." Whether either document scores the plating target against the reduction.
+152. (started below) Pt-black plating vs the MCS TiN impedance listings. Whether either document scores the plating against the TiN window.
+
+### 1 MΩ vs 0.4 MΩ (problem 151)
+Rutten 2002: "lowering the high impedance of the tiny electrode sites to about 1 MΩ by additional electroplating of Pt-black (85)." Already on the map.
+
+Duan et al. 2001 (SPIE): "Nisch (1994) reported reductions from 4 MΩ to 0.4 MΩ at 1 kHz." Already on the map.
+
+Neither document scores the plating target against the reduction. About 1 MΩ and 0.4 MΩ are separate. Not a quoted comparison.
+
+### Pt-black vs TiN (problem 152)
+Rutten 2002: "additional electroplating of Pt-black (85)." Already on the map.
+
+MCS datasheets: impedance <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Already on the map.
+
+Neither document scores the plating against the TiN window. Pt-black and TiN are separate. Not a quoted match.
+
+### Nisch non-platinised from Jaber et al. 2009 (fills empty field on Nisch Au value)
+Jaber et al. 2009: "was found to be 2.2 MΩ ± 1.8 MΩ at 1 kHz, which is an expected result for Au electrodes that have not been platinised (Gross et al., 1977; Boppart et al., 1992; Nisch et al., 1994)."
+
+The sentence prints 2.2 MΩ ± 1.8 MΩ at 1 kHz for non-platinised Au, citing Nisch et al. 1994. It does not print 4 MΩ, 0.4 MΩ, or about 1 MΩ. Not scored against the Duan or Rutten citations. Different paper, different electrode.
+
+### Attempts / dead ends (continued)
+- Rutten about 1 MΩ and Duan 0.4 MΩ are separate. Score unprinted.
+- Pt-black and MCS TiN windows are separate. Match not printed.
+- Jaber 2009 prints 2.2 MΩ ± 1.8 MΩ at 1 kHz for non-platinised Au. Not the same number as the other Nisch citations.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: Duan 2001 cites reductions from 4 MΩ to 0.4 MΩ at 1 kHz. Rutten 2002 cites lowering to about 1 MΩ by Pt-black (85). Jaber 2009 cites 2.2 MΩ ± 1.8 MΩ at 1 kHz for non-platinised Au. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–150. status as previous list.
+151. Rutten: about 1 MΩ by Pt-black. Duan: 0.4 MΩ at 1 kHz. Neither document scores the plating target against the reduction.
+152. Pt-black plating. MCS: <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Neither document scores the plating against the TiN window.
+153. (not started) Jaber 2.2 MΩ ± 1.8 MΩ at 1 kHz vs Rutten "about 1 MΩ." Whether either document scores the non-platinised value against the plating target.
+154. (not started) Non-platinised Au vs the MCS TiN listings. Whether either document scores the Au impedance against the TiN window.
