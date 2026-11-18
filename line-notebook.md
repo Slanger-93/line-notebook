@@ -4239,5 +4239,55 @@ The sentence prints 2.2 MΩ ± 1.8 MΩ at 1 kHz for non-platinised Au, citing Ni
 25–150. status as previous list.
 151. Rutten: about 1 MΩ by Pt-black. Duan: 0.4 MΩ at 1 kHz. Neither document scores the plating target against the reduction.
 152. Pt-black plating. MCS: <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Neither document scores the plating against the TiN window.
-153. (not started) Jaber 2.2 MΩ ± 1.8 MΩ at 1 kHz vs Rutten "about 1 MΩ." Whether either document scores the non-platinised value against the plating target.
-154. (not started) Non-platinised Au vs the MCS TiN listings. Whether either document scores the Au impedance against the TiN window.
+153. (started below) Jaber 2.2 MΩ ± 1.8 MΩ at 1 kHz vs Rutten "about 1 MΩ." Whether either document scores the non-platinised value against the plating target.
+154. (started below) Non-platinised Au vs the MCS TiN listings. Whether either document scores the Au impedance against the TiN window.
+
+### 2.2 MΩ vs 1 MΩ (problem 153)
+Jaber et al. 2009: "was found to be 2.2 MΩ ± 1.8 MΩ at 1 kHz, which is an expected result for Au electrodes that have not been platinised (Gross et al., 1977; Boppart et al., 1992; Nisch et al., 1994)." Already on the map.
+
+Rutten 2002: "lowering the high impedance of the tiny electrode sites to about 1 MΩ by additional electroplating of Pt-black (85)." Already on the map.
+
+Neither document scores the non-platinised value against the plating target. 2.2 MΩ ± 1.8 MΩ and about 1 MΩ are separate. Not a quoted comparison.
+
+### Non-platinised Au vs TiN (problem 154)
+Jaber et al. 2009: non-platinised Au at 2.2 MΩ ± 1.8 MΩ at 1 kHz. Already on the map.
+
+MCS datasheets: impedance <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Already on the map.
+
+Neither document scores the Au impedance against the TiN window. Au and TiN are separate. Not a quoted match.
+
+### Nisch geometry from Chen et al. 2003 (fills empty field on Nisch diameter and pitch)
+Chen et al. 2003: "(10 μm in diameter) and are arranged in an 8 × 8 matrix with 100 μm distance from tip to tip (fig. 1(b)) [12, 13]."
+
+The sentence prints 10 μm diameter and 100 μm tip-to-tip, citing [12, 13]. It does not print 30 µm, and does not print 200 µm. Not scored against the MCS 10/30 µm listings or the 2000 proceedings 200 µm separation. Different paper, different pitch.
+
+### Attempts / dead ends (continued)
+- Jaber 2.2 MΩ ± 1.8 MΩ and Rutten about 1 MΩ are separate. Score unprinted.
+- Non-platinised Au and MCS TiN windows are separate. Match not printed.
+- Chen 2003 prints 10 μm diameter and 100 μm tip-to-tip. Not the same pitch as the 2000 proceedings 200 µm.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: Duan 2001 cites reductions from 4 MΩ to 0.4 MΩ at 1 kHz. Rutten 2002 cites lowering to about 1 MΩ by Pt-black (85). Jaber 2009 cites 2.2 MΩ ± 1.8 MΩ at 1 kHz for non-platinised Au. Chen 2003 cites 10 μm diameter and 100 μm tip-to-tip. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–152. status as previous list.
+153. Jaber: 2.2 MΩ ± 1.8 MΩ at 1 kHz non-platinised Au. Rutten: about 1 MΩ by Pt-black. Neither document scores the non-platinised value against the plating target.
+154. Non-platinised Au: 2.2 MΩ ± 1.8 MΩ. MCS: <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Neither document scores the Au impedance against the TiN window.
+155. (not started) Chen 2003 100 μm tip-to-tip vs the 2000 proceedings 200 µm separation. Whether either paper scores the pitch against the other.
+156. (not started) 10 μm diameter from Chen vs the MCS 30 µm TiN option. Whether either document scores the diameter against the 30 µm listing.
