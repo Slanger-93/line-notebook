@@ -4289,5 +4289,55 @@ The sentence prints 10 μm diameter and 100 μm tip-to-tip, citing [12, 13]. It 
 25–152. status as previous list.
 153. Jaber: 2.2 MΩ ± 1.8 MΩ at 1 kHz non-platinised Au. Rutten: about 1 MΩ by Pt-black. Neither document scores the non-platinised value against the plating target.
 154. Non-platinised Au: 2.2 MΩ ± 1.8 MΩ. MCS: <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Neither document scores the Au impedance against the TiN window.
-155. (not started) Chen 2003 100 μm tip-to-tip vs the 2000 proceedings 200 µm separation. Whether either paper scores the pitch against the other.
-156. (not started) 10 μm diameter from Chen vs the MCS 30 µm TiN option. Whether either document scores the diameter against the 30 µm listing.
+155. (started below) Chen 2003 100 μm tip-to-tip vs the 2000 proceedings 200 µm separation. Whether either paper scores the pitch against the other.
+156. (started below) 10 μm diameter from Chen vs the MCS 30 µm TiN option. Whether either document scores the diameter against the 30 µm listing.
+
+### 100 μm vs 200 µm (problem 155)
+Chen et al. 2003: "(10 μm in diameter) and are arranged in an 8 × 8 matrix with 100 μm distance from tip to tip (fig. 1(b)) [12, 13]." Already on the map.
+
+2000 proceedings: "Each 10 µm diameter titanium-nitride electrode was separated by 200 µm." Already on the map.
+
+Neither paper scores the pitch against the other. 100 μm and 200 µm are separate. Not a quoted comparison.
+
+### 10 μm vs 30 µm (problem 156)
+Chen et al. 2003: "10 μm in diameter." Already on the map.
+
+MCS datasheets: Common diameters: 10 µm, 30 µm. Already on the map.
+
+Neither document scores the diameter against the 30 µm listing. 10 μm and 30 µm are separate. Not a quoted match.
+
+### Nisch method from Salpavaara et al. 2026 (fills empty field on Nisch spatial sensitivity)
+Salpavaara et al. 2026: "Nisch et al. [16] introduced a method for probing spatial sensitivity of an electrode with a movable micropipette."
+
+The sentence prints a method for probing spatial sensitivity with a movable micropipette, citing Nisch et al. [16]. It does not print an impedance, and does not print a diameter or pitch. Not scored against the Duan, Rutten, Jaber, or Chen citations. Different paper, different claim.
+
+### Attempts / dead ends (continued)
+- Chen 100 μm tip-to-tip and 2000 200 µm are separate. Score unprinted.
+- 10 μm diameter and MCS 30 µm are separate. Match not printed.
+- Salpavaara 2026 prints a method for probing spatial sensitivity. Impedance and geometry unprinted in this citation.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: Duan 2001 cites reductions from 4 MΩ to 0.4 MΩ at 1 kHz. Rutten 2002 cites lowering to about 1 MΩ by Pt-black (85). Jaber 2009 cites 2.2 MΩ ± 1.8 MΩ at 1 kHz for non-platinised Au. Chen 2003 cites 10 μm diameter and 100 μm tip-to-tip. Salpavaara 2026 cites a method for probing spatial sensitivity with a movable micropipette. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–154. status as previous list.
+155. Chen 2003: 100 μm tip-to-tip. 2000: 200 µm separation. Neither paper scores the pitch against the other.
+156. Chen 2003: 10 μm diameter. MCS: 10 µm, 30 µm. Neither document scores the diameter against the 30 µm listing.
+157. (not started) Salpavaara "movable micropipette" vs the MCS "up to 100 µm from a neuron." Whether either document scores the method against the source radius.
+158. (not started) Spatial sensitivity method vs the Thiagarajan "no detectable overlap." Whether either paper scores the method against the overlap claim.
