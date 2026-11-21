@@ -4389,5 +4389,49 @@ The sentence prints 60 microelectrodes, 10 µm diameter, 100 µm center-to-cente
 25–156. status as previous list.
 157. Salpavaara: movable micropipette for spatial sensitivity. MCS: up to 100 µm from a neuron. Neither document scores the method against the source radius.
 158. Spatial sensitivity method. Thiagarajan: no detectable overlap at 200 µm. Neither paper scores the method against the overlap claim.
-159. (not started) Vidor 100 µm center-to-center vs Chen 100 μm tip-to-tip. Whether either paper scores the spacing against the other.
-160. (not started) Gold covered with platinum black vs the MCS TiN listings. Whether either document scores the plating against the TiN window.
+159. (started below) Vidor 100 µm center-to-center vs Chen 100 μm tip-to-tip. Whether either paper scores the spacing against the other.
+160. (started below) Gold covered with platinum black vs the MCS TiN listings. Whether either document scores the plating against the TiN window.
+
+### 100 µm center-to-center vs tip-to-tip (problem 159)
+Vidor 2014: "60 microeletrodos (10 µm de diâmetro, afastados 100 µm centro a centro) de ouro cobertos com negro de platina e dispostos em um arranjo 8 x 8 (sem os eletrodos dos cantos)." Already on the map.
+
+Chen et al. 2003: "(10 μm in diameter) and are arranged in an 8 × 8 matrix with 100 μm distance from tip to tip (fig. 1(b)) [12, 13]." Already on the map.
+
+Neither paper scores the spacing against the other. 100 µm center-to-center and 100 μm tip-to-tip are separate. Not a quoted comparison.
+
+### Platinum black vs TiN (problem 160)
+Vidor 2014: "de ouro cobertos com negro de platina." Already on the map.
+
+MCS datasheets: impedance <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Already on the map.
+
+Neither document scores the plating against the TiN window. Gold covered with platinum black and TiN are separate. Not a quoted match.
+
+### Attempts / dead ends (continued)
+- Vidor 100 µm center-to-center and Chen 100 μm tip-to-tip are separate. Score unprinted.
+- Gold covered with platinum black and MCS TiN windows are separate. Match not printed.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: Duan 2001 cites reductions from 4 MΩ to 0.4 MΩ at 1 kHz. Rutten 2002 cites lowering to about 1 MΩ by Pt-black (85). Jaber 2009 cites 2.2 MΩ ± 1.8 MΩ at 1 kHz for non-platinised Au. Chen 2003 cites 10 μm diameter and 100 μm tip-to-tip. Salpavaara 2026 cites a method for probing spatial sensitivity with a movable micropipette. Vidor 2014 cites 60 microelectrodes (10 µm diameter, 100 µm center-to-center) of gold covered with platinum black in an 8×8 array without corners on glass with Si₃N₄. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–158. status as previous list.
+159. Vidor: 100 µm center-to-center. Chen: 100 μm tip-to-tip. Neither paper scores the spacing against the other.
+160. Vidor: gold covered with platinum black. MCS: <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Neither document scores the plating against the TiN window.
+161. (not started) 60 microelectrodes (8×8 without corners) vs the MCS 59 recording + 1 reference. Whether either document scores the count against the other.
+162. (not started) Si₃N₄ insulation vs the MCS TiN electrode material. Whether either document scores the insulator against the electrode listing.
