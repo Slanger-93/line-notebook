@@ -4485,5 +4485,59 @@ The sentences print 30 µm diameter, 200 µm grid, Pt-black coating, and impedan
 25–160. status as previous list.
 161. Vidor: 60 microelectrodes (8×8 without corners). MCS: 59 recording + 1 reference. Neither document scores the count against the other.
 162. Vidor: Si₃N₄ insulation. MCS: TiN electrodes. Neither document scores the insulator against the electrode listing.
-163. (not started) Friscourt 30 µm / 200 µm grid / Pt-black vs the MCS 30 µm TiN / 200 µm listing. Whether either document scores the coating against the TiN window.
-164. (not started) Friscourt median 56 kΩ (range 24–107 kΩ) vs the JVE 10–100 kΩ pass window. Whether either document scores the midpoint against the reject rule.
+163. (started below) Friscourt 30 µm / 200 µm grid / Pt-black vs the MCS 30 µm TiN / 200 µm listing. Whether either document scores the coating against the TiN window.
+164. (started below) Friscourt median 56 kΩ (range 24–107 kΩ) vs the JVE 10–100 kΩ pass window. Whether either document scores the midpoint against the reject rule.
+
+### Friscourt vs MCS 30 µm TiN (problem 163)
+Friscourt et al. 2026: "Recording sites are 30 µm in diameter and arranged on a 200 µm grid. Electrodes are coated with Pt-black to reduce impedance and increase effective charge-transfer capacity." Already on the map.
+
+MCS datasheets: Common diameters: 10 µm, 30 µm. Common pitches: 100 µm, 200 µm, 500 µm. Impedance <100 kΩ (30 µm TiN). Already on the map.
+
+Neither document scores the coating against the TiN window. Pt-black and TiN are separate. Not a quoted match.
+
+### 56 kΩ vs JVE window (problem 164)
+Friscourt et al. 2026: "Per-chip impedance midpoints, computed as the centre of the [min, max] range across the 59 electrodes of each chip, had a population median of 56 kΩ with an interquartile range of 42–82 kΩ, and a full population range of 24–107 kΩ." Already on the map.
+
+Hales / JVE 2010: "Normal impedance readings around 1 kHz should range between 10,000 and 100,000 Ohms." Already on the map.
+
+Neither document scores the midpoint against the reject rule. 56 kΩ (range 24–107 kΩ) and 10–100 kΩ are separate. Not a quoted rejection.
+
+### Nisch 1994 original (fills empty field in problems 8, 10)
+Nisch et al. 1994: "The complete device incorporates an array of 60 gold microelectrodes (covered with platinum black), each 10 µm wide."
+
+Same paper: "The tips of these conductors serve as the electrodes (10 µm) and are arranged in an 8 × 8 matrix with 100 µm distance from tip to tip."
+
+Same paper: "The shunt impedance to ground (the bath medium), Cs was estimated to be <15 pF at 1 kHz for >3 MΩ at 1 kHz for a 500 nm..."
+
+The sentences print 60 gold microelectrodes covered with platinum black, each 10 µm, 8×8 matrix with 100 µm tip-to-tip, and shunt impedance >3 MΩ at 1 kHz (with <15 pF). Not scored against the prior citations of the same paper (Duan, Rutten, Jaber, Chen, Salpavaara, Vidor). Different sentences, different numbers. Figure itself still not pulled as a graphic.
+
+### Attempts / dead ends (continued)
+- Friscourt 30 µm / 200 µm / Pt-black and MCS 30 µm TiN are separate. Score unprinted.
+- 56 kΩ median (24–107 kΩ) and JVE 10–100 kΩ are separate. Rejection not printed.
+- Nisch 1994 original prints 60 gold with Pt-black, 10 µm, 100 µm tip-to-tip, >3 MΩ at 1 kHz. Prior citations remain separate.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: original prints 60 gold microelectrodes (covered with platinum black), each 10 µm, 8×8 with 100 µm tip-to-tip, shunt >3 MΩ at 1 kHz. Prior citations (Duan, Rutten, Jaber, Chen, Salpavaara, Vidor) remain separate. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–162. status as previous list.
+163. Friscourt: 30 µm / 200 µm grid / Pt-black. MCS: 30 µm TiN / 200 µm. Neither document scores the coating against the TiN window.
+164. Friscourt: median 56 kΩ (range 24–107 kΩ). JVE: 10–100 kΩ pass. Neither document scores the midpoint against the reject rule.
+165. (not started) Nisch original >3 MΩ at 1 kHz vs Duan "0.4 MΩ." Whether either document scores the shunt against the reduction.
+166. (not started) Nisch 10 µm / 100 µm tip-to-tip vs Friscourt 30 µm / 200 µm grid. Whether either paper scores the geometry against the other.
