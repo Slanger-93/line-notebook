@@ -4433,5 +4433,57 @@ Neither document scores the plating against the TiN window. Gold covered with pl
 25–158. status as previous list.
 159. Vidor: 100 µm center-to-center. Chen: 100 μm tip-to-tip. Neither paper scores the spacing against the other.
 160. Vidor: gold covered with platinum black. MCS: <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Neither document scores the plating against the TiN window.
-161. (not started) 60 microelectrodes (8×8 without corners) vs the MCS 59 recording + 1 reference. Whether either document scores the count against the other.
-162. (not started) Si₃N₄ insulation vs the MCS TiN electrode material. Whether either document scores the insulator against the electrode listing.
+161. (started below) 60 microelectrodes (8×8 without corners) vs the MCS 59 recording + 1 reference. Whether either document scores the count against the other.
+162. (started below) Si₃N₄ insulation vs the MCS TiN electrode material. Whether either document scores the insulator against the electrode listing.
+
+### 60 vs 59 + 1 (problem 161)
+Vidor 2014: "60 microeletrodos ... dispostos em um arranjo 8 x 8 (sem os eletrodos dos cantos)." Already on the map.
+
+MCS / Hales et al. JVE 2010: "Each MEA has 59 recording electrodes and one internal ground electrode." Already on the map.
+
+Neither document scores the count against the other. 60 and 59 recording + 1 reference are separate. Not a quoted comparison.
+
+### Si₃N₄ vs TiN (problem 162)
+Vidor 2014: "A camada de isolamento utilizada foi de nitreto de silício (Si₃N₄)." Already on the map.
+
+MCS datasheets: TiN electrodes. Already on the map.
+
+Neither document scores the insulator against the electrode listing. Si₃N₄ and TiN are separate. Not a quoted match.
+
+### ALI MEA60 geometry and impedance from Friscourt et al. 2026 (fills empty field on 30 µm / 200 µm / Pt-black / impedance)
+Friscourt et al. 2026: "Recording sites are 30 µm in diameter and arranged on a 200 µm grid. Electrodes are coated with Pt-black to reduce impedance and increase effective charge-transfer capacity."
+
+Same paper: "Per-chip impedance midpoints, computed as the centre of the [min, max] range across the 59 electrodes of each chip, had a population median of 56 kΩ with an interquartile range of 42–82 kΩ, and a full population range of 24–107 kΩ."
+
+The sentences print 30 µm diameter, 200 µm grid, Pt-black coating, and impedance midpoints median 56 kΩ (IQR 42–82 kΩ, range 24–107 kΩ) across 59 electrodes. Not scored against the MCS <100 kΩ (30 µm TiN) listing, the 2000 proceedings 10 µm / 200 µm, or the Vidor gold with platinum black. Different paper, different object.
+
+### Attempts / dead ends (continued)
+- Vidor 60 (8×8 without corners) and MCS 59 recording + 1 reference are separate. Score unprinted.
+- Si₃N₄ and TiN are separate. Match not printed.
+- Friscourt 2026 prints 30 µm, 200 µm grid, Pt-black, and 56 kΩ median. Not scored against MCS TiN or prior Nisch citations.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: Duan 2001 cites reductions from 4 MΩ to 0.4 MΩ at 1 kHz. Rutten 2002 cites lowering to about 1 MΩ by Pt-black (85). Jaber 2009 cites 2.2 MΩ ± 1.8 MΩ at 1 kHz for non-platinised Au. Chen 2003 cites 10 μm diameter and 100 μm tip-to-tip. Salpavaara 2026 cites a method for probing spatial sensitivity with a movable micropipette. Vidor 2014 cites 60 microelectrodes (10 µm diameter, 100 µm center-to-center) of gold covered with platinum black in an 8×8 array without corners on glass with Si₃N₄. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–160. status as previous list.
+161. Vidor: 60 microelectrodes (8×8 without corners). MCS: 59 recording + 1 reference. Neither document scores the count against the other.
+162. Vidor: Si₃N₄ insulation. MCS: TiN electrodes. Neither document scores the insulator against the electrode listing.
+163. (not started) Friscourt 30 µm / 200 µm grid / Pt-black vs the MCS 30 µm TiN / 200 µm listing. Whether either document scores the coating against the TiN window.
+164. (not started) Friscourt median 56 kΩ (range 24–107 kΩ) vs the JVE 10–100 kΩ pass window. Whether either document scores the midpoint against the reject rule.
