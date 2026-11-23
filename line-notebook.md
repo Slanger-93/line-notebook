@@ -4539,5 +4539,49 @@ The sentences print 60 gold microelectrodes covered with platinum black, each 10
 25–162. status as previous list.
 163. Friscourt: 30 µm / 200 µm grid / Pt-black. MCS: 30 µm TiN / 200 µm. Neither document scores the coating against the TiN window.
 164. Friscourt: median 56 kΩ (range 24–107 kΩ). JVE: 10–100 kΩ pass. Neither document scores the midpoint against the reject rule.
-165. (not started) Nisch original >3 MΩ at 1 kHz vs Duan "0.4 MΩ." Whether either document scores the shunt against the reduction.
-166. (not started) Nisch 10 µm / 100 µm tip-to-tip vs Friscourt 30 µm / 200 µm grid. Whether either paper scores the geometry against the other.
+165. (started below) Nisch original >3 MΩ at 1 kHz vs Duan "0.4 MΩ." Whether either document scores the shunt against the reduction.
+166. (started below) Nisch 10 µm / 100 µm tip-to-tip vs Friscourt 30 µm / 200 µm grid. Whether either paper scores the geometry against the other.
+
+### >3 MΩ vs 0.4 MΩ (problem 165)
+Nisch et al. 1994: "The shunt impedance to ground (the bath medium), Cs was estimated to be <15 pF at 1 kHz for >3 MΩ at 1 kHz for a 500 nm..." Already on the map.
+
+Duan et al. 2001 (SPIE): "Nisch (1994) reported reductions from 4 MΩ to 0.4 MΩ at 1 kHz." Already on the map.
+
+Neither document scores the shunt against the reduction. >3 MΩ and 0.4 MΩ are separate. Not a quoted comparison.
+
+### 10 µm / 100 µm vs 30 µm / 200 µm (problem 166)
+Nisch et al. 1994: "The tips of these conductors serve as the electrodes (10 µm) and are arranged in an 8 × 8 matrix with 100 µm distance from tip to tip." Already on the map.
+
+Friscourt et al. 2026: "Recording sites are 30 µm in diameter and arranged on a 200 µm grid." Already on the map.
+
+Neither paper scores the geometry against the other. 10 µm / 100 µm tip-to-tip and 30 µm / 200 µm grid are separate. Not a quoted comparison.
+
+### Attempts / dead ends (continued)
+- Nisch original >3 MΩ at 1 kHz and Duan 0.4 MΩ are separate. Score unprinted.
+- Nisch 10 µm / 100 µm tip-to-tip and Friscourt 30 µm / 200 µm grid are separate. Geometry score unprinted.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: original prints 60 gold microelectrodes (covered with platinum black), each 10 µm, 8×8 with 100 µm tip-to-tip, shunt >3 MΩ at 1 kHz. Prior citations (Duan, Rutten, Jaber, Chen, Salpavaara, Vidor) remain separate. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–164. status as previous list.
+165. Nisch original: >3 MΩ at 1 kHz. Duan: 0.4 MΩ at 1 kHz. Neither document scores the shunt against the reduction.
+166. Nisch: 10 µm / 100 µm tip-to-tip. Friscourt: 30 µm / 200 µm grid. Neither paper scores the geometry against the other.
+167. (not started) Nisch original 60 gold with Pt-black vs Vidor 60 gold with platinum black. Whether either paper scores the description against the other.
+168. (not started) Nisch shunt >3 MΩ vs Jaber 2.2 MΩ ± 1.8 MΩ non-platinised. Whether either document scores the shunt against the non-platinised value.
