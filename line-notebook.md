@@ -4583,5 +4583,49 @@ Neither paper scores the geometry against the other. 10 µm / 100 µm tip-to-tip
 25–164. status as previous list.
 165. Nisch original: >3 MΩ at 1 kHz. Duan: 0.4 MΩ at 1 kHz. Neither document scores the shunt against the reduction.
 166. Nisch: 10 µm / 100 µm tip-to-tip. Friscourt: 30 µm / 200 µm grid. Neither paper scores the geometry against the other.
-167. (not started) Nisch original 60 gold with Pt-black vs Vidor 60 gold with platinum black. Whether either paper scores the description against the other.
-168. (not started) Nisch shunt >3 MΩ vs Jaber 2.2 MΩ ± 1.8 MΩ non-platinised. Whether either document scores the shunt against the non-platinised value.
+167. (started below) Nisch original 60 gold with Pt-black vs Vidor 60 gold with platinum black. Whether either paper scores the description against the other.
+168. (started below) Nisch shunt >3 MΩ vs Jaber 2.2 MΩ ± 1.8 MΩ non-platinised. Whether either document scores the shunt against the non-platinised value.
+
+### 60 gold with Pt-black (problem 167)
+Nisch et al. 1994: "The complete device incorporates an array of 60 gold microelectrodes (covered with platinum black), each 10 µm wide." Already on the map.
+
+Vidor 2014: "60 microeletrodos (10 µm de diâmetro, afastados 100 µm centro a centro) de ouro cobertos com negro de platina." Already on the map.
+
+Neither paper scores the description against the other. 60 gold with Pt-black and 60 gold with platinum black are separate. Not a quoted comparison.
+
+### >3 MΩ vs 2.2 MΩ (problem 168)
+Nisch et al. 1994: "The shunt impedance to ground (the bath medium), Cs was estimated to be <15 pF at 1 kHz for >3 MΩ at 1 kHz for a 500 nm..." Already on the map.
+
+Jaber et al. 2009: "was found to be 2.2 MΩ ± 1.8 MΩ at 1 kHz, which is an expected result for Au electrodes that have not been platinised (Gross et al., 1977; Boppart et al., 1992; Nisch et al., 1994)." Already on the map.
+
+Neither document scores the shunt against the non-platinised value. >3 MΩ and 2.2 MΩ ± 1.8 MΩ are separate. Not a quoted comparison.
+
+### Attempts / dead ends (continued)
+- Nisch original 60 gold with Pt-black and Vidor 60 gold with platinum black are separate. Score unprinted.
+- Nisch shunt >3 MΩ and Jaber 2.2 MΩ ± 1.8 MΩ are separate. Comparison not printed.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: original prints 60 gold microelectrodes (covered with platinum black), each 10 µm, 8×8 with 100 µm tip-to-tip, shunt >3 MΩ at 1 kHz. Prior citations (Duan, Rutten, Jaber, Chen, Salpavaara, Vidor) remain separate. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–166. status as previous list.
+167. Nisch original: 60 gold with Pt-black. Vidor: 60 gold with platinum black. Neither paper scores the description against the other.
+168. Nisch: shunt >3 MΩ at 1 kHz. Jaber: 2.2 MΩ ± 1.8 MΩ non-platinised. Neither document scores the shunt against the non-platinised value.
+169. (not started) Nisch original 10 µm / 100 µm tip-to-tip vs Chen 10 μm / 100 μm tip-to-tip. Whether either paper scores the geometry against the other.
+170. (not started) Nisch shunt >3 MΩ vs Rutten "about 1 MΩ." Whether either document scores the shunt against the plating target.
