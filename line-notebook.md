@@ -4671,5 +4671,49 @@ Neither document scores the shunt against the plating target. >3 MΩ and about 1
 25–168. status as previous list.
 169. Nisch original: 10 µm / 100 µm tip-to-tip. Chen: 10 μm / 100 μm tip-to-tip. Neither paper scores the geometry against the other.
 170. Nisch: shunt >3 MΩ at 1 kHz. Rutten: about 1 MΩ by Pt-black. Neither document scores the shunt against the plating target.
-171. (not started) Nisch original 8×8 matrix with 100 µm tip-to-tip vs MCS 8×8 grid four corners omitted. Whether either document scores the layout against the other.
-172. (not started) Nisch shunt >3 MΩ vs Friscourt median 56 kΩ. Whether either paper scores the shunt against the midpoint.
+171. (started below) Nisch original 8×8 matrix with 100 µm tip-to-tip vs MCS 8×8 grid four corners omitted. Whether either document scores the layout against the other.
+172. (started below) Nisch shunt >3 MΩ vs Friscourt median 56 kΩ. Whether either paper scores the shunt against the midpoint.
+
+### 8×8 matrix vs four corners omitted (problem 171)
+Nisch et al. 1994: "The tips of these conductors serve as the electrodes (10 µm) and are arranged in an 8 × 8 matrix with 100 µm distance from tip to tip." Already on the map.
+
+MCS datasheets / Hales et al. JVE 2010: "8×8 grid, four corner sites omitted, one site wired as large internal reference." "Each MEA has 59 recording electrodes and one internal ground electrode." Already on the map.
+
+Neither document scores the layout against the other. 8×8 matrix and 8×8 grid four corners omitted are separate. Not a quoted comparison.
+
+### >3 MΩ vs 56 kΩ (problem 172)
+Nisch et al. 1994: "The shunt impedance to ground (the bath medium), Cs was estimated to be <15 pF at 1 kHz for >3 MΩ at 1 kHz for a 500 nm..." Already on the map.
+
+Friscourt et al. 2026: "Per-chip impedance midpoints, computed as the centre of the [min, max] range across the 59 electrodes of each chip, had a population median of 56 kΩ with an interquartile range of 42–82 kΩ, and a full population range of 24–107 kΩ." Already on the map.
+
+Neither paper scores the shunt against the midpoint. >3 MΩ and 56 kΩ are separate. Not a quoted comparison.
+
+### Attempts / dead ends (continued)
+- Nisch original 8×8 matrix with 100 µm tip-to-tip and MCS 8×8 grid four corners omitted are separate. Score unprinted.
+- Nisch shunt >3 MΩ and Friscourt median 56 kΩ are separate. Comparison not printed.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: original prints 60 gold microelectrodes (covered with platinum black), each 10 µm, 8×8 with 100 µm tip-to-tip, shunt >3 MΩ at 1 kHz. Prior citations (Duan, Rutten, Jaber, Chen, Salpavaara, Vidor) remain separate. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–170. status as previous list.
+171. Nisch original: 8×8 matrix with 100 µm tip-to-tip. MCS: 8×8 grid four corners omitted. Neither document scores the layout against the other.
+172. Nisch: shunt >3 MΩ at 1 kHz. Friscourt: median 56 kΩ. Neither paper scores the shunt against the midpoint.
+173. (not started) Nisch original 60 gold microelectrodes vs MCS 59 recording + 1 reference. Whether either document scores the count against the other.
+174. (not started) Nisch 10 µm electrodes vs MCS 10 µm and 30 µm diameters. Whether either document scores the diameter against the listings.
