@@ -4715,5 +4715,49 @@ Neither paper scores the shunt against the midpoint. >3 MΩ and 56 kΩ are separ
 25–170. status as previous list.
 171. Nisch original: 8×8 matrix with 100 µm tip-to-tip. MCS: 8×8 grid four corners omitted. Neither document scores the layout against the other.
 172. Nisch: shunt >3 MΩ at 1 kHz. Friscourt: median 56 kΩ. Neither paper scores the shunt against the midpoint.
-173. (not started) Nisch original 60 gold microelectrodes vs MCS 59 recording + 1 reference. Whether either document scores the count against the other.
-174. (not started) Nisch 10 µm electrodes vs MCS 10 µm and 30 µm diameters. Whether either document scores the diameter against the listings.
+173. (started below) Nisch original 60 gold microelectrodes vs MCS 59 recording + 1 reference. Whether either document scores the count against the other.
+174. (started below) Nisch 10 µm electrodes vs MCS 10 µm and 30 µm diameters. Whether either document scores the diameter against the listings.
+
+### 60 gold vs 59 + 1 (problem 173)
+Nisch et al. 1994: "The complete device incorporates an array of 60 gold microelectrodes (covered with platinum black), each 10 µm wide." Already on the map.
+
+MCS / Hales et al. JVE 2010: "Each MEA has 59 recording electrodes and one internal ground electrode." Already on the map.
+
+Neither document scores the count against the other. 60 gold microelectrodes and 59 recording + 1 reference are separate. Not a quoted comparison.
+
+### 10 µm vs 10 µm and 30 µm (problem 174)
+Nisch et al. 1994: "each 10 µm wide." "The tips of these conductors serve as the electrodes (10 µm)." Already on the map.
+
+MCS datasheets: Common diameters: 10 µm, 30 µm. Already on the map.
+
+Neither document scores the diameter against the listings. 10 µm and 10 µm / 30 µm are separate. Not a quoted match.
+
+### Attempts / dead ends (continued)
+- Nisch original 60 gold microelectrodes and MCS 59 recording + 1 reference are separate. Score unprinted.
+- Nisch 10 µm electrodes and MCS 10 µm / 30 µm diameters are separate. Match not printed.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: original prints 60 gold microelectrodes (covered with platinum black), each 10 µm, 8×8 with 100 µm tip-to-tip, shunt >3 MΩ at 1 kHz. Prior citations (Duan, Rutten, Jaber, Chen, Salpavaara, Vidor) remain separate. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–172. status as previous list.
+173. Nisch original: 60 gold microelectrodes. MCS: 59 recording + 1 reference. Neither document scores the count against the other.
+174. Nisch: 10 µm electrodes. MCS: 10 µm, 30 µm. Neither document scores the diameter against the listings.
+175. (not started) Nisch original 100 µm tip-to-tip vs MCS common pitches 100 µm, 200 µm, 500 µm. Whether either document scores the pitch against the listings.
+176. (not started) Nisch shunt >3 MΩ vs MCS impedance <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Whether either document scores the shunt against the listings.
