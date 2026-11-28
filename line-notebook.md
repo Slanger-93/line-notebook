@@ -4759,5 +4759,59 @@ Neither document scores the diameter against the listings. 10 µm and 10 µm / 3
 25–172. status as previous list.
 173. Nisch original: 60 gold microelectrodes. MCS: 59 recording + 1 reference. Neither document scores the count against the other.
 174. Nisch: 10 µm electrodes. MCS: 10 µm, 30 µm. Neither document scores the diameter against the listings.
-175. (not started) Nisch original 100 µm tip-to-tip vs MCS common pitches 100 µm, 200 µm, 500 µm. Whether either document scores the pitch against the listings.
-176. (not started) Nisch shunt >3 MΩ vs MCS impedance <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Whether either document scores the shunt against the listings.
+175. (started below) Nisch original 100 µm tip-to-tip vs MCS common pitches 100 µm, 200 µm, 500 µm. Whether either document scores the pitch against the listings.
+176. (started below) Nisch shunt >3 MΩ vs MCS impedance <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Whether either document scores the shunt against the listings.
+
+### 100 µm tip-to-tip vs MCS pitches (problem 175)
+Nisch et al. 1994: "arranged in an 8 × 8 matrix with 100 µm distance from tip to tip." Already on the map.
+
+MCS datasheets: Common pitches: 100 µm, 200 µm, 500 µm. Already on the map.
+
+Neither document scores the pitch against the listings. 100 µm tip-to-tip and 100/200/500 µm are separate. Not a quoted comparison.
+
+### >3 MΩ vs MCS impedance listings (problem 176)
+Nisch et al. 1994: "The shunt impedance to ground (the bath medium), Cs was estimated to be <15 pF at 1 kHz for >3 MΩ at 1 kHz for a 500 nm..." Already on the map.
+
+MCS datasheets: Impedance <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Already on the map.
+
+Neither document scores the shunt against the listings. >3 MΩ and <100 kΩ / 250–400 kΩ are separate. Not a quoted match.
+
+### Utah human yield from Hahn et al. 2026 (fills empty field on BrainGate Utah yield)
+Hahn et al. 2026: "Between 2004 and 2019, 14 participants were enrolled in the BrainGate and BrainGate2 pilot clinical trials; each participant had one or two 96-channel platinum-metalized Utah microelectrode arrays placed in cortex."
+
+Same paper: "Averaged over all days, participants and arrays, the mean array yield (the percentage of electrodes recording spiking activity) was 35.6%. Arrays experienced a modest 7 percentage point average decline in yield between the first 3 months post-implant and the last 3 months of recording (a 41% yield in the first 3 months to a 34% yield in the last 3 months)."
+
+Same paper: "Overall, results were favorable compared with prior work in nonhuman primates, with over 50% of arrays maintaining at least 20% yield over the first 3 years (compared with the study by Sponheim et al., where less than 15% of arrays maintained a 20% yield)."
+
+The sentences print 14 participants, one or two 96-channel platinum-metalized Utah arrays, mean yield 35.6% (41% first 3 months to 34% last 3 months), and >50% of arrays maintaining ≥20% yield over 3 years (vs Sponheim et al. <15%). Not scored against the prior Utah longevity numbers (622 days average, ~40% SNR>1.5 at one year). Different paper, different yield bar.
+
+### Attempts / dead ends (continued)
+- Nisch 100 µm tip-to-tip and MCS 100/200/500 µm pitches are separate. Score unprinted.
+- Nisch >3 MΩ and MCS <100 kΩ / 250–400 kΩ are separate. Match not printed.
+- Hahn 2026 prints 35.6% mean yield, 41% to 34%, >50% arrays ≥20% over 3 years. Not scored against prior Utah numbers.
+- Still no Shannon figure.
+- 10 µm vs 30 µm yield still unpulled head-to-head.
+- Maeda PEA diameter and pitch still unquoted.
+
+## Open problems
+1. still open. Wire-rate still not the bound.
+2. started. Hahn 2026 adds 35.6% mean yield (41% to 34%) and >50% arrays ≥20% over 3 years on 96-channel platinum-metalized Utah in 14 BrainGate participants. Prior longevity numbers remain separate.
+3. still open. Crosstalk dB still missing.
+4. still empty of bits.
+5. still not a joint 3-pattern × 15/59 statement.
+6. still not a tracked-unit-through-delay experiment.
+7. independent-LFP-generator N still missing.
+8. Nisch 1994: original prints 60 gold microelectrodes (covered with platinum black), each 10 µm, 8×8 with 100 µm tip-to-tip, shunt >3 MΩ at 1 kHz. Prior citations (Duan, Rutten, Jaber, Chen, Salpavaara, Vidor) remain separate. Figure itself still not pulled.
+9. pagination mismatch logged.
+10. Nisch figure still not pulled.
+11. product not computed.
+12. slice 100 µm vs Potter 10 µm "range" unmerged.
+13–21. unchanged status.
+22. year-2 N: Barrese 2013 gives 61% of 26 arrays for a full second year, and 20/96 viable channels at 735 days. Not a site-count table.
+23. 10 µm vs 30 µm yield not pulled head-to-head.
+24. 30 µm; BMC did not sort; PRE forced 4 clusters/electrode on two cultures.
+25–174. status as previous list.
+175. Nisch original: 100 µm tip-to-tip. MCS: 100 µm, 200 µm, 500 µm. Neither document scores the pitch against the listings.
+176. Nisch: shunt >3 MΩ at 1 kHz. MCS: <100 kΩ (30 µm TiN) and 250–400 kΩ (10 µm). Neither document scores the shunt against the listings.
+177. (not started) Hahn 35.6% mean yield (41% to 34%) vs Sponheim ~40% SNR>1.5 at one year. Whether either paper scores the yield against the other.
+178. (not started) Hahn >50% arrays ≥20% over 3 years vs Sponheim nearly 50% year-long with >40% SNR>1.5. Whether either paper scores the longevity against the other.
